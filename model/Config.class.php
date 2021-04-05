@@ -3,9 +3,9 @@
 
         //informaçoes Basicas do site
         const SITE_URL = "http://localhost";
-        const SITE_PASTA = "LOJA_VIRUTAL";
+        const SITE_PASTA = "LOJA_Compra_Certa";
         const SITE_NOME = "Loja HS";
-        const SITE_EMAIL_ADM = "emailquevoucriar@gmail.com";
+        const SITE_EMAIL_ADM = "theprojectcompracerta@gmail.com";
 
         //Informaçoes do banco de dados
         const BD_HOST = "localhost",
@@ -15,12 +15,12 @@
 
     //Informaçoes para PHP MAILLER (trata envio automatico de emails)
         const EMAIL_HOST = "smtp.gmail.com";
-        const EMAIL_USER = "EMAIL NAO CRIADO insirir aki";
+        const EMAIL_USER = "theprojectcompracerta@gmail.com";
         const EMAIL_NOME = "Loja virtual ...";
-        const EMAIL_SENHA = "Senha do EMAIL AKI";
+        const EMAIL_SENHA = "compracerta2020";
         const EMAIL_PORTA = "587";
         const EMAIL_SMTPAUTH = true;
         const EMAIL_SMTPSECURE = "tls";
-        const EMAIL_COPIA = "EMAIL NAO CRIADO insirir aki";
+        const EMAIL_COPIA = "Etheprojectcompracerta@gmail.com";
     } 
 ?>
