@@ -1,4 +1,27 @@
+<?php
+/* Smarty version 3.1.39, created on 2021-04-08 06:07:15
+  from 'C:\Projeto\Loja_Virtual\view\index.tpl' */
 
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_606e8173105f88_93179178',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'b0d4b2a709494d3553654efad6efa1a543ccec48' => 
+    array (
+      0 => 'C:\\Projeto\\Loja_Virtual\\view\\index.tpl',
+      1 => 1617854635,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_606e8173105f88_93179178 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -8,7 +31,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
     <meta name="keywords" content="Nova Moda Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-    <script>
+    <?php echo '<script'; ?>
+>
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
         }, false);
@@ -16,7 +40,8 @@
         function hideURLbar() {
             window.scrollTo(0, 1);
         }
-    </script>
+    <?php echo '</script'; ?>
+>
     <!-- //Meta tag Keywords -->
     <!-- Custom-Files -->
     <link rel="stylesheet" href="view/css/bootstrap.css">
@@ -311,3 +336,5 @@
 </body>
 
 </html>
+<?php }
+}

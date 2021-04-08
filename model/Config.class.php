@@ -3,7 +3,7 @@
 
         //informaçoes Basicas do site
         const SITE_URL = "http://localhost";
-        const SITE_PASTA = "LOJA_Compra_Certa";
+        const SITE_PASTA = "Loja_Virtual";
         const SITE_NOME = "Loja HS";
         const SITE_EMAIL_ADM = "theprojectcompracerta@gmail.com";
 

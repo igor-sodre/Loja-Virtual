@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-04-08 04:18:32
-  from 'C:\Projeto\Loja Virtual\view\index.tpl' */
+/* Smarty version 3.1.39, created on 2021-04-08 04:10:01
+  from 'D:\PROJETO\Loja-Virtual\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_606e67f8932033_57460500',
+  'unifunc' => 'content_606e65f96449c1_33439672',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'f42a64857c7f81d024db7a4da4bc86c21c938903' => 
+    '99621fdab6f886469e6bf545c410d22350915a8b' => 
     array (
-      0 => 'C:\\Projeto\\Loja Virtual\\view\\index.tpl',
-      1 => 1617848308,
+      0 => 'D:\\PROJETO\\Loja-Virtual\\view\\index.tpl',
+      1 => 1617847770,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,17 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_606e67f8932033_57460500 (Smarty_Internal_Template $_smarty_tpl) {
-?>
-<!DOCTYPE html>
-<html lang="zxx">
-
+function content_606e65f96449c1_33439672 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
+<html lang="en">
+<title>Compra Livre</title>
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <head>
     <title>Baggage Ecommerce Category Bootstrap Responsive Web Template | Home :: W3layouts</title>
     <!-- Meta tag Keywords -->
@@ -44,15 +50,12 @@ function content_606e67f8932033_57460500 (Smarty_Internal_Template $_smarty_tpl)
 >
     <!-- //Meta tag Keywords -->
     <!-- Custom-Files -->
-    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-view/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Bootstrap-Core-CSS -->
-    <link rel="stylesheet" href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-view/css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
     <!-- Style-CSS -->
     <!-- font-awesome-icons -->
-    <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-view/css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
     <!-- //font-awesome-icons -->
     <!-- /Fonts -->
     <link href="//fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
@@ -428,5 +431,6 @@ view/css/font-awesome.css" rel="stylesheet">
 </body>
 
 </html>
+
 <?php }
 }
