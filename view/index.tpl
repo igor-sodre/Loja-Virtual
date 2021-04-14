@@ -40,12 +40,12 @@
                 <!-- nav -->
                 <div class="top-w3pvt d-flex">
                     <div id="logo">
-                        <h1> <a href="index.html"><span class="log-w3pvt">N</span>ova Moda</a> <label class="sub-des">Moda em Geral <br>Ate Para o seu lar</label></h1>
+                        <h1> <a href="index.php"><span class="log-w3pvt">N</span>ova Moda</a> <label class="sub-des">Moda em Geral <br>Ate Para o seu lar</label></h1>
                     </div>
 
                     <div class="forms ml-auto">
-                        <a href="login.html" class="btn"><span class="fa fa-user-circle-o"></span> Entrar</a>
-                        <a href="register.html" class="btn"><span class="fa fa-pencil-square-o"></span> Inscreva_se</a>
+                        <a href="/view/login.html" class="btn"><span class="fa fa-user-circle-o"></span> Entrar</a>
+                        <a href="/view/register.html" class="btn"><span class="fa fa-pencil-square-o"></span> Inscreva_se</a>
                     </div>
                 </div>
                 <div class="nav-top-wthree">
@@ -53,24 +53,11 @@
                         <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
                         <input type="checkbox" id="drop" />
                         <ul class="menu">
-                            <li class="active"><a href="index.php">Loja</a></li>
+                            <li class="active"><a href="view/shop.html">Loja</a></li>
                             <li class="active"><a href="index.tpl">Categorias</a></li>
                             
                            
-                            
-                            <li>
-                                <!-- First Tier Drop Down -->
-                                <label for="drop-2" class="toggle">Categorias <span class="fa fa-angle-down" aria-hidden="true"></span>
-                                </label>
-                                <a href="#">Minha Conta <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                                <input type="checkbox" id="drop-2" />
-                                <ul>
-                                   
-                                    <li><a href="about.html" class="drop-text">Perfil</a></li>
-                                    <li><a href="single.html" class="drop-text">Carrinho</a></li>
-
-                                </ul>
-                            </li>
+ 
 
                            
                             <li><a href="contact.html">Fale Conosco</a></li>

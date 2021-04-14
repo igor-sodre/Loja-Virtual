@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-04-08 06:07:15
+/* Smarty version 3.1.39, created on 2021-04-15 00:47:03
   from 'C:\Projeto\Loja_Virtual\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_606e8173105f88_93179178',
+  'unifunc' => 'content_607770e76c3de0_04636753',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b0d4b2a709494d3553654efad6efa1a543ccec48' => 
     array (
       0 => 'C:\\Projeto\\Loja_Virtual\\view\\index.tpl',
-      1 => 1617854635,
+      1 => 1618440422,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_606e8173105f88_93179178 (Smarty_Internal_Template $_smarty_tpl) {
+function content_607770e76c3de0_04636753 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -65,12 +65,12 @@ function content_606e8173105f88_93179178 (Smarty_Internal_Template $_smarty_tpl)
                 <!-- nav -->
                 <div class="top-w3pvt d-flex">
                     <div id="logo">
-                        <h1> <a href="index.html"><span class="log-w3pvt">N</span>ova Moda</a> <label class="sub-des">Moda em Geral <br>Ate Para o seu lar</label></h1>
+                        <h1> <a href="index.php"><span class="log-w3pvt">N</span>ova Moda</a> <label class="sub-des">Moda em Geral <br>Ate Para o seu lar</label></h1>
                     </div>
 
                     <div class="forms ml-auto">
-                        <a href="login.html" class="btn"><span class="fa fa-user-circle-o"></span> Entrar</a>
-                        <a href="register.html" class="btn"><span class="fa fa-pencil-square-o"></span> Inscreva_se</a>
+                        <a href="/view/login.html" class="btn"><span class="fa fa-user-circle-o"></span> Entrar</a>
+                        <a href="/view/register.html" class="btn"><span class="fa fa-pencil-square-o"></span> Inscreva_se</a>
                     </div>
                 </div>
                 <div class="nav-top-wthree">
@@ -78,24 +78,11 @@ function content_606e8173105f88_93179178 (Smarty_Internal_Template $_smarty_tpl)
                         <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
                         <input type="checkbox" id="drop" />
                         <ul class="menu">
-                            <li class="active"><a href="index.php">Loja</a></li>
+                            <li class="active"><a href="view/shop.html">Loja</a></li>
                             <li class="active"><a href="index.tpl">Categorias</a></li>
                             
                            
-                            
-                            <li>
-                                <!-- First Tier Drop Down -->
-                                <label for="drop-2" class="toggle">Categorias <span class="fa fa-angle-down" aria-hidden="true"></span>
-                                </label>
-                                <a href="#">Minha Conta <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-                                <input type="checkbox" id="drop-2" />
-                                <ul>
-                                   
-                                    <li><a href="about.html" class="drop-text">Perfil</a></li>
-                                    <li><a href="single.html" class="drop-text">Carrinho</a></li>
-
-                                </ul>
-                            </li>
+ 
 
                            
                             <li><a href="contact.html">Fale Conosco</a></li>
