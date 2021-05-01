@@ -40,7 +40,7 @@
                 <!-- nav -->
                 <div class="top-w3pvt d-flex">
                     <div id="logo">
-                        <h1> <a href="index.php"><span class="log-w3pvt">N</span>ova Moda</a> <label class="sub-des">Moda em Geral <br>Ate Para o seu lar</label></h1>
+                        <h1> <a href="{$GET_HOME}"><span class="log-w3pvt">N</span>ova Moda</a> <label class="sub-des">Moda em Geral <br>Ate Para o seu lar</label></h1>
                     </div>
 
                     <div class="forms ml-auto">
@@ -54,13 +54,14 @@
                         <input type="checkbox" id="drop" />
                         <ul class="menu">
                             <li class="active"><a href="view/shop.html">Loja</a></li>
+                            <li class="active"><a href="{$GET_CARRINHO}">Carrinho</a></li>
                             <li class="active"><a href="index.tpl">Categorias</a></li>
                             
                            
  
 
                            
-                            <li><a href="contact.html">Fale Conosco</a></li>
+                            <li><a href="{$GET_MINHACONTA}">Fale Conosco</a></li>
                         </ul>
                     </nav>
                     <!-- //nav -->
@@ -217,14 +218,14 @@
         <div class="container py-md-5">
             <div class="row">
                 <div class="col-lg-3 footer_wthree_gridf mt-lg-5">
-                    <h2><a href="index.html"><span>N</span>ova Moda
+                    <h2><a href="{$GET_HOME}"><span>N</span>ova Moda
                         </a> </h2>
                     <label class="sub-des2">MODA EM GERAL</label>
                 </div>
                 <div class="col-lg-3 footer_wthree_gridf mt-md-0 mt-4">
                     <ul class="footer_wthree_gridf_list">
                         <li>
-                            <a href="index.html"><span class="fa fa-angle-right" aria-hidden="true"></span> pagina Inicial</a>
+                            <a href="{$GET_HOME}"><span class="fa fa-angle-right" aria-hidden="true"></span> pagina Inicial</a>
                         </li>
                         <li>
                             <a href="about.html"><span class="fa fa-angle-right" aria-hidden="true"></span> Sobre Nós</a>
@@ -262,7 +263,7 @@
                             <a href="#"><span class="fa fa-angle-right" aria-hidden="true"></span>Privacy & Policy</a>
                         </li>
                                                 <li>
-                            <a href="contact.html"><span class="fa fa-angle-right" aria-hidden="true"></span> Fale Conosco</a>
+                            <a href="{$GET_CONTATO}"><span class="fa fa-angle-right" aria-hidden="true"></span> Fale Conosco</a>
                         </li>
 
                     </ul>

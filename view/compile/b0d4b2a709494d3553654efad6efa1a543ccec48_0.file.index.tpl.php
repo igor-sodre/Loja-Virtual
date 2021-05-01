@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-04-15 00:47:03
+/* Smarty version 3.1.39, created on 2021-05-01 04:24:53
   from 'C:\Projeto\Loja_Virtual\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_607770e76c3de0_04636753',
+  'unifunc' => 'content_608cbbf5a85931_18410605',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b0d4b2a709494d3553654efad6efa1a543ccec48' => 
     array (
       0 => 'C:\\Projeto\\Loja_Virtual\\view\\index.tpl',
-      1 => 1618440422,
+      1 => 1619835892,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_607770e76c3de0_04636753 (Smarty_Internal_Template $_smarty_tpl) {
+function content_608cbbf5a85931_18410605 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="zxx">
@@ -65,7 +65,8 @@ function content_607770e76c3de0_04636753 (Smarty_Internal_Template $_smarty_tpl)
                 <!-- nav -->
                 <div class="top-w3pvt d-flex">
                     <div id="logo">
-                        <h1> <a href="index.php"><span class="log-w3pvt">N</span>ova Moda</a> <label class="sub-des">Moda em Geral <br>Ate Para o seu lar</label></h1>
+                        <h1> <a href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
+"><span class="log-w3pvt">N</span>ova Moda</a> <label class="sub-des">Moda em Geral <br>Ate Para o seu lar</label></h1>
                     </div>
 
                     <div class="forms ml-auto">
@@ -79,13 +80,16 @@ function content_607770e76c3de0_04636753 (Smarty_Internal_Template $_smarty_tpl)
                         <input type="checkbox" id="drop" />
                         <ul class="menu">
                             <li class="active"><a href="view/shop.html">Loja</a></li>
+                            <li class="active"><a href="<?php echo $_smarty_tpl->tpl_vars['GET_CARRINHO']->value;?>
+">Carrinho</a></li>
                             <li class="active"><a href="index.tpl">Categorias</a></li>
                             
                            
  
 
                            
-                            <li><a href="contact.html">Fale Conosco</a></li>
+                            <li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_MINHACONTA']->value;?>
+">Fale Conosco</a></li>
                         </ul>
                     </nav>
                     <!-- //nav -->
@@ -242,14 +246,16 @@ function content_607770e76c3de0_04636753 (Smarty_Internal_Template $_smarty_tpl)
         <div class="container py-md-5">
             <div class="row">
                 <div class="col-lg-3 footer_wthree_gridf mt-lg-5">
-                    <h2><a href="index.html"><span>N</span>ova Moda
+                    <h2><a href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
+"><span>N</span>ova Moda
                         </a> </h2>
                     <label class="sub-des2">MODA EM GERAL</label>
                 </div>
                 <div class="col-lg-3 footer_wthree_gridf mt-md-0 mt-4">
                     <ul class="footer_wthree_gridf_list">
                         <li>
-                            <a href="index.html"><span class="fa fa-angle-right" aria-hidden="true"></span> pagina Inicial</a>
+                            <a href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
+"><span class="fa fa-angle-right" aria-hidden="true"></span> pagina Inicial</a>
                         </li>
                         <li>
                             <a href="about.html"><span class="fa fa-angle-right" aria-hidden="true"></span> Sobre Nós</a>
@@ -287,7 +293,8 @@ function content_607770e76c3de0_04636753 (Smarty_Internal_Template $_smarty_tpl)
                             <a href="#"><span class="fa fa-angle-right" aria-hidden="true"></span>Privacy & Policy</a>
                         </li>
                                                 <li>
-                            <a href="contact.html"><span class="fa fa-angle-right" aria-hidden="true"></span> Fale Conosco</a>
+                            <a href="<?php echo $_smarty_tpl->tpl_vars['GET_CONTATO']->value;?>
+"><span class="fa fa-angle-right" aria-hidden="true"></span> Fale Conosco</a>
                         </li>
 
                     </ul>

@@ -4,19 +4,26 @@ class Rotas{
     private static $pasta_controller = 'controller';
     private static $pasta_view = 'view';
 
-    static function get_SiteHome(){
+    static function get_SiteHOME(){
       return Config::SITE_URL . '/' .Config::SITE_PASTA;
     }
 
     static function get_SiteRaiz(){
       return $_SERVER['DOCUMENT_ROOT'] . '/' .Config::SITE_PASTA;
     }
-    static function get_SiteTema(){
+    static function get_SiteTEMA(){
       return self::get_SiteHome(). '/' .self::$pasta_view;
     }
 
     static function pag_Carrinho(){
-      return self::get_SiteHome() . '/carrinho';
+      return self::get_SiteHOME() . '/carrinho';
+    }
+
+    static function pag_Contato(){
+      return self::get_SiteHOME() . '/contato';
+    }
+    static function pag_MinhaConta(){
+      return self::get_SiteHOME() . '/minhaconta';
     }
 
     static function get_Pagina(){
