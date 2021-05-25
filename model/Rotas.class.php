@@ -11,16 +11,14 @@ class Rotas{
     static function get_SiteRaiz(){
       return $_SERVER['DOCUMENT_ROOT'] . '/' .Config::SITE_PASTA;
     }
-    static function get_SiteTEMA(){
-      return self::get_SiteHome(). '/' .self::$pasta_view;
-    }
+
 
     static function pag_Carrinho(){
-      return self::get_SiteHOME() . '/carrinho';
+      return self::get_SiteHome() . '/carrinho';
     }
 
     static function pag_Contato(){
-      return self::get_SiteHOME() . '/contato';
+      return self::get_SiteHome() . '/contato';
     }
     static function pag_MinhaConta(){
       return self::get_SiteHOME() . '/minhaconta';

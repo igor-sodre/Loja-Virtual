@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-05-07 01:03:16
-  from 'C:\Projeto\Loja_Virtual\view\index.tpl' */
+/* Smarty version 3.1.39, created on 2021-05-25 02:07:35
+  from 'C:\Developer\Projeto\Loja_Virtual\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_609475b45eb0a7_44688840',
+  'unifunc' => 'content_60ac3fc7770ef0_77479776',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'b0d4b2a709494d3553654efad6efa1a543ccec48' => 
+    '315e19eeef27787aa598a0443e714ffcba77f55e' => 
     array (
-      0 => 'C:\\Projeto\\Loja_Virtual\\view\\index.tpl',
-      1 => 1620342195,
+      0 => 'C:\\Developer\\Projeto\\Loja_Virtual\\view\\index.tpl',
+      1 => 1621901253,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_609475b45eb0a7_44688840 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60ac3fc7770ef0_77479776 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -53,9 +53,9 @@ function content_609475b45eb0a7_44688840 (Smarty_Internal_Template $_smarty_tpl)
                                 
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">Sobre</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="#!">??</a></li>-->
+                        <li class="nav-item"><a class="nav-link" href="../view/contato.html">Entre Em Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -67,7 +67,7 @@ function content_609475b45eb0a7_44688840 (Smarty_Internal_Template $_smarty_tpl)
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <h1 class="my-4">W.A Acessorios</h1>
+                    <h1 class="my-4">Categorias</h1>
                     <div class="list-group">
                         <a class="list-group-item" href="#!">Bolsas</a>
                         <a class="list-group-item" href="#!">Tapetes</a>
@@ -169,7 +169,7 @@ function content_609475b45eb0a7_44688840 (Smarty_Internal_Template $_smarty_tpl)
         </div>
         <!-- Rodape-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; StrayDogsDev 2021</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <?php echo '<script'; ?>
