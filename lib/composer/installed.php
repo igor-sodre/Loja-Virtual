@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '2127e32d5853a9800baed6b575a3944f1f44e4cf',
     'dev-requirement' => true,
     'name' => '__root__',
   ),
@@ -14,12 +14,12 @@
   array (
     '__root__' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '2127e32d5853a9800baed6b575a3944f1f44e4cf',
       'dev-requirement' => false,
     ),
     'smarty/smarty' => 

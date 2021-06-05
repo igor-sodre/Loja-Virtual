@@ -22,5 +22,5 @@ $smarty->assign('GET_MINHACONTA',Rotas::pag_MinhaConta());
 
 
 //chama o template e deve ficar no final do codigo//
-$smarty->display('index.tpl');
+$smarty->display('index.html');
 ?>
