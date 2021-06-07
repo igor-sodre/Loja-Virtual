@@ -25,12 +25,12 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
+    'pretty_version' => '1.0.0+no-version-set',
+    'version' => '1.0.0.0',
     'aliases' => 
     array (
     ),
-    'reference' => '2127e32d5853a9800baed6b575a3944f1f44e4cf',
+    'reference' => NULL,
     'dev-requirement' => true,
     'name' => '__root__',
   ),
@@ -38,12 +38,22 @@ private static $installed = array (
   array (
     '__root__' => 
     array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
+      'pretty_version' => '1.0.0+no-version-set',
+      'version' => '1.0.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '2127e32d5853a9800baed6b575a3944f1f44e4cf',
+      'reference' => NULL,
+      'dev-requirement' => false,
+    ),
+    'phpmailer/phpmailer' => 
+    array (
+      'pretty_version' => 'v5.2.28',
+      'version' => '5.2.28.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'acba50393dd03da69a50226c139722af8b153b11',
       'dev-requirement' => false,
     ),
     'smarty/smarty' => 

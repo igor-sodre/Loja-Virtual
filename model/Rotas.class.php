@@ -12,6 +12,10 @@ class Rotas{
       return $_SERVER['DOCUMENT_ROOT'] . '/' .Config::SITE_PASTA;
     }
 
+    static function get_SiteTEMA(){
+      return  self::get_SiteHOME(). '/' .self::$pasta_view;
+    }
+
 
     static function pag_Carrinho(){
       return self::get_SiteHome() . '/carrinho';
@@ -25,10 +29,10 @@ class Rotas{
     }
 
     static function get_Pagina(){
-        if(isset($_GET['pag'])){
+      if(isset($_GET['pag'])){
 
-            $pagina = $_GET['pag'];
-            self::$pag = explode('/', $pagina) ;
+        $pagina = $_GET['pag'];
+        self::$pag = explode('/', $pagina);
 
 
           //para debug do array//
@@ -40,10 +44,10 @@ class Rotas{
           //passado algo mais apos a '/' 
           //o ponto fora das chaves e para concatenaçao para abrir o arquivo NAO ESQUECER DE COLOCAR O . para definir o formato
           
-         $pagina = 'controller/'.self::$pag[0] . '.php';
-         //$pagina = 'controller/' . $_GET['pag']  . '.php'; 
-         if(file_exists($pagina)){
-           include $pagina;
+          $pagina = 'controller/' .self::$pag[0] . '.php';
+          //$pagina = 'controller/' .$_GET['pag'] . '.php'; 
+          if(file_exists($pagina)){
+            include $pagina;
          }else{
             include 'erro.php';
         }

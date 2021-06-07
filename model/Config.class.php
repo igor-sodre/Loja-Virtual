@@ -2,9 +2,10 @@
     class Config{
 
         //informaçoes Basicas do site
+        //http://127.0.0.1:8080
         const SITE_URL = "http://127.0.0.1:8080";
-        const SITE_PASTA = "Loja_Virtual";
-        const SITE_NOME = "Loja HS";
+        const SITE_PASTA = "W_A_Acessorios";
+        const SITE_NOME = "W A Acessorios";
         const SITE_EMAIL_ADM = "theprojectcompracerta@gmail.com";
 
         //Informaçoes do banco de dados
