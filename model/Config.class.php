@@ -3,8 +3,8 @@
 
         //informaçoes Basicas do site
         //http://127.0.0.1:8080
-        const SITE_URL = "http://127.0.0.1:8080";
-        const SITE_PASTA = "W_A_Acessorios";
+        const SITE_URL = "http://localhost/";
+        const SITE_PASTA = "loja";
         const SITE_NOME = "W A Acessorios";
         const SITE_EMAIL_ADM = "theprojectcompracerta@gmail.com";
 

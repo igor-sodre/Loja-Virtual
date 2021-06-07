@@ -1,6 +1,6 @@
 <?php
 //essa classe foi criada para evitar a repetiçao de codigo chamando o template em cada pagina//
-class Template extends Smarty{
+class Template extends SmartyBC{
     function __construct(){
            parent:: __construct();
            //-> esse simbolo usado apos o smarty e usado pra chamar um comando, esse comando abaixo e pra buscar o diretorio//

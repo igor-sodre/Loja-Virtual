@@ -25,7 +25,7 @@
         <!-- começa  o container geral -->
         <div class="container-fluid">
             
-            <!-- começa a div topo -->
+            <!-- começa a div topo 
             <div class="row" id="topo">
                  
                 
@@ -34,7 +34,7 @@
                        
                 </div>    
             
-            </div><!-- fim da div topo -->
+            </div> fim da div topo -->
             
             <!-- começa a barra MENU-->
             <div class="row" id="barra-menu">
@@ -136,6 +136,14 @@
                     </ul>   
                     <!-- fim do menu breadcrumb-->             
                     
+                    {php} 
+
+                    Rotas::get_Pagina();
+                    //var_dump(Rotas::$pag);
+
+
+                    {/php}
+                
                   
                     
                 </div>  <!--fim coluna direita-->  

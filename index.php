@@ -17,7 +17,7 @@ $smarty->assign('GET_MINHACONTA',Rotas::pag_MinhaConta());
 
 
 //dbug de diretorio
-echo Rotas::get_SiteHOME().'<br>';
+//echo Rotas::get_SiteHOME().'<br>';
 //debug de raiz do site
 //echo
 
