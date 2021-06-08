@@ -3,15 +3,16 @@
 #topo{
 
 min-height: 100px;
-background-color: #DC4B80;
+background-color: #222222;
 color: #fff;
+padding-top: 30px;
     
 }
 
 #rodape{
      
  min-height: 150px;
- background-color: #DC4B80;  
+ background-color: #222222;  
 color: #fff; 
     
 }

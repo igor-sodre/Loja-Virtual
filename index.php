@@ -14,6 +14,7 @@ $smarty->assign('GET_TEMA',Rotas::get_SiteTEMA());
 $smarty->assign('GET_CARRINHO',Rotas::pag_Carrinho());
 $smarty->assign('GET_CONTATO',Rotas::pag_Contato());
 $smarty->assign('GET_MINHACONTA',Rotas::pag_MinhaConta());
+$smarty->assign('TITULO_SITE',config::SITE_NOME);
 
 
 //dbug de diretorio
@@ -21,6 +22,20 @@ $smarty->assign('GET_MINHACONTA',Rotas::pag_MinhaConta());
 //debug de raiz do site
 //echo
 
+
+
+//$dados = new Conexao();
+//$sql = "SELECT * FROM categorias";
+//$dados->ExecuteSQL($sql);
+//echo $dados->TotalDados();
+
+
+
+//$lista = $dados->ListarDados();
+
+//echo '<pre>';
+//var_dump($lista);
+//echo'</pre>';
 
 //chama o template e deve ficar no final do codigo//
 $smarty->display('index.tpl');

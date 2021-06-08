@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>W.A Acessorios</title>
+        <title>{$TITULO_SITE}</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
@@ -166,7 +166,11 @@
             
             <!-- começa div rodape -->
             <div class="row" id="rodape">
-            
+                    <center><h4>{$TITULO_SITE}</h4> 
+                    
+                    <p>Todos os Direitos Reservados</P>
+
+                    </center>
             
             </div><!-- fim div rodape-->
             

@@ -12,7 +12,8 @@
         const BD_HOST = "localhost",
               BD_USER = "root",
               BD_SENHA = "",
-              BD_BANCO = "lojaonline";
+              BD_BANCO = "lojaonline",
+              BD_PREFIX = "";
 
     //Informaçoes para PHP MAILLER (trata envio automatico de emails)
         const EMAIL_HOST = "smtp.gmail.com";

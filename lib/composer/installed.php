@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => 'dev-main',
-    'version' => 'dev-main',
+    'pretty_version' => '1.0.0+no-version-set',
+    'version' => '1.0.0.0',
     'aliases' => 
     array (
     ),
-    'reference' => '69deff83a3612cf979739f6095f58584a01370ee',
+    'reference' => NULL,
     'dev-requirement' => true,
     'name' => '__root__',
   ),
@@ -14,12 +14,12 @@
   array (
     '__root__' => 
     array (
-      'pretty_version' => 'dev-main',
-      'version' => 'dev-main',
+      'pretty_version' => '1.0.0+no-version-set',
+      'version' => '1.0.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '69deff83a3612cf979739f6095f58584a01370ee',
+      'reference' => NULL,
       'dev-requirement' => false,
     ),
     'phpmailer/phpmailer' => 
