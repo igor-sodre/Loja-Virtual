@@ -9,15 +9,13 @@
         <link href="{$GET_TEMA}/tema/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <!--configuração do css da pagina de contato -->
         <link href="{$GET_TEMA}/tema/contatos/contatos.css" rel="stylesheet" type="text/css"/>
-
         <script src="{$GET_TEMA}/tema/js/jquery-2.2.1.min.js" type="text/javascript"></script>
         <!--configuração do JS da pagina de contato -->
-        <script src="{$GET_TEMA}/tema/contatos/contatos.js" type="text/javascript"></script>        
-
         <script src="{$GET_TEMA}/tema/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="{$GET_TEMA}/tema/contatos/contatos.js" type="text/javascript"></script>
         <!-- meu aquivo pessoal de CSS-->
         <link href="{$GET_TEMA}/tema/css/tema.css" rel="stylesheet" type="text/css"/>
-        
+
      <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
     <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
     <!--[if lt IE 9]>
@@ -31,16 +29,16 @@
         <!-- começa  o container geral -->
         <div class="container-fluid">
             
-            <!-- começa a div topo 
+            <!-- começa a div topo -->
             <div class="row" id="topo">
                  
                 
                 <div class="container">
-                <img src="{$GET_TEMA}/imagens/logo.png" alt=""> 
+                <img src="{$GET_TEMA}/images/logo.png" alt=""> 
                        
                 </div>    
             
-            </div> fim da div topo -->
+            </div><!-- fim da div topo -->
             
             <!-- começa a barra MENU-->
             <div class="row" id="barra-menu">
@@ -64,12 +62,12 @@
                         
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="nav navbar-nav">
-                                <li><a href="{$GET_HOME}"><i class="glyphicon glyphicon-home"></i>W.A A </a> </li>
+                                <li><a href="{$GET_HOME}"><i class="glyphicon glyphicon-home"></i> Home </a> </li>
                                
-                                <li><a href="{$GET_MINHACONTA}"><i class="glyphicon glyphicon-user"></i> Minha Conta </a> </li>
-                                <li><a href="{$GET_CARRINHO}"><i class="glyphicon glyphicon-shopping-cart"></i> Carrinho </a> </li>
-                                <li><a href="{$GET_CONTATO}" ><i class="glyphicon glyphicon-envelope"></i> Contato </a> </li>
-                                
+                                <li><a href="{$PAG_MINHACONTA}"><i class="glyphicon glyphicon-user"></i> Minha Conta </a> </li>
+                                <li><a href="{$PAG_CARRINHO}"><i class="glyphicon glyphicon-shopping-cart"></i> Carrinho </a> </li>
+                                <li><a href="{$PAG_CONTATO}" ><i class="glyphicon glyphicon-envelope"></i> Contato </a> </li>
+
                                 <!--<li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Categorias <i class="glyphicon glyphicon-menu-down"></i></a> 
                                 
@@ -85,7 +83,6 @@
                                     </ul>
                                 
                                 </li> -->
-                               
                                 
                             </ul>
                             
@@ -126,32 +123,30 @@
                     <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Tapetes</a> 
                     
                     
-                    
                 </div><!--fim da list group-->              
                               
-                </div> <!-- finm coluna esquerda -->  
+                </div>  
+                
+                <!-- finm coluna esquerda -->  
                 
                 <!-- coluna direita CONYEUDO CENTRAL -->
-               <!-- <div class="col-md-10">
+                 <div class="col-md-10">
                     
                     
                     <ul class="breadcrumb">
                         <li><a href="#"><i class="glyphicon glyphicon-home"></i> Home </a></li>
                         <li><a href="#"> Produtos </a></li>
                         <li><a href="#"> Info </a></li>
-                    </ul> -->  
+                    </ul>  
                     <!-- fim do menu breadcrumb-->   
                               
-                    <!-- aqui e a area onde e chamada o conteudo da pagina -->
-                    {php} 
+                    <!-- aqui e a area onde e chamada o conteudo da pagina -->          
+                    
+                  {php}
 
-                    Rotas::get_Pagina();
-                    //var_dump(Rotas::$pag);
-
-
-                    {/php}
-                
-                  
+                  Rotas::get_Pagina();
+                  //var_dump(Rotas::$pag);
+                  {/php}
                     
                 </div>  <!--fim coluna direita-->  
             
@@ -166,11 +161,10 @@
             
             <!-- começa div rodape -->
             <div class="row" id="rodape">
-                    <center><h4>{$TITULO_SITE}</h4> 
-                    
-                    <p>Todos os Direitos Reservados</P>
-
-                    </center>
+                <center>
+                    <h4>{$TITULO_SITE}</h4>
+                    <P>Todos os Direitos Reservados</P>
+                </center>
             
             </div><!-- fim div rodape-->
             

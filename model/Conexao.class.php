@@ -4,7 +4,7 @@
 Class Conexao extends Config{
 	private $host, $user, $senha, $banco;
 //aqui executa a coneccao 
-	protected $obj, $itens=array(), $prefix; 
+	protected $obj, $itens=array(), $prefix;
 
 	function __construct(){
 		$this->host = self::BD_HOST;

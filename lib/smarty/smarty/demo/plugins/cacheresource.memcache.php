@@ -19,9 +19,6 @@ class Smarty_CacheResource_Memcache extends Smarty_CacheResource_KeyValueStore
      */
     protected $memcache = null;
 
-    /**
-     * Smarty_CacheResource_Memcache constructor.
-     */
     public function __construct()
     {
         if (class_exists('Memcached')) {
@@ -35,26 +32,33 @@ class Smarty_CacheResource_Memcache extends Smarty_CacheResource_KeyValueStore
     /**
      * Read values for a set of keys from cache
      *
-     * @param array $keys list of keys to fetch
+     * @param  array $keys list of keys to fetch
      *
      * @return array   list of values with the given keys used as indexes
      * @return boolean true on success, false on failure
      */
     protected function read(array $keys)
     {
-        $res = array();
-        foreach ($keys as $key) {
-            $k = sha1($key);
-            $res[$key] = $this->memcache->get($k);
+        $_keys = $lookup = array();
+        foreach ($keys as $k) {
+            $_k = sha1($k);
+            $_keys[] = $_k;
+            $lookup[ $_k ] = $k;
         }
-        return $res;
+        $_res = array();
+        $res = $this->memcache->get($_keys);
+        foreach ($res as $k => $v) {
+            $_res[ $lookup[ $k ] ] = $v;
+        }
+
+        return $_res;
     }
 
     /**
      * Save values for a set of keys to cache
      *
-     * @param array $keys   list of values to save
-     * @param int   $expire expiration time
+     * @param  array $keys   list of values to save
+     * @param  int   $expire expiration time
      *
      * @return boolean true on success, false on failure
      */
@@ -62,19 +66,16 @@ class Smarty_CacheResource_Memcache extends Smarty_CacheResource_KeyValueStore
     {
         foreach ($keys as $k => $v) {
             $k = sha1($k);
-            if (class_exists('Memcached')) {
-                $this->memcache->set($k, $v, $expire);
-            } else {
-                $this->memcache->set($k, $v, 0, $expire);
-            }
+            $this->memcache->set($k, $v, 0, $expire);
         }
+
         return true;
     }
 
     /**
      * Remove values from cache
      *
-     * @param array $keys list of keys to delete
+     * @param  array $keys list of keys to delete
      *
      * @return boolean true on success, false on failure
      */
@@ -84,6 +85,7 @@ class Smarty_CacheResource_Memcache extends Smarty_CacheResource_KeyValueStore
             $k = sha1($k);
             $this->memcache->delete($k);
         }
+
         return true;
     }
 
@@ -94,6 +96,6 @@ class Smarty_CacheResource_Memcache extends Smarty_CacheResource_KeyValueStore
      */
     protected function purge()
     {
-        return $this->memcache->flush();
+        $this->memcache->flush();
     }
 }
