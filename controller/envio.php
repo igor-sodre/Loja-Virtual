@@ -4,7 +4,7 @@ $to      = Config::EMAIL_USER;
 
 
 //echo $to;
-$subject = 'Comtato Loja W.A Asesorios';
+$subject = 'Contato Loja W.A Asesorios';
 $message = 'Email de '.$_GET['txtinputnome']. "\r\n" .$_GET['txtinputarea'];
 $dest = $_GET['txtinputemail'];
 

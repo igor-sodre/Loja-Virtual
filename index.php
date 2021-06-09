@@ -36,6 +36,7 @@ $smarty->assign('TITULO_SITE',config::SITE_NOME);
 //echo '<pre>';
 //var_dump($lista);
 //echo'</pre>';
+$dados = new Conexao();
 
 //chama o template e deve ficar no final do codigo//
 $smarty->display('index.tpl');

@@ -1,24 +1,18 @@
 <?php
+class Produtos extends Conexao{
+    function __construct(){
+        parent:: __construct();
+        
+    }
+    function GetProdutos(){
+        //query q busca os produtos de uma categoria especifica com base no Id
+        $query = "SELECT * FROM {$this->prefix}produtos p INNER 
+        JOIN {$this->prefix}categorias c ON p.pro_categoria = c.cate_id";
 
-Class Produtos extends Conexao{
-    function __construct()
-    {
-        parent::__construct();
-        }
-
-        function GetProdutos(){
-            //query especifica para buscar os produtos de uma categoria especifica
-            $query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias 
-            c ON p.pro_categorias = c.cate_id";
-
-            $query .= "ORDER BY pro_id DESC";
-
-            $this->ExecuteSQL($query);
-            $this->GetLista();
-
-
-        } 
-
+        //$query  .="ORDER BY pro_id DESC";
+        $this->ExecuteSQL($query);
+        $this->GetLista();
+    }
     private function GetLista(){
         $i = 1;
         while($lista = $this->ListarDados()):
@@ -42,6 +36,7 @@ Class Produtos extends Conexao{
         endwhile;
     }    
 }
+
 
 
 ?>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-09 11:16:26
-  from 'C:\xampp\htdocs\Loja\view\index.tpl' */
+/* Smarty version 3.1.39, created on 2021-06-05 23:12:31
+  from 'C:\Developer\Projeto\W_A_Acessorios\view\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60c086ea7d4a68_57898071',
+  'unifunc' => 'content_60bbe8bf72faf6_61112853',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '5e80d62a928da47e9195f928835f4bedfc3a5d6e' => 
+    '2cb5fcafbe45c973bfc134ac60b92a653d9b5adb' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\Loja\\view\\index.tpl',
-      1 => 1623229765,
+      0 => 'C:\\Developer\\Projeto\\W_A_Acessorios\\view\\index.html',
+      1 => 1622927331,
       2 => 'file',
     ),
   ),
@@ -20,40 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60c086ea7d4a68_57898071 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60bbe8bf72faf6_61112853 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
     <head>
-        <title><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
-</title>
+        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/tema/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <!--configuração do css da pagina de contato -->
-        <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/tema/contatos/contatos.css" rel="stylesheet" type="text/css"/>
-
+        <link href="view/tema/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/tema/js/jquery-2.2.1.min.js" type="text/javascript"><?php echo '</script'; ?>
+ src="view/tema/js/jquery-2.2.1.min.js" type="text/javascript"><?php echo '</script'; ?>
 >
-        <!--configuração do JS da pagina de contato -->
         <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/tema/contatos/contatos.js" type="text/javascript"><?php echo '</script'; ?>
->        
-
-        <?php echo '<script'; ?>
- src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/tema/js/bootstrap.min.js" type="text/javascript"><?php echo '</script'; ?>
+ src="view/tema/js/bootstrap.min.js" type="text/javascript"><?php echo '</script'; ?>
 >
         <!-- meu aquivo pessoal de CSS-->
-        <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/tema/css/tema.css" rel="stylesheet" type="text/css"/>
-        
+        <link href="view/tema/css/tema.css" rel="stylesheet" type="text/css"/>
      <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
     <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
     <!--[if lt IE 9]>
@@ -71,17 +55,16 @@ function content_60c086ea7d4a68_57898071 (Smarty_Internal_Template $_smarty_tpl)
         <!-- começa  o container geral -->
         <div class="container-fluid">
             
-            <!-- começa a div topo 
+            <!-- começa a div topo -->
             <div class="row" id="topo">
                  
                 
                 <div class="container">
-                <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/imagens/logo.png" alt=""> 
+                <img src="view/imagens/logo.png" alt=""> 
                        
                 </div>    
             
-            </div> fim da div topo -->
+            </div><!-- fim da div topo -->
             
             <!-- começa a barra MENU-->
             <div class="row" id="barra-menu">
@@ -105,17 +88,13 @@ function content_60c086ea7d4a68_57898071 (Smarty_Internal_Template $_smarty_tpl)
                         
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="nav navbar-nav">
-                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_HOME']->value;?>
-"><i class="glyphicon glyphicon-home"></i>W.A A </a> </li>
+                                <li><a href="#"><i class="glyphicon glyphicon-home"></i> Home </a> </li>
                                
-                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_MINHACONTA']->value;?>
-"><i class="glyphicon glyphicon-user"></i> Minha Conta </a> </li>
-                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_CARRINHO']->value;?>
-"><i class="glyphicon glyphicon-shopping-cart"></i> Carrinho </a> </li>
-                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_CONTATO']->value;?>
-" ><i class="glyphicon glyphicon-envelope"></i> Contato </a> </li>
+                                <li><a href="#"><i class="glyphicon glyphicon-user"></i> Minha Conta </a> </li>
+                                <li><a href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Carrinho </a> </li>
+                                <li><a href="#" ><i class="glyphicon glyphicon-envelope"></i> Contato </a> </li>
                                 
-                                <!--<li class="dropdown">
+                                <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Categorias <i class="glyphicon glyphicon-menu-down"></i></a> 
                                 
                                     <ul class="dropdown-menu">
@@ -129,7 +108,7 @@ function content_60c086ea7d4a68_57898071 (Smarty_Internal_Template $_smarty_tpl)
                                     
                                     </ul>
                                 
-                                </li> -->
+                                </li>
                                
                                 
                             </ul>
@@ -177,25 +156,16 @@ function content_60c086ea7d4a68_57898071 (Smarty_Internal_Template $_smarty_tpl)
                 </div> <!-- finm coluna esquerda -->  
                 
                 <!-- coluna direita CONYEUDO CENTRAL -->
-               <!-- <div class="col-md-10">
+                <div class="col-md-10">
                     
                     
                     <ul class="breadcrumb">
                         <li><a href="#"><i class="glyphicon glyphicon-home"></i> Home </a></li>
                         <li><a href="#"> Produtos </a></li>
                         <li><a href="#"> Info </a></li>
-                    </ul> -->  
-                    <!-- fim do menu breadcrumb-->   
-                              
-                    <!-- aqui e a area onde e chamada o conteudo da pagina -->
-                    <?php  
-
-                    Rotas::get_Pagina();
-                    //var_dump(Rotas::$pag);
-
-
-                    ?>
-                
+                    </ul>   
+                    <!-- fim do menu breadcrumb-->             
+                    
                   
                     
                 </div>  <!--fim coluna direita-->  
@@ -211,12 +181,7 @@ function content_60c086ea7d4a68_57898071 (Smarty_Internal_Template $_smarty_tpl)
             
             <!-- começa div rodape -->
             <div class="row" id="rodape">
-                    <center><h4><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
-</h4> 
-                    
-                    <p>Todos os Direitos Reservados</P>
-
-                    </center>
+            
             
             </div><!-- fim div rodape-->
             

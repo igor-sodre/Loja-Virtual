@@ -1,9 +1,10 @@
 <?php 
 
+//restante da conecçao do banco de dados vindo da config.class.php
 Class Conexao extends Config{
 	private $host, $user, $senha, $banco;
-
-	protected $obj, $itens=array(), $prefix;
+//aqui executa a coneccao 
+	protected $obj, $itens=array(), $prefix; 
 
 	function __construct(){
 		$this->host = self::BD_HOST;
