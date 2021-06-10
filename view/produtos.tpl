@@ -1,6 +1,10 @@
 <h3>Lista de produtos</h3>
 <hr>
 
+{if $PRO_TOTAL < 1}
+<H4 class="alert alert-danger">Nenhum Produto encontrado</H4>
+{/if}
+
  
     <section id="pagincao" class="row">
        <center>

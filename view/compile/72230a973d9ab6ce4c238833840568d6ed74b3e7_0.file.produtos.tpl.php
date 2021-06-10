@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.31, created on 2021-06-09 21:07:58
-  from "C:\wamp64\www\loja\view\produtos.tpl" */
+/* Smarty version 3.1.39, created on 2021-06-10 18:35:18
+  from 'C:\wamp64\www\loja\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.31',
-  'unifunc' => 'content_60c12dae047ba1_84948607',
+  'version' => '3.1.39',
+  'unifunc' => 'content_60c25b66839d07_65984863',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '72230a973d9ab6ce4c238833840568d6ed74b3e7' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\produtos.tpl',
-      1 => 1503588640,
+      1 => 1623350040,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60c12dae047ba1_84948607 (Smarty_Internal_Template $_smarty_tpl) {
-?>
-<h3>Lista de produtos</h3>
+function content_60c25b66839d07_65984863 (Smarty_Internal_Template $_smarty_tpl) {
+?><h3>Lista de produtos</h3>
 <hr>
+
+<?php if ($_smarty_tpl->tpl_vars['PRO_TOTAL']->value < 1) {?>
+<H4 class="alert alert-danger">Nenhum Produto encontrado</H4>
+<?php }?>
 
  
     <section id="pagincao" class="row">
@@ -43,8 +46,9 @@ function content_60c12dae047ba1_84948607 (Smarty_Internal_Template $_smarty_tpl)
 		                  <div class="row" id="pularliha">
 		        <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
+$_smarty_tpl->tpl_vars['P']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
+$_smarty_tpl->tpl_vars['P']->do_else = false;
 ?> 
 		           
 		        <li class="col-md-4">
@@ -79,10 +83,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
 
 		        <?php
 }
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
-?>
-
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		        
 		         </div>
 		         

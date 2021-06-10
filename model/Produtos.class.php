@@ -24,9 +24,33 @@ Class Produtos extends Conexao{
 		//query para buscar os produtos de uma categoria especifica.
 		$query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c ON p.pro_categoria = c.cate_id";
 
-		$query .= " AND pro_id = {$id}";
+		$query .= " AND pro_id = :id";
 
-		$this->ExecuteSQL($query);
+		$params = array(':id'=>(int)$id);
+
+		$this->ExecuteSQL($query, $params);
+
+		$this->GetLista();
+		
+	}
+
+
+	function GetProdutosCateID($id){
+		//query para buscar os produtos de uma categoria especifica.
+
+		$id = filter_var($id, FILTER_SANITIZE_NUMBER_INT);
+
+		$query = "SELECT * FROM {$this->prefix}produtos p INNER JOIN {$this->prefix}categorias c ON p.pro_categoria = c.cate_id";
+
+		$query .= " AND pro_categoria = :id";
+
+		
+
+
+
+		$params = array(':id'=>(int)$id);
+
+		$this->ExecuteSQL($query, $params);
 
 		$this->GetLista();
 		

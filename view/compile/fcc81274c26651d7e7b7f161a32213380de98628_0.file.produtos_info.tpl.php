@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.31, created on 2021-06-09 21:07:59
-  from "C:\wamp64\www\loja\view\produtos_info.tpl" */
+/* Smarty version 3.1.39, created on 2021-06-10 17:49:03
+  from 'C:\wamp64\www\loja\view\produtos_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.31',
-  'unifunc' => 'content_60c12daf8f4444_85806134',
+  'version' => '3.1.39',
+  'unifunc' => 'content_60c2508f8aec93_65060345',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60c12daf8f4444_85806134 (Smarty_Internal_Template $_smarty_tpl) {
-?>
- <?php
+function content_60c2508f8aec93_65060345 (Smarty_Internal_Template $_smarty_tpl) {
+?> <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
-if ($_from !== null) {
-foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
+$_smarty_tpl->tpl_vars['P']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
+$_smarty_tpl->tpl_vars['P']->do_else = false;
 ?>
 
       <h3 class="text-center"><?php echo $_smarty_tpl->tpl_vars['P']->value['pro_nome'];?>
@@ -36,8 +36,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
 <div class="row">
     
   
-    
-    <div class="col-md-6 ">
+        <div class="col-md-6 ">
 
         <img class="thumbnail" src="<?php echo $_smarty_tpl->tpl_vars['P']->value['pro_img_g'];?>
 " alt="" > 
@@ -45,8 +44,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
     </div>
 
    
-	
-    <div class="col-md-6 thumbnail">
+	    <div class="col-md-6 thumbnail">
         
           <img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
 /images/logo-pagseguro.png" alt="">
@@ -83,8 +81,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
 
 </div>
         <!-- -->
-         
-        <div class="row">
+                 <div class="row">
             <hr>
               <h4 class="text-center">Mais imagens</h4>
 
@@ -102,8 +99,7 @@ foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
               
 
         </div>
-            
-      
+                  
         <div class="row">
             <hr>
             <h4 class="text-center">Descrição do produto</h4>
@@ -117,7 +113,6 @@ foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
 
 
   <?php
-}
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
 }
