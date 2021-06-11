@@ -1,1 +1,1 @@
-<h2>Minha Conta</h2>
+<h2>página de minha conta</h2>

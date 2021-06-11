@@ -8,6 +8,7 @@ Class Config{
 	const SITE_PASTA = "loja";
 	const SITE_NOME = "W.A Acessorios";
 	const SITE_EMAIL_ADM = "theprojectcompracerta@gmail.com";
+	const BD_LIMIT_POR_PAG = 9;
 
 
 	//INFORMAÇÕES DO BANCO DE DADOS
@@ -15,7 +16,7 @@ Class Config{
 		  BD_USER = "root",
 		  BD_SENHA = "",
 		  BD_BANCO = "lojaonline",
-		  BD_PREFIX = "";
+		  BD_PREFIX = "qc_";
 
 
 	//INFORMAÇÕES PARA PHP MAILLER

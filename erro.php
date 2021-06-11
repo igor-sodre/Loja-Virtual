@@ -1,1 +1,1 @@
-<h2>ERRO PAGINA NÃO ENCONTRADA</h2>
+<h2>Página não Encontrada!</h2>

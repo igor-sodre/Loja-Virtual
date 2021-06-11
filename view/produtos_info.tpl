@@ -27,7 +27,7 @@
         </div>
       
         <div class="col-md-6">
-            <form name="carrinho" method="post" action="">
+            <form name="carrinho" method="post" action="{$PAG_COMPRAR}">
                 <input type="hidden" name="pro_id" value="{$P.pro_id}">
                 <input type="hidden" name="acao" value="add">
             <button  class="btn btn-success btn-lg">Comprar</button>
@@ -55,13 +55,15 @@
               <h4 class="text-center">Mais imagens</h4>
 
               <ul style="list-style: none">
-                 
+                 {foreach from=$IMAGES item=I}
 
                       <li class="col-md-3 ">
-                          <img src="" alt="" class="thumbnail">
+                          <img src="{$I.img_nome}" alt="" class="thumbnail">
 
 
                       </li>
+
+                      {/foreach}
 
                  
               </ul>

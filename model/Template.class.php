@@ -1,4 +1,5 @@
 <?php 
+
 //essa classe foi criada para evitar a repetiçao de codigo chamando o template em cada pagina//
 Class Template extends SmartyBC{
 	function __construct(){

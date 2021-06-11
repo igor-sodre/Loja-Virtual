@@ -1,9 +1,6 @@
 
 <?php
-
 $to      = Config::EMAIL_USER;
-
-//echo $to;
 $subject = 'Contato - Loja Freitas';
 $message = 'Email de '.$_GET['txtinputnome']. "\r\n" .$_GET['txtinputarea'];
 $dest = $_GET['txtinputemail'];

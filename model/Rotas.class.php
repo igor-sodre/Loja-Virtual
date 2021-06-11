@@ -24,6 +24,10 @@ Class Rotas{
 		return  self::get_SiteHOME(). '/carrinho';
 	}
 
+	static function pag_CarrinhoAlterar(){
+		return  self::get_SiteHOME(). '/carrinho_alterar';
+	}
+
 	static function pag_Produtos(){
 		return  self::get_SiteHOME(). '/produtos';
 	}
@@ -38,6 +42,14 @@ Class Rotas{
 
 	static function pag_MinhaConta(){
 		return  self::get_SiteHOME(). '/minhaconta';
+	}
+
+	static function pag_PedidoConfirmar(){
+		return  self::get_SiteHOME(). '/pedido_confirmar';
+	}
+
+	static function pag_PedidoFinalizar(){
+		return  self::get_SiteHOME(). '/pedido_finalizar';
 	}
 
 	static function get_ImagePasta(){
@@ -57,6 +69,20 @@ Class Rotas{
 	}
 
 
+	static function get_Pasta_Controller(){
+		return self::$pasta_controller;
+	}
+
+
+
+
+	//MÉTODO PARA REDIRECIONAR
+	static function Redirecionar($tempo, $pagina){
+		$url = '<meta http-equiv="refresh" content="'.$tempo.'; url='. $pagina .'">';
+		echo $url;
+	}
+
+
 
 
 
@@ -68,13 +94,14 @@ Class Rotas{
 			self::$pag = explode('/', $pagina);
 			
 			//para debug do array//
-          	//echo'<pre>';
-          	//var_dump(self::$pag);
-          	//echo'</pre>';
+			//echo '<pre>';
+			//var_dump(self::$pag);
+			//echo '</pre>';
 
-          	//a linha aseguir e para a definiçao do array para zero, para fazer a verificação da pagina se ela existe mesmo se for
+			//a linha aseguir e para a definiçao do array para zero, para fazer a verificação da pagina se ela existe mesmo se for
           	//passado algo mais apos a '/' 
           	//o ponto fora das chaves e para concatenaçao para abrir o arquivo NAO ESQUECER DE COLOCAR O . para definir o formato
+
 
 
 			$pagina = 'controller/' .self::$pag[0] . '.php';
@@ -86,6 +113,8 @@ Class Rotas{
 			include 'erro.php';
 		}
 
+		}else{
+			include 'home.php';
 		}
 	}
 }

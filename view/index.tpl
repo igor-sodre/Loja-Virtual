@@ -15,7 +15,6 @@
         <script src="{$GET_TEMA}/tema/contatos/contatos.js" type="text/javascript"></script>
         <!-- meu aquivo pessoal de CSS-->
         <link href="{$GET_TEMA}/tema/css/tema.css" rel="stylesheet" type="text/css"/>
-
      <!-- HTML5 shim e Respond.js para suporte no IE8 de elementos HTML5 e media queries -->
     <!-- ALERTA: Respond.js não funciona se você visualizar uma página file:// -->
     <!--[if lt IE 9]>
@@ -62,27 +61,17 @@
                         
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="nav navbar-nav">
-                                <li><a href="{$GET_HOME}"><i class="glyphicon glyphicon-home"></i> Home </a> </li>
-                                <li><a href="{$PAG_PRODUTOS}"><i class="glyphicon glyphicon-tag"></i> Produtos </a> </li>
+                                <li><a href="{$GET_SITE_HOME}"><i class="glyphicon glyphicon-home"></i> Home </a> </li>
+
+
+                                 <li><a href="{$PAG_PRODUTOS}"><i class="glyphicon glyphicon-tag"></i> Produtos </a> </li>
+                               
                                 <li><a href="{$PAG_MINHACONTA}"><i class="glyphicon glyphicon-user"></i> Minha Conta </a> </li>
                                 <li><a href="{$PAG_CARRINHO}"><i class="glyphicon glyphicon-shopping-cart"></i> Carrinho </a> </li>
                                 <li><a href="{$PAG_CONTATO}" ><i class="glyphicon glyphicon-envelope"></i> Contato </a> </li>
-
-                                <!--<li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Categorias <i class="glyphicon glyphicon-menu-down"></i></a> 
                                 
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span> categoria 1 </a> </li>
-                                     <li class="divider"></li>
-                                     <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span> categoria 2 </a> </li>
-                                      <li class="divider"></li>
-                                      <li><a href="#"><i class="glyphicon glyphicon-bookmark"></i> categoria 3 </a> </li>
-                                      <li class="divider"></li>
-                                     <li><a href="#"> categoria 4 </a> </li>
-                                    
-                                    </ul>
                                 
-                                </li> -->
+                               
                                 
                             </ul>
                             
@@ -117,33 +106,34 @@
                     
                 <div class="list-group">
                     <span class="list-group-item active"> Categorias</span>
-                    
-                    <a href="{$PAG_PRODUTOS}" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Todos</a> 
-                    
+
+                     <a href="{$PAG_PRODUTOS}" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Todos</a> 
+
                     {foreach from=$CATEGORIAS item=C}
                     
                     <a href="{$C.cate_link}" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> {$C.cate_nome}</a> 
                     
                     {/foreach}
+
+
+                    
+                    
                     
                 </div><!--fim da list group-->              
                               
-                </div>  
-                
-                <!-- finm coluna esquerda -->  
+                </div> <!-- finm coluna esquerda -->  
                 
                 <!-- coluna direita CONYEUDO CENTRAL -->
-                 <div class="col-md-10">
+                <div class="col-md-10">
                     
                     
                     <ul class="breadcrumb">
                         <li><a href="#"><i class="glyphicon glyphicon-home"></i> Home </a></li>
                         <li><a href="#"> Produtos </a></li>
                         <li><a href="#"> Info </a></li>
-                    </ul>  
-                    <!-- fim do menu breadcrumb-->   
-                              
-                    <!-- aqui e a area onde e chamada o conteudo da pagina -->          
+                    </ul>   
+                    <!-- fim do menu breadcrumb-->  
+                    <!-- aqui e a area onde e chamada o conteudo da pagina -->              
                     
                   {php}
 
@@ -166,7 +156,7 @@
             <div class="row" id="rodape">
                 <center>
                     <h4>{$TITULO_SITE}</h4>
-                    <P>Todos os Direitos Reservados</P>
+                    <P>Todos os Direitos Reservados - Data Atual: {$DATA}</P>
                 </center>
             
             </div><!-- fim div rodape-->

@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Carrinho' => $baseDir . '/model/Carrinho.class.php',
     'Categorias' => $baseDir . '/model/Categorias.class.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Conexao' => $baseDir . '/model/Conexao.class.php',
@@ -15,9 +16,12 @@ return array(
     'PHPMailerOAuth' => $vendorDir . '/phpmailer/phpmailer/class.phpmaileroauth.php',
     'PHPMailerOAuthGoogle' => $vendorDir . '/phpmailer/phpmailer/class.phpmaileroauthgoogle.php',
     'POP3' => $vendorDir . '/phpmailer/phpmailer/class.pop3.php',
+    'Paginacao' => $baseDir . '/model/Paginacao.class.php',
     'Produtos' => $baseDir . '/model/Produtos.class.php',
+    'ProdutosImages' => $baseDir . '/model/ProdutosImages.class.php',
     'Rotas' => $baseDir . '/model/Rotas.class.php',
     'SMTP' => $vendorDir . '/phpmailer/phpmailer/class.smtp.php',
+    'Sistema' => $baseDir . '/model/Sistema.class.php',
     'Smarty' => $vendorDir . '/smarty/smarty/libs/Smarty.class.php',
     'SmartyBC' => $vendorDir . '/smarty/smarty/libs/SmartyBC.class.php',
     'SmartyCompilerException' => $vendorDir . '/smarty/smarty/libs/sysplugins/smartycompilerexception.php',
