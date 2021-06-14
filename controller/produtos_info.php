@@ -14,6 +14,7 @@ $smarty->assign('TEMA', Rotas::get_SiteTEMA());
 $smarty->assign('IMAGES', $image->GetItens());
 $smarty->assign('PAG_COMPRAR', Rotas::pag_CarrinhoAlterar());
 
+//debug do carrinho de compras 
 /*
 $ID = Rotas::$pag[1];
 foreach ($produtos->GetItens() as $pro) {

@@ -77,6 +77,7 @@ Class Rotas{
 
 
 	//MÉTODO PARA REDIRECIONAR
+	//$tempo e definido na chamada e o tempo de mudança de pagina
 	static function Redirecionar($tempo, $pagina){
 		$url = '<meta http-equiv="refresh" content="'.$tempo.'; url='. $pagina .'">';
 		echo $url;

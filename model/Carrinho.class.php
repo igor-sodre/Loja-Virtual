@@ -11,6 +11,7 @@ class Carrinho{
 
 		foreach ($_SESSION['PRO'] as $lista) {
 			$sub = ($lista['VALOR_US'] * $lista['QTD']);
+			//soma os itens do carrinho
 			$this->total_valor += $sub;
 
 
@@ -64,6 +65,7 @@ class Carrinho{
             $LINK  = Rotas::pag_ProdutosInfo().'/'.$ID.'/'.$pro['pro_slug'];
             $ACAO  = $_POST['acao'];
 		}
+		
 
 		switch ($ACAO) {
 			case 'add':
@@ -77,6 +79,7 @@ class Carrinho{
 					    $_SESSION['PRO'][$ID]['IMG']   = $IMG;
 					    $_SESSION['PRO'][$ID]['LINK']  = $LINK;  
 					}else{
+						//se ja existe o produto ele soma com o produto do mesmo aumentando a quantidade
 						 $_SESSION['PRO'][$ID]['QTD']   += $QTD;
 					}
 
@@ -98,7 +101,7 @@ class Carrinho{
 		}
 	}
 
-
+   //quando vc coloca o id deleta apenas ele sem o id e a msm coisa do delete sem where no banco apaga a pora toda
 	private function CarrinhoDEL($id){
 		unset($_SESSION['PRO'][$id]);
 	}

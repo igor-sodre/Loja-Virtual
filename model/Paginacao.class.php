@@ -1,5 +1,5 @@
 <?php 
-
+//gerencia os itens a aparecerem por paginas
 class Paginacao extends Conexao{
 
 	public $limite, $inicio, $totalpags, $link = array();
@@ -8,6 +8,10 @@ class Paginacao extends Conexao{
 		$query = "SELECT {$campo} FROM {$tabela}";
 		$this->ExecuteSQL($query);
 		$total = $this->TotalDados();
+
+		//arredonda a paginação para um numero maior exemplo, se ficar 3 intens por pagina e for um total de 10 itens vai ficar errado a conta
+		//ai com isso fica 4 paginas 3 com 3 itens e a ultima com apenas 1
+
 
 		$this->limite = Config::BD_LIMIT_POR_PAG;
 		$paginas = ceil($total / $this->limite);
@@ -19,7 +23,8 @@ class Paginacao extends Conexao{
 			$p = $paginas;
 		}
 
-		//TESTAR NA PRÁTICA
+		//calculo pra verificar a quantidade por pagina
+		//e sistema de tolerancea pra não colocar todas as paginas de uma vez e nao exibir numeros negativos
 		$this->inicio = ($p * $this->limite) - $this->limite;
 
 		$tolerancia = 4;

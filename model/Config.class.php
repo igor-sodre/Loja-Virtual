@@ -8,6 +8,7 @@ Class Config{
 	const SITE_PASTA = "loja";
 	const SITE_NOME = "W.A Acessorios";
 	const SITE_EMAIL_ADM = "theprojectcompracerta@gmail.com";
+	//quantidade de itens por pagina
 	const BD_LIMIT_POR_PAG = 9;
 
 
@@ -16,6 +17,7 @@ Class Config{
 		  BD_USER = "root",
 		  BD_SENHA = "",
 		  BD_BANCO = "lojaonline",
+		  //prefixo ele serve pra meio q criar uma inicial pre definida no banco de dados, pra evitar de ataques ao banco
 		  BD_PREFIX = "qc_";
 
 
