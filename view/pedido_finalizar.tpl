@@ -12,6 +12,7 @@
 <section class="row ">
    
     <center>
+     <div class="alert alert-success">Pedido Finalizado com sucesso</div>
     <table class="table table-bordered" style="width: 95%">
 
 <!--
@@ -106,10 +107,7 @@
 
                 
             </div>
-            <div class="col-md-4">
-                 <img src="{$TEMA}/images/deposito.gif"  alt=""> 
-                   <script type="text/javascript" src=""></script>
-            </div>
+
 
             <div class="col-md-4">
               

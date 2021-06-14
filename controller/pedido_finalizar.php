@@ -13,6 +13,16 @@ if(isset($_SESSION['PRO'])) {
 
 	
 	$smarty->assign('TEMA', Rotas::get_SiteTEMA());
+//debug da parte do banco de salvar os pedidos
+//como não tem cliente ta ai um temporario
+	$pedido = new Pedidos();
+	$cliente = 1;
+	$cod = $_SESSION['pedido'];
+	$ref = '054451ref';
+
+	if($pedido->PedidoGravar($cliente, $cod, $ref)){
+		$pedido->LimparSessoes();
+	}
 
 
 	$smarty->display('pedido_finalizar.tpl');

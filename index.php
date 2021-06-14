@@ -4,6 +4,10 @@ if(!isset($_SESSION)){
 	session_start();
 	
 }
+if(!isset($_SESSION['pedido'])){
+	//seçao dinamica com base no ano mes dia minuto segundo, o md5 e pra codificar
+	$_SESSION['pedido'] = md5(uniqid(date('ymdHms')));
+}
 
 require './lib/autoload.php';
 
