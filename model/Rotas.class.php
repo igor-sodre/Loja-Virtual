@@ -23,6 +23,18 @@ Class Rotas{
 	static function pag_Carrinho(){
 		return  self::get_SiteHOME(). '/carrinho';
 	}
+	static function pag_CLientePedidos(){
+		return  self::get_SiteHOME(). '/clientes_pedidos';
+	}
+
+	
+	static function pag_ClienteLogin(){
+		return  self::get_SiteHOME(). '/login';
+	}
+
+	static function pag_Logoff(){
+		return  self::get_SiteHOME(). '/logoff';
+	}
 
 	static function pag_CarrinhoAlterar(){
 		return  self::get_SiteHOME(). '/carrinho_alterar';
@@ -41,6 +53,9 @@ Class Rotas{
 	}
 
 	static function pag_MinhaConta(){
+		return  self::get_SiteHOME(). '/minhaconta';
+	}
+	static function pag_ClienteConta(){
 		return  self::get_SiteHOME(). '/minhaconta';
 	}
 

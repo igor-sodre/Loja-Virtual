@@ -7,8 +7,8 @@ www.hugocursos.com.br
 #topo{
 
 min-height: 100px;
-background-color: #ffffff;
-color: #fff;
+background-color: #262626;
+color: #262626;
     
 }
 
@@ -49,7 +49,7 @@ padding-top:30px;
 
 .navbar-inverse .navbar-nav > li > a{
     
-  color: #fff;
+  color: #262626;
   font-size: 16px;  
     
 }
@@ -88,7 +88,7 @@ a.list-group-item{
 
 .thumbnail{
   border-radius: 13px;
-  box-shadow:6px 6px 10px #adadad;
+  box-shadow:6px 6px 10px #262626;
 }
 
 /*

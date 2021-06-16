@@ -1,5 +1,13 @@
 <?php
 
+if(!Login::Logado()){
+	Login::AcessoNegado();
+	Rotas::Redirecionar(1, Rotas::pag_ClienteLogin());
+}else{
+
+
+
+
 if(isset($_SESSION['PRO'])) {
 
 
@@ -37,4 +45,5 @@ echo '<pre>';
 var_dump($carrinho->GetCarrinho());
 echo '</pre>';
 */
+}
  ?>

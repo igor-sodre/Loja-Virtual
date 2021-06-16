@@ -33,9 +33,25 @@
                  
                 
                 <div class="container">
+
+                <div class="col-md-6">
+
                 <img src="{$GET_TEMA}/images/logo.png" alt=""> 
+                </div>
+
+                                <div class="col-md-6 text-right">
+                        
+                                 <br>{if $LOGADO == true}
+                                  Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-danger"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
+                                 {/if}
+                    
+                    </div>
                        
-                </div>    
+                </div>
+                <!-- Botao sair na barra de cima com a funçao de sumir quando o usuario n tiver logado-->
+
+
+    
             
             </div><!-- fim da div topo -->
             

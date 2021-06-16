@@ -1,6 +1,6 @@
 <?php
 //debug de seçao de pedido
-echo $_SESSION['pedido'];
+//echo $_SESSION['pedido'];
 if(isset($_SESSION['PRO'])) {
 
 

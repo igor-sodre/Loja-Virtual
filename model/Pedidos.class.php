@@ -28,6 +28,53 @@ class Pedidos extends Conexao{
         $retorno = TRUE;
         return $retorno;
     }
+    function GetPedidosCliente($cliente=null){
+        $query = "SELECT * FROM {$this->prefix}pedidos p INNER JOIN {$this->prefix}clientes c";
+        //não esqueça query (espaço).= e pra concatenar com a linha anterior
+        $query .= "ON p.ped_cliente = c.cli_id";
+        //verifica se o usuario existe
+        if($cliente != null){
+            $cli = (int)$cliente;
+            //quando estiver lincando com o banco e for usar uma variavel n esqueça das {}
+            $query .= "WHERE ped_cliente = {$cli}";
+
+        }
+        $this->ExecuteSQL($query);
+        $this->GetLista();
+
+    }
+    private function GetLista(){
+        
+        $i = 1;
+        while ($lista = $this->ListarDados()):
+            
+        $this->itens[$i] = array(
+                'ped_id'    => $lista['ped_id'],
+                'ped_data'  => Sistema::Fdata($lista['ped_data']),
+                'ped_data_us'  => $lista['ped_data'],
+                'ped_hora'   => $lista['ped_hora'],
+                'ped_cliente' => $lista['ped_cliente'],
+                'ped_cod'   => $lista['ped_cod'],
+                'ped_ref'     => $lista['ped_ref'],
+                'ped_pag_status' => $lista['ped_pag_status'],
+                'ped_pag_forma'   => $lista['ped_pag_forma'],
+                'ped_pag_tipo'    => $lista['ped_pag_tipo'],
+                'ped_pag_codigo'   => $lista['ped_pag_codigo'],
+                'ped_frete_valor' => $lista['ped_frete_valor'],
+                'ped_frete_tipo'  => $lista['ped_frete_tipo'],
+                'cli_nome'  => $lista['cli_nome'],
+                'cli_sobrenome'  => $lista['cli_sobrenome'],
+            );
+        
+        
+            $i++;
+        
+        endwhile;
+        
+        
+    }
+
+
     function ItensGravar($codpedido){
         $carrinho = new carrinho();
         foreach ($carrinho->GetCarrinho() as $item) {
