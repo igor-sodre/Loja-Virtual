@@ -49,8 +49,8 @@ Class Produtos extends Conexao{
 
 		$query .= $this->PaginacaoLinks("pro_id", $this->prefix."produtos WHERE pro_categoria=".(int)$id);
 
-
 		//bloqueia o uso de outros parametros alem de numeros inteiros na url
+
 		$params = array(':id'=>(int)$id);
 
 		$this->ExecuteSQL($query, $params);
@@ -68,8 +68,7 @@ Class Produtos extends Conexao{
 			 'pro_id' => $lista['pro_id'],
 			 'pro_nome'  => $lista['pro_nome'] ,  
 	         'pro_desc'  => $lista['pro_desc'] ,  
-	         'pro_peso'  => $lista['pro_peso'] , 
-			 //essa moeda Br ai e a formatação pra nossa moeda e esta em Sistema.class.php la tb tem o da data 
+	         'pro_peso'  => $lista['pro_peso'] ,  
 	         'pro_valor'   => Sistema::MoedaBR($lista['pro_valor'])  ,  
 	         'pro_valor_us'   => $lista['pro_valor']  ,  
 	         'pro_altura' => $lista['pro_altura'] ,  

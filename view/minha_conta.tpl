@@ -1,1 +1,1 @@
-<h4 class="text-center">Este e o seu menu </h4>
+<h4 class="text-center">Bem vindo a sua área de cliente, no menu acima temos algumas opções para você!</h4>

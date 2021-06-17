@@ -20,14 +20,34 @@ Class Rotas{
 		return  self::get_SiteHOME(). '/' .self::$pasta_view;
 	}
 
-	static function pag_Carrinho(){
-		return  self::get_SiteHOME(). '/carrinho';
+	static function pag_ClienteCadastro(){
+		return  self::get_SiteHOME(). '/cadastro';
 	}
+
+	static function pag_CLienteDados(){
+		return  self::get_SiteHOME(). '/clientes_dados';
+	}
+
+	static function pag_CLienteSenha(){
+		return  self::get_SiteHOME(). '/clientes_senha';
+	}
+
+	static function pag_ClienteRecovery(){
+		return  self::get_SiteHOME(). '/clientes_recovery';
+	}
+
 	static function pag_CLientePedidos(){
 		return  self::get_SiteHOME(). '/clientes_pedidos';
 	}
 
-	
+	static function pag_ClienteItens(){
+		return  self::get_SiteHOME(). '/cliente_itens';
+	}
+
+	static function pag_Carrinho(){
+		return  self::get_SiteHOME(). '/carrinho';
+	}
+
 	static function pag_ClienteLogin(){
 		return  self::get_SiteHOME(). '/login';
 	}
@@ -55,6 +75,7 @@ Class Rotas{
 	static function pag_MinhaConta(){
 		return  self::get_SiteHOME(). '/minhaconta';
 	}
+
 	static function pag_ClienteConta(){
 		return  self::get_SiteHOME(). '/minhaconta';
 	}
@@ -117,7 +138,6 @@ Class Rotas{
 			//a linha aseguir e para a definiçao do array para zero, para fazer a verificação da pagina se ela existe mesmo se for
           	//passado algo mais apos a '/' 
           	//o ponto fora das chaves e para concatenaçao para abrir o arquivo NAO ESQUECER DE COLOCAR O . para definir o formato
-
 
 
 			$pagina = 'controller/' .self::$pag[0] . '.php';

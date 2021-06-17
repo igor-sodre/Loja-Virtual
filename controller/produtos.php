@@ -4,9 +4,11 @@
 $smarty = new Template();
 
 $produtos = new Produtos();
+
 //tras os protudos com base no numero do array de acordo com o codigo primario do banco na parte de categorias ai como o array sempre inicia 
 //com 0 assim q ele for verificar ja vai estar como 1,
 //isset verifica se existe
+
 if(isset(Rotas::$pag[1])){
 	$produtos->GetProdutosCateID(Rotas::$pag[1]);
 }else{

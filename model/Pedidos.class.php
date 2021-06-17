@@ -1,49 +1,57 @@
-<?php
+<?php 
 
 class Pedidos extends Conexao{
-    function __construct(){
-        parent::__construct();
-    }
-    function PedidoGravar($cliente, $cod, $ref, $freteValor=null, $freteTipo=null){
-        $retorno = FALSE;
-        //esse modelo de query com . faz concatenar as linhas pra n ter q deixar o codigo todo junto assim reduzindo erros de escrita 
-        $query  = "INSERT INTO ".$this->prefix."pedidos ";   
-        $query .= "(ped_data, ped_hora, ped_cliente, ped_cod, ped_ref, ped_frete_valor, ped_frete_tipo)"; 
-        $query .= " VALUES ";
-        $query .= "(:data, :hora, :cliente, :cod, :ref, :frete_valor, :frete_tipo)";
+	function __construct(){
+		parent::__construct();
+	}
 
-        $params = array(
-        ':data' => Sistema::DataAtualUS(),
-        ':hora' => Sistema::HoraAtual(),
-        ':cliente'=> (int)$cliente,
-        ':cod' => $cod,
-        ':ref' => $ref,
-        ':frete_valor'=>$freteValor,
-        ':frete_tipo' =>$freteTipo   
-        );
+	function PedidoGravar($cliente, $cod, $ref, $freteValor=null, $freteTipo=null){
 
-        $this->ExecuteSQL($query, $params);
-        //gravar itens do pedido
-        $this->itensGravar($cod);
-        $retorno = TRUE;
-        return $retorno;
-    }
+		$retorno = FALSE;
+    //esse modelo de query com . faz concatenar as linhas pra n ter q deixar o codigo todo junto assim reduzindo erros de escrita 
+		 $query  = "INSERT INTO ".$this->prefix."pedidos ";   
+     	 $query .= "(ped_data, ped_hora, ped_cliente, ped_cod, ped_ref, ped_frete_valor, ped_frete_tipo)"; 
+    	 $query .= " VALUES ";
+     	 $query .= "(:data, :hora, :cliente, :cod, :ref, :frete_valor, :frete_tipo)";
+
+     	 $params = array(
+
+
+     	 	':data' => Sistema::DataAtualUS(),
+            ':hora' => Sistema::HoraAtual(),
+            ':cliente'=> (int)$cliente,
+            ':cod' => $cod,
+            ':ref' => $ref,
+            ':frete_valor'=>$freteValor,
+            ':frete_tipo' =>$freteTipo 
+
+     	 	);
+
+
+     	 $this->ExecuteSQL($query, $params);
+     	 
+     	 //gravar os itens do pedido
+     	 $this->ItensGravar($cod);
+     	 $retorno = TRUE;
+     	 return $retorno;
+
+	}
+
     function GetPedidosCliente($cliente=null){
-        $query = "SELECT * FROM {$this->prefix}pedidos p INNER JOIN {$this->prefix}clientes c";
-        //não esqueça query (espaço).= e pra concatenar com a linha anterior
-        $query .= "ON p.ped_cliente = c.cli_id";
-        //verifica se o usuario existe
-        if($cliente != null){
-            $cli = (int)$cliente;
-            //quando estiver lincando com o banco e for usar uma variavel n esqueça das {}
-            $query .= "WHERE ped_cliente = {$cli}";
+      $query = "SELECT * FROM {$this->prefix}pedidos p INNER JOIN {$this->prefix}clientes c";
+      $query .= " ON p.ped_cliente = c.cli_id";
 
-        }
-        $this->ExecuteSQL($query);
-        $this->GetLista();
+      if($cliente != null){
+        $cli = (int)$cliente;
+        $query .= " WHERE ped_cliente = {$cli}";
+      }  
 
+      $this->ExecuteSQL($query);
+      $this->GetLista();   
     }
-    private function GetLista(){
+
+
+     private function GetLista(){
         
         $i = 1;
         while ($lista = $this->ListarDados()):
@@ -75,12 +83,13 @@ class Pedidos extends Conexao{
     }
 
 
-    function ItensGravar($codpedido){
-        $carrinho = new carrinho();
-        foreach ($carrinho->GetCarrinho() as $item) {
-            $query  = "INSERT INTO ".$this->prefix."pedidos_itens ";
-            $query .= "(item_produto, item_valor, item_qtd, item_ped_cod)";
-            $query .= "VALUES  (:produto,:valor,:qtd,:cod)";
+	function ItensGravar($codpedido){
+		$carrinho = new Carrinho();
+		foreach ($carrinho->GetCarrinho() as $item) {
+			
+			$query  = "INSERT INTO ".$this->prefix."pedidos_itens ";
+	        $query .= "(item_produto, item_valor, item_qtd, item_ped_cod)";
+	        $query .= "VALUES  (:produto,:valor,:qtd,:cod)";
                 
                 $params = array(
                 ':produto' => $item['pro_id'],
@@ -88,26 +97,21 @@ class Pedidos extends Conexao{
                 ':qtd'     => (int)$item['pro_qtd'],
                 ':cod'     =>  $codpedido  
                 );
+
                 $this->ExecuteSQL($query, $params);
+                
+
+		}
+	}
 
 
-        }
-    }
-
-    function LimparSessoes(){
-        unset($_SESSION['PRO']);
-        unset($_SESSION['pedido']);
-        
-    }
-
-
-
-
+	function LimparSessoes(){
+		unset($_SESSION['PRO']);
+		unset($_SESSION['PED']['pedido']);
+        unset($_SESSION['PED']['ref']);
+		
+	}
 
 }
 
-
-
-
-
-?>
+ ?>

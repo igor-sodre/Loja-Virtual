@@ -34,24 +34,22 @@
                 
                 <div class="container">
 
-                <div class="col-md-6">
-
-                <img src="{$GET_TEMA}/images/logo.png" alt=""> 
-                </div>
-
-                                <div class="col-md-6 text-right">
-                        
-                                 <br>{if $LOGADO == true}
-                                  Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-danger"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
-                                 {/if}
-                    
+                    <div class="col-md-6">
+                         <img src="{$GET_TEMA}/images/logo.png" alt=""> 
                     </div>
+
+                    <div class="col-md-6 text-right">
+                            
+                                     <br>{if $LOGADO == true}
+                                      Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-info"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
+                                     {/if}
+                        
+                        </div>  
                        
-                </div>
-                <!-- Botao sair na barra de cima com a funçao de sumir quando o usuario n tiver logado-->
+                </div> 
 
 
-    
+                     
             
             </div><!-- fim da div topo -->
             
@@ -124,6 +122,7 @@
                     <span class="list-group-item active"> Categorias</span>
 
                      <a href="{$PAG_PRODUTOS}" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Todos</a> 
+
                      <!--busca os protudos filtrados por categorias e busca as opçoes de categorias -->
 
                     {foreach from=$CATEGORIAS item=C}
@@ -149,8 +148,7 @@
                         <li><a href="#"> Produtos </a></li>
                         <li><a href="#"> Info </a></li>
                     </ul>   
-                    <!-- fim do menu breadcrumb-->  
-                    <!-- aqui e a area onde e chamada o conteudo da pagina -->              
+                    <!-- fim do menu breadcrumb-->             
                     
                   {php}
 

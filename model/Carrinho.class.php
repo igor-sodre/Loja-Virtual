@@ -14,7 +14,10 @@ class Carrinho{
 			//soma os itens do carrinho
 			$this->total_valor += $sub;
 
+			$peso = $lista['PESO'] *  $lista['QTD'];
+			$this->total_peso += $peso;
 
+			
 
 			$this->itens[$i] = array(
 
@@ -31,6 +34,8 @@ class Carrinho{
 
 				);
 			$i++;
+
+			
 		}
 
 		if(count($this->itens) > 0){
@@ -65,7 +70,6 @@ class Carrinho{
             $LINK  = Rotas::pag_ProdutosInfo().'/'.$ID.'/'.$pro['pro_slug'];
             $ACAO  = $_POST['acao'];
 		}
-		
 
 		switch ($ACAO) {
 			case 'add':
@@ -101,7 +105,8 @@ class Carrinho{
 		}
 	}
 
-   //quando vc coloca o id deleta apenas ele sem o id e a msm coisa do delete sem where no banco apaga a pora toda
+	//quando vc coloca o id deleta apenas ele sem o id e a msm coisa do delete sem where no banco apaga a pora toda
+
 	private function CarrinhoDEL($id){
 		unset($_SESSION['PRO'][$id]);
 	}
@@ -109,6 +114,8 @@ class Carrinho{
 	private function CarrinhoLimpar(){
 		unset($_SESSION['PRO']);
 	}
+
+
 
 
 }

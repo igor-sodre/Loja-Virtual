@@ -4,10 +4,17 @@ if(!isset($_SESSION)){
 	session_start();
 	
 }
-if(!isset($_SESSION['pedido'])){
+
+/*
+if(!isset($_SESSION['PED']['pedido'])){
 	//seçao dinamica com base no ano mes dia minuto segundo, o md5 e pra codificar
-	$_SESSION['pedido'] = md5(uniqid(date('ymdHms')));
+	$_SESSION['pedido'] = md5(uniqid(date('YmdHms')));
 }
+
+if(!isset($_SESSION['PED']['ref'])){
+	$_SESSION['ref'] = date('ymdHms');
+}
+*/
 
 require './lib/autoload.php';
 
@@ -29,14 +36,12 @@ $smarty->assign('PAG_MINHACONTA', Rotas::pag_MinhaConta());
 $smarty->assign('TITULO_SITE', Config::SITE_NOME);
 $smarty->assign('CATEGORIAS', $categorias->GetItens());
 $smarty->assign('DATA', Sistema::DataAtualBR());
-$smarty->assign('LOGADO', Login::Logado());
 $smarty->assign('PAG_LOGOFF', Rotas::pag_Logoff());
+$smarty->assign('LOGADO', Login::Logado());
 
-
-//para verificar se o cliente esta logado
 if(Login::Logado()){
-    $smarty->assign('USER', $_SESSION['CLI']['cli_nome']);
-    
+	$smarty->assign('USER', $_SESSION['CLI']['cli_nome']);
+	
 }
 
 

@@ -12,7 +12,6 @@ class Paginacao extends Conexao{
 		//arredonda a paginação para um numero maior exemplo, se ficar 3 intens por pagina e for um total de 10 itens vai ficar errado a conta
 		//ai com isso fica 4 paginas 3 com 3 itens e a ultima com apenas 1
 
-
 		$this->limite = Config::BD_LIMIT_POR_PAG;
 		$paginas = ceil($total / $this->limite);
 		$this->totalpags = $paginas;

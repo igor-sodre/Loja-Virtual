@@ -1,9 +1,8 @@
 <?php 
-
 //restante da conecçao do banco de dados vindo da config.class.php
 Class Conexao extends Config{
 	private $host, $user, $senha, $banco;
-//aqui executa a coneccao 
+	//aqui executa a coneccao 
 	protected $obj, $itens=array(), $prefix;
 
 
@@ -21,7 +20,7 @@ Class Conexao extends Config{
 		try {
 			if($this->Conectar() == null){
 				$this->Conectar();
-			} 
+			}
 			
 
 		} catch (Exception $e) {
@@ -43,9 +42,7 @@ Class Conexao extends Config{
 
 	function ExecuteSQL($query, array $params = NULL){
 		$this->obj = $this->Conectar()->prepare($query);
-
-		//realiza a verificaçao dos parametros na url a fim de inpedir uso inevido dela pra ir pra qualquer pagina 
-
+			//realiza a verificaçao dos parametros na url a fim de inpedir uso inevido dela pra ir pra qualquer pagina 
 		if(@count($params) > 0){
 			foreach($params as $key =>$value){
 				$this->obj->bindvalue($key, $value);
@@ -101,7 +98,7 @@ Class Conexao extends Config{
 		$pag .= '<li><a href="?p='. $this->totalpags .'"> ...'.$this->totalpags.'>></a></li>';
 
 		$pag .= '</ul>';
-		//se a quantidade de paginas n for maior q 1 não ira exibir o bagulho da paginas 
+			//se a quantidade de paginas n for maior q 1 não ira exibir o bagulho da paginas 
 		if($this->totalpags > 1){
 		return $pag;
 		}

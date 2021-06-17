@@ -9,7 +9,8 @@ Class Config{
 	const SITE_NOME = "W.A Acessorios";
 	const SITE_EMAIL_ADM = "theprojectcompracerta@gmail.com";
 	//quantidade de itens por pagina
-	const BD_LIMIT_POR_PAG = 9;
+	const BD_LIMIT_POR_PAG = 6;
+	const SITE_CEP = '76150000';
 
 
 	//INFORMAÇÕES DO BANCO DE DADOS

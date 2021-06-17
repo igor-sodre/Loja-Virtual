@@ -4,6 +4,6 @@ $smarty = new Template();
 
 Login::MenuCliente();
 
-$smarty->display('minha_conta.tpl');
+$smarty->display('cliente_dados.tpl');
 
  ?>

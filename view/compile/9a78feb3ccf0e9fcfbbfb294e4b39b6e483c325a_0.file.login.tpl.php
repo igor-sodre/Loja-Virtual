@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-16 06:14:28
+/* Smarty version 3.1.39, created on 2021-06-17 15:56:10
   from 'C:\wamp64\www\loja\view\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60c996c4bfbec6_37496737',
+  'unifunc' => 'content_60cb709a1ab750_70534370',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9a78feb3ccf0e9fcfbbfb294e4b39b6e483c325a' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\login.tpl',
-      1 => 1623823910,
+      1 => 1504203934,
       2 => 'file',
     ),
   ),
@@ -20,20 +20,20 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60c996c4bfbec6_37496737 (Smarty_Internal_Template $_smarty_tpl) {
-?>    <!--if dentro das {} dispensa a abertura de um bloco PHP -->
-    <?php if ($_smarty_tpl->tpl_vars['LOGADO']->value == true) {?>
+function content_60cb709a1ab750_70534370 (Smarty_Internal_Template $_smarty_tpl) {
+if ($_smarty_tpl->tpl_vars['LOGADO']->value == true) {?>
 
-    
-    <?php } else { ?>
-    <section class="row" id="fazerlogin">
+
+<?php } else { ?>
+
+<section class="row" id="fazerlogin">
 
     <form name="cliente_login" method="post" action="" >
     
         <div class="col-md-4 text-center">
-        <!--teste se esta reconhecendo o usuario q esta logado--> 
-        <!--<p><?php echo $_smarty_tpl->tpl_vars['USER']->value;?>
-</p>-->
+        
+    
+           
                 
           
         
@@ -67,10 +67,12 @@ function content_60c996c4bfbec6_37496737 (Smarty_Internal_Template $_smarty_tpl)
             </div>
             <div class="form-group"> 
                 
-                <a href="" class="btn btn-default "><i class="glyphicon glyphicon-pencil"></i> Me Cadastrar</a>
+                <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CADASTRO']->value;?>
+" class="btn btn-default "><i class="glyphicon glyphicon-pencil"></i> Me Cadastrar</a>
              
                 
-                <a href="" class="btn btn-default "><i class="glyphicon glyphicon-question-sign"></i> Esqueci a Senha</a>
+                <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_RECOVERY']->value;?>
+" class="btn btn-default "><i class="glyphicon glyphicon-question-sign"></i> Esqueci a Senha</a>
            
                 
                 
@@ -89,6 +91,9 @@ function content_60c996c4bfbec6_37496737 (Smarty_Internal_Template $_smarty_tpl)
     
     
 </section>
+
+<?php }?>
+
+
 <?php }
-}
 }

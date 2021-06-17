@@ -74,6 +74,14 @@
             <h4>
                Total : R$ {$TOTAL}
             </h4>
+
+            <h4>
+               Frete : R$ {$FRETE}
+            </h4>
+            <hr>
+            <h4>
+               Total com Frete : R$ {$TOTAL_FRETE}
+            </h4>
             </div>
             
             <!-- botão de limpar-->

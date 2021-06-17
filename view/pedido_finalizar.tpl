@@ -10,9 +10,11 @@
 
 <!--  table listagem de itens -->
 <section class="row ">
+
+
    
     <center>
-     <div class="alert alert-success">Pedido Finalizado com sucesso</div>
+    <div class="alert alert-success">Pedido Finalizado com Sucesso</div>
     <table class="table table-bordered" style="width: 95%">
 
 <!--
@@ -67,6 +69,12 @@
             <h4>
                Total : R$ {$TOTAL}
             </h4>
+            <h4>
+               Frete : R$ {$FRETE}
+            </h4>
+            <h4>
+               Total do Pedido : R$ {$TOTAL_FRETE}
+            </h4>
             </div>
             
            
@@ -107,7 +115,7 @@
 
                 
             </div>
-
+            
 
             <div class="col-md-4">
               

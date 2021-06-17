@@ -1,15 +1,16 @@
-    <!--if dentro das {} dispensa a abertura de um bloco PHP -->
-    {if $LOGADO == true}
+{if $LOGADO == true}
 
-    
-    {else}
-    <section class="row" id="fazerlogin">
+
+{else}
+
+<section class="row" id="fazerlogin">
 
     <form name="cliente_login" method="post" action="" >
     
         <div class="col-md-4 text-center">
-        <!--teste se esta reconhecendo o usuario q esta logado--> 
-        <!--<p>{$USER}</p>-->
+        
+    
+           
                 
           
         
@@ -43,10 +44,10 @@
             </div>
             <div class="form-group"> 
                 
-                <a href="" class="btn btn-default "><i class="glyphicon glyphicon-pencil"></i> Me Cadastrar</a>
+                <a href="{$PAG_CADASTRO}" class="btn btn-default "><i class="glyphicon glyphicon-pencil"></i> Me Cadastrar</a>
              
                 
-                <a href="" class="btn btn-default "><i class="glyphicon glyphicon-question-sign"></i> Esqueci a Senha</a>
+                <a href="{$PAG_RECOVERY}" class="btn btn-default "><i class="glyphicon glyphicon-question-sign"></i> Esqueci a Senha</a>
            
                 
                 
@@ -65,4 +66,7 @@
     
     
 </section>
+
 {/if}
+
+

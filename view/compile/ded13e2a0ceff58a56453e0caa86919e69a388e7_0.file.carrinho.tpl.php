@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-14 06:09:17
+/* Smarty version 3.1.39, created on 2021-06-17 15:38:12
   from 'C:\wamp64\www\loja\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60c6f28d4000f4_08093647',
+  'unifunc' => 'content_60cb6c6443dab4_64648014',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ded13e2a0ceff58a56453e0caa86919e69a388e7' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\carrinho.tpl',
-      1 => 1623650950,
+      1 => 1504278795,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,47 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60c6f28d4000f4_08093647 (Smarty_Internal_Template $_smarty_tpl) {
-?>  <h3>Meu Carrinho</h3>
-<hr>
+function content_60cb6c6443dab4_64648014 (Smarty_Internal_Template $_smarty_tpl) {
+?> 
+<?php echo '<script'; ?>
+>
+$(document).ready(function(){    
+
+   // validar frete
+     $('#buscar_frete').click(function(){  
+        
+      var CEP_CLIENTE = $('#cep_frete').val();
+      var PESO_FRETE = $('#peso_frete').val();
+       
+        if (CEP_CLIENTE.length !== 8 ) {
+        alert('Digite seu CEP corretamente, 8 dígitos e sem traço ou ponto');  
+         $('#frete').addClass(' text-center text-danger');
+         $('#frete').html('<b>Digite seu CEP corretamente, 8 dígitos e sem traço ou ponto</b>');
+        $('#cep_frete').focus();
+        } else {
+     
+       
+        $('#frete').html('<img src="view/images/loader.gif"> <b>Carregando...</b>');
+        $('#frete').addClass(' text-center text-danger');
+      
+        // carrego o combo com os bairros
+       
+        $('#frete').load('controller/frete.php?cepcliente='+CEP_CLIENTE+'&pesofrete='+PESO_FRETE);
+ 
+ } // fim do IF digitei o CEP
+      
+ 
+    }); // fim do change
+    
+   
+} ); // fim do ready
+
+<?php echo '</script'; ?>
+>
+
+
+  <h3>Meu Carrinho</h3>
+
 <!-- botoes e opções de cima -->
 <section class="row">
     
@@ -57,7 +95,7 @@ function content_60c6f28d4000f4_08093647 (Smarty_Internal_Template $_smarty_tpl)
             <td></td> 
             <td>Produto</td> 
             <td>Valor R$</td> 
-            <td>Quantidade</td> 
+            <td>X</td> 
             <td>Sub Total R$</td> 
             <td></td> 
             
@@ -110,6 +148,48 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
            
 </section><!-- fim da listagem itens -->
         
+        
+
+        <!--  bloco frete -->
+           <section class="row" id="dadosfrete">
+                    
+               
+             
+               
+               <div class="col-md-4"></div>
+                   
+                   
+               <div class="col-md-4">
+                   
+                   <!-- campos para tratar  do  frete -->
+                   <input type="hidden" name="peso_frete" id="peso_frete" value="<?php echo $_smarty_tpl->tpl_vars['PESO']->value;?>
+" class="form-control " readonly>
+                   
+                   <input type="text" name="cep_frete" class="form-control" id="cep_frete" value="" placeholder="digite seu cep" >
+                  
+                   
+                   <input type="hidden" name="frete_valor" id="frete_valor" value="0">
+                   
+                   
+               </div> 
+               
+              
+                   <div class="col-md-4">
+                       <!-- botão frete -->
+
+                       <button class="btn btn-warning btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-send"></i> Calcular Frete </button>
+
+                      
+                       
+                   </div>          
+                                
+                                
+                                
+          </section>
+
+
+          <br><hr>
+
         <!-- botoes de baixo e valor total -->
         <section class="row" id="total">
                       
@@ -138,23 +218,33 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 </form>
                     <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CONFIRMAR']->value;?>
 ">
+
+                     <span id="frete"></span>
+                     
                      <button class="btn btn-success btn-block" type="submit">  <i class="glyphicon glyphicon-ok"></i> Confirmar Pedido </button>
+
+
+
                  </form>
 
             </div>
 
+
+
             
                <!-- botão finalzar -->
               
-          
+       
 
         </section>
                     <br>
                     
-    
-                   
-           
            <hr>
+
+
+           
+
+        
            
        </form>  
        
