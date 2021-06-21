@@ -10,7 +10,7 @@ Class Config{
 	const SITE_EMAIL_ADM = "theprojectcompracerta@gmail.com";
 	//quantidade de itens por pagina
 	const BD_LIMIT_POR_PAG = 6;
-	const SITE_CEP = '76150000';
+	const SITE_CEP = '68552270';
 
 
 	//INFORMAÇÕES DO BANCO DE DADOS
