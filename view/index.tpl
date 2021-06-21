@@ -41,7 +41,7 @@
                     <div class="col-md-6 text-right">
                             
                                      <br>{if $LOGADO == true}
-                                      Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-info"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
+                                      Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-danger"><i class="glyphicon glyphicon-log-out"></i> Sair </a>
                                      {/if}
                         
                         </div>  

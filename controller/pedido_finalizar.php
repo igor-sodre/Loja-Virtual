@@ -75,7 +75,6 @@ if(!Login::Logado()){
 }
 
 
-
 /*
 echo '<pre>';
 var_dump($carrinho->GetCarrinho());

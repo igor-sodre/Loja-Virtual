@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-18 19:19:55
+/* Smarty version 3.1.39, created on 2021-06-21 05:16:42
   from 'C:\wamp64\www\loja\view\pedido_confirmar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60ccf1dbda89d6_78237070',
+  'unifunc' => 'content_60d020ba2b68c5_89573671',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd7cf3fc0958d8b252c2bd5cae70893bba4254682' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\pedido_confirmar.tpl',
-      1 => 1624043389,
+      1 => 1624003535,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60ccf1dbda89d6_78237070 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d020ba2b68c5_89573671 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <h3>Confirmar Pedido</h3>
 <hr>
 <!-- botoes e opções de cima -->
@@ -109,6 +109,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             
             <div class="col-md-4 text-right text-danger bg-warning">
             <h4>
+            <!--Informaçoes da compra como preco e frete-->
                Total : R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
 
             </h4>

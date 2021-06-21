@@ -42,7 +42,7 @@ class Login extends Conexao{
              $_SESSION['CLI']['cli_hora_cad']  =  $lista['cli_hora_cad'];
              $_SESSION['CLI']['cli_data_cad']  =  $lista['cli_data_cad'];
              $_SESSION['CLI']['cli_pass']      =  $lista['cli_pass']; 
-
+//recarrega a pagina pra carregar os dados
 			Rotas::Redirecionar(0, Rotas::pag_CLienteLogin());
 
 		}else{
@@ -50,6 +50,7 @@ class Login extends Conexao{
 		}
 
 	}
+
 
 	static function AcessoNegado(){
 		echo '<div class="alert alert-danger"><a href="'.Rotas::pag_ClienteLogin().'" class="btn btn-danger">Login </a> Acesso Negado, faça Login</div>';

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-17 15:38:12
+/* Smarty version 3.1.39, created on 2021-06-18 08:15:59
   from 'C:\wamp64\www\loja\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60cb6c6443dab4_64648014',
+  'unifunc' => 'content_60cc563f4cff63_84095771',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ded13e2a0ceff58a56453e0caa86919e69a388e7' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\carrinho.tpl',
-      1 => 1504278795,
+      1 => 1624001682,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60cb6c6443dab4_64648014 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60cc563f4cff63_84095771 (Smarty_Internal_Template $_smarty_tpl) {
 ?> 
 <?php echo '<script'; ?>
 >
@@ -150,7 +150,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         
         
 
-        <!--  bloco frete -->
+        <!--Modulo que calcula o frete-->
            <section class="row" id="dadosfrete">
                     
                

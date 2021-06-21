@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-17 15:38:05
+/* Smarty version 3.1.39, created on 2021-06-18 06:11:41
   from 'C:\wamp64\www\loja\view\clentes_pedidos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60cb6c5d2bdca6_83294029',
+  'unifunc' => 'content_60cc391dbb6d39_36555173',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '453a1ed26541d8d72af11f8568b6f9947053c70d' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\clentes_pedidos.tpl',
-      1 => 1504197264,
+      1 => 1623994620,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60cb6c5d2bdca6_83294029 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60cc391dbb6d39_36555173 (Smarty_Internal_Template $_smarty_tpl) {
 ?><br>
 <br>
 
@@ -34,12 +34,12 @@ function content_60cb6c5d2bdca6_83294029 (Smarty_Internal_Template $_smarty_tpl)
         <tr class="text-danger bg-danger">
             <td>Data</td>
             <td>Hora</td>
-            <td>Ref</td>
+            <td>Referencia</td>
            
             <td>Status</td>
             <td></td>
         </tr>
-        
+        <!--Usa a nossa variavel P q criamos pra trazer informaçoes dos produtos comprados pelo cliente-->
         <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PEDIDOS']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;

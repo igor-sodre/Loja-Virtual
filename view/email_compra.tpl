@@ -1,3 +1,4 @@
+<!--Css pra estrutura do email-->
 <style>
 .tabela {
     border-collapse: collapse;

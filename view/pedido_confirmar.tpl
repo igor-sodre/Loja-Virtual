@@ -72,6 +72,7 @@
             
             <div class="col-md-4 text-right text-danger bg-warning">
             <h4>
+            <!--Informaçoes da compra como preco e frete-->
                Total : R$ {$TOTAL}
             </h4>
 

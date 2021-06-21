@@ -11,12 +11,12 @@
         <tr class="text-danger bg-danger">
             <td>Data</td>
             <td>Hora</td>
-            <td>Ref</td>
+            <td>Referencia</td>
            
             <td>Status</td>
             <td></td>
         </tr>
-        
+        <!--Usa a nossa variavel P q criamos pra trazer informaçoes dos produtos comprados pelo cliente-->
         {foreach from=$PEDIDOS item=P}
         <tr>
             

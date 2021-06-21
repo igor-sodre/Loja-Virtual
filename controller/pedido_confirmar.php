@@ -1,5 +1,5 @@
 <?php
-
+//bloqueia o finalizar compra caso não tenha selecionado um frete
 if(isset($_SESSION['PRO'])) {
 
 

@@ -17,7 +17,7 @@ class Itens extends Conexao{
         $query .= " AND p.ped_cliente = {:cliente}";
         $params[':cliente'] = (int)$cliente;
       }  
-
+//recebe uma variavel do tipo inteiro pra evitar sql injection
       $params[':pedido'] = (int)$pedido;
 
       $this->ExecuteSQL($query, $params);
@@ -69,7 +69,7 @@ class Itens extends Conexao{
         
         }
 
-
+//calcula o total dos itens
         function GetTotal(){
         	return $this->total_valor;
         }
