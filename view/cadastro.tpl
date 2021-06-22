@@ -26,7 +26,7 @@
       
         <div class="col-md-3">
             <label>Data Nasc:</label>
-            <input type="date" name="cli_data_nasc" class="form-control" required>
+            <input type="date" name="cli_data_nasc" class="form-control" placeholder="dd/mm/aaaa" required>
             
             
         </div>
@@ -154,7 +154,7 @@
        <div class="col-md-4"></div>
        
        <div class="col-md-4">
-           <button type="submit" class="btn btn-geral btn-success "> <i class="glyphicon glyphicon-ok"></i> Salvar </button>
+           <button type="submit" class="btn btn-info btn-block "> <i class="glyphicon glyphicon-ok"></i> Gravar </button>
                
            
        </div>

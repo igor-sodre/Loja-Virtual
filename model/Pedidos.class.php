@@ -44,6 +44,10 @@ class Pedidos extends Conexao{
       if($cliente != null){
         $cli = (int)$cliente;
         $query .= " WHERE ped_cliente = {$cli}";
+        $query .= " ORDER BY ped_id DESC";
+
+        $query .= $this->PaginacaoLinks("ped_id", $this->prefix."pedidos");
+        
       }  
 
       $this->ExecuteSQL($query);

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-17 15:38:03
+/* Smarty version 3.1.39, created on 2021-06-22 19:32:45
   from 'C:\wamp64\www\loja\view\menu_cliente.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60cb6c5bcc9dc1_32657516',
+  'unifunc' => 'content_60d2650dea9b11_61624737',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60cb6c5bcc9dc1_32657516 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d2650dea9b11_61624737 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h4 class="text-center text-danger"> Olá <b><?php echo $_smarty_tpl->tpl_vars['USER']->value;?>
 </b>, seja bem vindo! O que deseja fazer agora?</h4> 
 <section class="row">

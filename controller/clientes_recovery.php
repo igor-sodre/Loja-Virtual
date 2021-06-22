@@ -7,8 +7,7 @@ $cliente = new Clientes();
 
 if(isset($_POST['cli_email'])){
 	$cliente->setCli_email($_POST['cli_email']);
-    //verifica se o email existe no banco
-    
+	//verifica se o email existe no banco
 	if($cliente->GetClienteEmail($cliente->getCli_email()) > 0){
 		$novasenha = Sistema::GerarSenha();
 		$cliente->SenhaUpdate($novasenha, $cliente->getCli_email());

@@ -46,11 +46,10 @@ class Login extends Conexao{
 			Rotas::Redirecionar(0, Rotas::pag_CLienteLogin());
 
 		}else{
-			
+			echo '<script> alert("Dados Incorretos"); </script>';
 		}
 
 	}
-
 
 	static function AcessoNegado(){
 		echo '<div class="alert alert-danger"><a href="'.Rotas::pag_ClienteLogin().'" class="btn btn-danger">Login </a> Acesso Negado, faça Login</div>';
@@ -70,7 +69,7 @@ class Login extends Conexao{
 	static function Logoff(){
 		unset($_SESSION['CLI']);
 		echo '<h4 class="alert alert-success"> Saindo... </h4>';
-		Rotas::Redirecionar(2, Rotas::get_SiteHome());
+		Rotas::Redirecionar(2, Rotas::pag_ClienteLogin());
 	}
 
 
@@ -114,10 +113,7 @@ class Login extends Conexao{
 	}
 
 	private function setSenha($senha){
-		
-		//caso der ruim usar-> $this->senha = Sistema::Criptografia($senha);
-		 $this->senha = md5($senha); 
-		
+		$this->senha = /*Sistema::Criptografia(*/md5($senha)/*)*/;
 	}
 
 	function getUser(){

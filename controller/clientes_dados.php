@@ -7,8 +7,9 @@ Login::MenuCliente();
 foreach($_SESSION['CLI'] as $campo => $valor){
      	$smarty->assign(strtoupper($campo), $valor);
      }
-   
-//variaveis pra buscar as informaçoes no banco pra exibir em cliente_dados.tpl
+
+//variaveis pra buscar as informaçoes no banco pra exibir em cliente_dados.tpl    
+
 if(isset($_POST['cli_nome']) and isset($_POST['cli_email']) and isset($_POST['cli_cpf'])){
 	 $cli_nome = $_POST['cli_nome'];
 	 $cli_sobrenome = $_POST['cli_sobrenome'];
@@ -35,17 +36,18 @@ if(isset($_POST['cli_nome']) and isset($_POST['cli_email']) and isset($_POST['cl
      	echo '</div>';
      	exit();
      }
+
+
+
      $clientes = new Clientes();
 
-     $clientes->Preparar($cli_nome, $cli_sobrenome, $cli_data_nasc, $cli_rg, $cli_cpf, 
-     $cli_ddd, $cli_fone, $cli_celular, $cli_endereco, $cli_numero, $cli_bairro, $cli_cidade,
-     $cli_uf, $cli_cep, $cli_email, $cli_data_cad, $cli_hora_cad, $cli_senha);
+     $clientes->Preparar($cli_nome, $cli_sobrenome, $cli_data_nasc, $cli_rg, $cli_cpf, $cli_ddd, $cli_fone, $cli_celular, $cli_endereco, $cli_numero, $cli_bairro, $cli_cidade, $cli_uf, $cli_cep, $cli_email, $cli_data_cad, $cli_hora_cad, $cli_senha);
 
      if(!$clientes->Editar($_SESSION['CLI']['cli_id'])){
      	echo '<div class="alert alert-danger">Ocorreu um erro ao editar os dados</div>';
      		exit();
      }else{
-        //alerta em tela "<script> alert"   
+          //alerta em tela "<script> alert"
      	echo '<script> alert("Dados alterados com sucesso! Atualizando os dados do Login..."); </script>';
      	echo '<div class="alert alert-success">Dados atualizados com sucesso! Atualiando dados do login...'; 
      	echo '</div>';

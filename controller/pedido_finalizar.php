@@ -43,7 +43,7 @@ if(!Login::Logado()){
 
 
 	$pedido = new Pedidos();
-	$cliente = 1;
+	$cliente = $_SESSION['CLI']['cli_id'];
 	$cod = $_SESSION['PED']['pedido'];
 	$ref = $_SESSION['PED']['ref'];
 	$frete = $_SESSION['PED']['frete'];
@@ -73,6 +73,7 @@ if(!Login::Logado()){
 }
 
 }
+
 
 
 /*

@@ -1,8 +1,13 @@
+/*
+
+www.hugocursos.com.br 
+*/
+
 
 #topo{
 
 min-height: 100px;
-background-color: #121213f3;
+background-color: #204d74;
 color: #fff;
     
 }
@@ -10,7 +15,7 @@ color: #fff;
 #rodape{
      
  min-height: 150px;
- background-color: #121213f3;  
+ background-color: #204d74;  
 color: #fff; 
 padding-top:30px;
     
@@ -50,7 +55,7 @@ padding-top:30px;
 }
 .navbar-inverse .navbar-nav > li > a:hover{
     
- background-color: #121213f3;
+ background-color: #000;
  border-radius: 10px;
  color: #eb9316;
     
@@ -60,13 +65,13 @@ padding-top:30px;
 
 .list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
     
-   background-color: #121213f3; 
+   background-color: #101010; 
     
 }
 
 a.list-group-item:hover{
     
-    background-color: #121213f3;;
+    background-color: #262626;;
      color: #FFF;
      
     

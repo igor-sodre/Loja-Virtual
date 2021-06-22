@@ -41,7 +41,7 @@
                     <div class="col-md-6 text-right">
                             
                                      <br>{if $LOGADO == true}
-                                      Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-danger"><i class="glyphicon glyphicon-log-out"></i> Sair </a>
+                                      Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-info"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
                                      {/if}
                         
                         </div>  
@@ -122,9 +122,9 @@
                     <span class="list-group-item active"> Categorias</span>
 
                      <a href="{$PAG_PRODUTOS}" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Todos</a> 
-
-                     <!--busca os protudos filtrados por categorias e busca as opçoes de categorias -->
-
+                    
+                    <!--busca os protudos filtrados por categorias e busca as opçoes de categorias -->
+                    
                     {foreach from=$CATEGORIAS item=C}
                     
                     <a href="{$C.cate_link}" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> {$C.cate_nome}</a> 

@@ -26,6 +26,7 @@ $smarty->assign('PAGINAS', $produtos->ShowPaginacao());
 
 $smarty->display('produtos.tpl');
 
+
 //e mais debug esse e dos produtos
 //echo'<pre>';
 //ar_dump($produtos->GetItens());

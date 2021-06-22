@@ -1,5 +1,8 @@
 <?php 
 
+
+date_default_timezone_set('America/Sao_Paulo');
+
 if(!isset($_SESSION)){
 	session_start();
 	
@@ -7,7 +10,6 @@ if(!isset($_SESSION)){
 
 /*
 if(!isset($_SESSION['PED']['pedido'])){
-	//seçao dinamica com base no ano mes dia minuto segundo, o md5 e pra codificar
 	$_SESSION['pedido'] = md5(uniqid(date('YmdHms')));
 }
 
@@ -25,7 +27,7 @@ $categorias->GetCategorias();
 
 
 //valores para o template
-$smarty->assign('NOME', 'Leonidas TOWERFALL');
+$smarty->assign('NOME', 'HUGO VASCONCELOS DE FREITAS');
 $smarty->assign('GET_TEMA', Rotas::get_SiteTEMA());
 $smarty->assign('GET_NOME', Config::SITE_NOME);
 $smarty->assign('GET_SITE_HOME', Rotas::get_SiteHOME());

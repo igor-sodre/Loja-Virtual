@@ -13,6 +13,8 @@ if(!isset($_POST['cod_pedido'])){
 $itens = new Itens();
 $pedido = filter_var($_POST['cod_pedido'], FILTER_SANITIZE_STRING);
 
+
+
 $itens->GetItensPedido($pedido);
 $smarty->assign('ITENS', $itens->GetItens());
 $smarty->assign('TOTAL', $itens->GetTotal());

@@ -6,12 +6,13 @@
     <h4 class="text-center">Meus Pedidos</h4>
     
     <center>
+    {if $PEDIDOS_QUANTIDADE > 0}
     <table class="table table-bordered" style="width: 90%">
         
         <tr class="text-danger bg-danger">
             <td>Data</td>
             <td>Hora</td>
-            <td>Referencia</td>
+            <td>Ref</td>
            
             <td>Status</td>
             <td></td>
@@ -41,11 +42,30 @@
         </form>    
             
         </tr>
-        {/foreach}
+
+      
+
+      {/foreach}
+
+
+    
         
     </table>
+
+    {else}
+        Você não tem nenhum pedido ainda!
+        {/if}
       </center>
-    
+
+
+
     
 </section>
+
+
+<section id="pagincao" class="row">
+    <center>
+    {$PAGINAS}
+    </center>
+    </section>
       

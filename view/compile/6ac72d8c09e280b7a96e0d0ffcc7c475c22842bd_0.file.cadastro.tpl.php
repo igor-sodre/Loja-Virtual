@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-21 08:30:10
+/* Smarty version 3.1.39, created on 2021-06-22 13:51:53
   from 'C:\wamp64\www\loja\view\cadastro.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d04e12b7e079_33008112',
+  'unifunc' => 'content_60d21529c8cf57_45447552',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '6ac72d8c09e280b7a96e0d0ffcc7c475c22842bd' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\cadastro.tpl',
-      1 => 1624264209,
+      1 => 1504559719,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d04e12b7e079_33008112 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d21529c8cf57_45447552 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3>Cadastro de cliente</h3>
 <!--- dados do cadastro -->
 
@@ -49,7 +49,7 @@ function content_60d04e12b7e079_33008112 (Smarty_Internal_Template $_smarty_tpl)
       
         <div class="col-md-3">
             <label>Data Nasc:</label>
-            <input type="date" name="cli_data_nasc" class="form-control" required>
+            <input type="date" name="cli_data_nasc" class="form-control" placeholder="dd/mm/aaaa" required>
             
             
         </div>
@@ -177,7 +177,7 @@ function content_60d04e12b7e079_33008112 (Smarty_Internal_Template $_smarty_tpl)
        <div class="col-md-4"></div>
        
        <div class="col-md-4">
-           <button type="submit" class="btn btn-geral btn-success "> <i class="glyphicon glyphicon-ok"></i> Salvar </button>
+           <button type="submit" class="btn btn-info btn-block "> <i class="glyphicon glyphicon-ok"></i> Gravar </button>
                
            
        </div>
@@ -188,6 +188,5 @@ function content_60d04e12b7e079_33008112 (Smarty_Internal_Template $_smarty_tpl)
 </section>
       
       
-         </form>
-<?php }
+         </form><?php }
 }

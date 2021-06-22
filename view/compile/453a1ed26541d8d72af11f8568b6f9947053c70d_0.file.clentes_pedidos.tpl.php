@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-18 06:11:41
+/* Smarty version 3.1.39, created on 2021-06-22 19:32:49
   from 'C:\wamp64\www\loja\view\clentes_pedidos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60cc391dbb6d39_36555173',
+  'unifunc' => 'content_60d26511d60138_29156161',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '453a1ed26541d8d72af11f8568b6f9947053c70d' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\clentes_pedidos.tpl',
-      1 => 1623994620,
+      1 => 1624368428,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60cc391dbb6d39_36555173 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d26511d60138_29156161 (Smarty_Internal_Template $_smarty_tpl) {
 ?><br>
 <br>
 
@@ -29,12 +29,13 @@ function content_60cc391dbb6d39_36555173 (Smarty_Internal_Template $_smarty_tpl)
     <h4 class="text-center">Meus Pedidos</h4>
     
     <center>
+    <?php if ($_smarty_tpl->tpl_vars['PEDIDOS_QUANTIDADE']->value > 0) {?>
     <table class="table table-bordered" style="width: 90%">
         
         <tr class="text-danger bg-danger">
             <td>Data</td>
             <td>Hora</td>
-            <td>Referencia</td>
+            <td>Ref</td>
            
             <td>Status</td>
             <td></td>
@@ -77,14 +78,34 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
         </form>    
             
         </tr>
-        <?php
+
+      
+
+      <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+
+
+    
         
     </table>
+
+    <?php } else { ?>
+        Você não tem nenhum pedido ainda!
+        <?php }?>
       </center>
-    
+
+
+
     
 </section>
+
+
+<section id="pagincao" class="row">
+    <center>
+    <?php echo $_smarty_tpl->tpl_vars['PAGINAS']->value;?>
+
+    </center>
+    </section>
       <?php }
 }

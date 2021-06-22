@@ -1,4 +1,4 @@
-<h3 class="text-center">Alterar Senha</h3>
+<h3 class="text-center">Alteração de senha de acesso</h3>
 
 
 <form name="alterarsenha" method="post" action="">
@@ -20,7 +20,7 @@
            
             
             
-            <button type="submit" class="btn btn-danger btn-block"> Alterar </button>
+            <button type="submit" class="btn btn-success btn-block"> Alterar </button>
         </div>
        
         <div class="col-md-4">
@@ -39,3 +39,4 @@
     
     
 </form>
+

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-22 08:56:29
+/* Smarty version 3.1.39, created on 2021-06-22 19:32:52
   from 'C:\wamp64\www\loja\view\cliente_dados.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d1a5bd5b6537_44892457',
+  'unifunc' => 'content_60d265144bc806_18423245',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '179e14fcfebbc1b7ca206e8af752554aa5e32827' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\cliente_dados.tpl',
-      1 => 1624352183,
+      1 => 1504627409,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d1a5bd5b6537_44892457 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d265144bc806_18423245 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3>Meus Dados</h3>
 
 <hr>
@@ -192,7 +192,7 @@ function content_60d1a5bd5b6537_44892457 (Smarty_Internal_Template $_smarty_tpl)
            <label>Digite sua senha atual por segurança<br>(<small>sua senha não será alterada</small>)</label>
            <input type="password" name="cli_senha" id="cli_senha" class="form-control" required>
            <br>
-           <button type="submit" class="btn btn-geral btn-block "> <i class="glyphicon glyphicon-ok"></i> Gravar </button>
+           <button type="submit" class="btn btn-success btn-block "> <i class="glyphicon glyphicon-ok"></i> Gravar </button>
                
            
        </div>
@@ -210,5 +210,8 @@ function content_60d1a5bd5b6537_44892457 (Smarty_Internal_Template $_smarty_tpl)
 <br>
 <br>
 <br>
-<br><?php }
+<br>
+
+
+<?php }
 }

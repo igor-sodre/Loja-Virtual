@@ -154,7 +154,7 @@
            <label>Digite sua senha atual por segurança<br>(<small>sua senha não será alterada</small>)</label>
            <input type="password" name="cli_senha" id="cli_senha" class="form-control" required>
            <br>
-           <button type="submit" class="btn btn-geral btn-block "> <i class="glyphicon glyphicon-ok"></i> Gravar </button>
+           <button type="submit" class="btn btn-success btn-block "> <i class="glyphicon glyphicon-ok"></i> Gravar </button>
                
            
        </div>
@@ -173,3 +173,5 @@
 <br>
 <br>
 <br>
+
+

@@ -106,7 +106,7 @@ class Carrinho{
 	}
 
 	//quando vc coloca o id deleta apenas ele sem o id e a msm coisa do delete sem where no banco apaga a pora toda
-
+	
 	private function CarrinhoDEL($id){
 		unset($_SESSION['PRO'][$id]);
 	}

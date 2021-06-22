@@ -11,7 +11,7 @@
           
             <input type="email" name="cli_email" id="cli_email" class="form-control" required>
             <br>
-            <button type="submit" class="btn btn-danger btn-block"> Recuperar </button>
+            <button type="submit" class="btn btn-warning btn-block"> Recuperar </button>
         </div>
        
         <div class="col-md-4">

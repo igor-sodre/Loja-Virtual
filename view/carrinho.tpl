@@ -109,7 +109,7 @@ $(document).ready(function(){
         
         
 
-        <!--Modulo que calcula o frete-->
+        <!--  bloco frete -->
            <section class="row" id="dadosfrete">
                     
                

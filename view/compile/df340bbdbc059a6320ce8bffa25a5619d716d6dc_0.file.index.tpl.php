@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-18 06:31:25
+/* Smarty version 3.1.39, created on 2021-06-22 13:30:34
   from 'C:\wamp64\www\loja\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60cc3dbdad8a83_95088881',
+  'unifunc' => 'content_60d2102a4b8c33_57593167',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'df340bbdbc059a6320ce8bffa25a5619d716d6dc' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\index.tpl',
-      1 => 1623997883,
+      1 => 1624369097,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60cc3dbdad8a83_95088881 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d2102a4b8c33_57593167 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -84,7 +84,7 @@ function content_60cc3dbdad8a83_95088881 (Smarty_Internal_Template $_smarty_tpl)
                                      <br><?php if ($_smarty_tpl->tpl_vars['LOGADO']->value == true) {?>
                                       Olá: <?php echo $_smarty_tpl->tpl_vars['USER']->value;?>
  <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_LOGOFF']->value;?>
-" class="btn btn-danger"><i class="glyphicon glyphicon-log-out"></i> Sair </a>
+" class="btn btn-info"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
                                      <?php }?>
                         
                         </div>  
@@ -171,9 +171,9 @@ function content_60cc3dbdad8a83_95088881 (Smarty_Internal_Template $_smarty_tpl)
 
                      <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
 " class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Todos</a> 
-
-                     <!--busca os protudos filtrados por categorias e busca as opçoes de categorias -->
-
+                    
+                    <!--busca os protudos filtrados por categorias e busca as opçoes de categorias -->
+                    
                     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CATEGORIAS']->value, 'C');
 $_smarty_tpl->tpl_vars['C']->do_else = true;

@@ -24,7 +24,7 @@ require_once '../lib/autoload.php';
         
         
                       
-                        foreach ($calc as $frete):
+                        foreach ($frete->frete as $frete):
 
 
                         if($frete['erro'] != 0):
