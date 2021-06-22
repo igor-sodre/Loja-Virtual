@@ -1,6 +1,7 @@
 <?php 
 
 $smarty = new Template();
+
 if(isset($_POST['cli_nome']) and isset($_POST['cli_email']) and isset($_POST['cli_cpf'])){
 //variaveis
 $cli_nome = $_POST['cli_nome'];
@@ -22,6 +23,47 @@ $cli_senha     = Sistema::GerarSenha();
 //salva a data em ingles q e o modelo padrao do banco
 $cli_data_cad  = Sistema::DataAtualUS();
 $cli_hora_cad  = Sistema::HoraAtual(); 
+
+$clientes = new Clientes();
+$clientes->Preparar($cli_nome, $cli_sobrenome, $cli_data_nasc, $cli_rg, $cli_cpf, 
+$cli_ddd, $cli_fone, $cli_celular, $cli_endereco, $cli_numero, $cli_bairro, $cli_cidade,
+$cli_uf, $cli_cep, $cli_email, $cli_data_cad, $cli_hora_cad, $cli_senha);
+
+
+$clientes->Inserir();
+//assings pro template
+$smarty->assign('NOME', $cli_nome);
+$smarty->assign('SITE', Config::SITE_NOME);
+$smarty->assign('EMAIL', $cli_email);
+$smarty->assign('SENHA', $cli_senha);
+$smarty->assign('PAG_MINHA_CONTA', Rotas::pag_ClienteConta());
+$smarty->assign('SITE_HOME', Rotas::get_SiteHOME());
+
+
+//manda a senha criptografada pro usuario
+$email = new EnviarEmail();
+$assunto = 'Cadastro Efetuado - ' . Config::SITE_NOME;
+$msg = $smarty->fetch('email_cliente_cadastro.tpl');
+//o cliente e o adm recebe o email
+$destinatarios = array($cli_email, Config::SITE_EMAIL_ADM);
+$email->Enviar($assunto, $msg, $destinatarios);
+
+
+
+
+//mensagem indicando q foi criado o usuario com sucesso
+echo'<div class="alert alert-success"> Cadastro Efetuado!!
+A senha para fazer login foi enviada para seu email cadastrado. <br>' . 'Verifique seu email e caixa de Spam </div>';
+Rotas::Redirecionar(40, Rotas::pag_ClienteLogin());
+
+
+
+
+$clientes->Inserir();
+
+
+}else{
+    $smarty->display('cadastro.tpl');
 }
 
 
@@ -29,6 +71,6 @@ $cli_hora_cad  = Sistema::HoraAtual();
 
 
 
-$smarty->display('cadastro.tpl');
+
 
  ?>
