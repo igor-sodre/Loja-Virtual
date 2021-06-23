@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-22 19:32:52
-  from 'C:\wamp64\www\loja\view\cliente_dados.tpl' */
+/* Smarty version 3.1.39, created on 2021-06-23 13:24:28
+  from 'C:\wamp64\www\loja\adm\view\adm_clientes_editar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d265144bc806_18423245',
+  'unifunc' => 'content_60d3603ce9fcd5_32338041',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '179e14fcfebbc1b7ca206e8af752554aa5e32827' => 
+    'd93e95a0f46fc40908a687d682eb37566ed31f4b' => 
     array (
-      0 => 'C:\\wamp64\\www\\loja\\view\\cliente_dados.tpl',
-      1 => 1504627409,
+      0 => 'C:\\wamp64\\www\\loja\\adm\\view\\adm_clientes_editar.tpl',
+      1 => 1624465441,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d265144bc806_18423245 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d3603ce9fcd5_32338041 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3>Meus Dados</h3>
 
 <hr>
@@ -73,7 +73,7 @@ function content_60d265144bc806_18423245 (Smarty_Internal_Template $_smarty_tpl)
         <div class="col-md-2">
             <label>CPF:</label>
             <input type="text" value="<?php echo $_smarty_tpl->tpl_vars['CLI_CPF']->value;?>
-" name="cli_cpf" class="form-control" minlength="11" maxlength="11" required readonly>
+" name="cli_cpf" class="form-control" minlength="11" maxlength="11" required>
             
             
         </div>
@@ -189,8 +189,9 @@ function content_60d265144bc806_18423245 (Smarty_Internal_Template $_smarty_tpl)
        <div class="col-md-4"></div>
        
        <div class="col-md-4">
-           <label>Digite sua senha atual por segurança<br>(<small>sua senha não será alterada</small>)</label>
-           <input type="password" name="cli_senha" id="cli_senha" class="form-control" required>
+           
+            <input type="hidden" name="cli_id" value="<?php echo $_smarty_tpl->tpl_vars['CLI_ID']->value;?>
+" class="form-control" required>
            <br>
            <button type="submit" class="btn btn-success btn-block "> <i class="glyphicon glyphicon-ok"></i> Gravar </button>
                

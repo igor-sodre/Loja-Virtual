@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-22 14:22:26
+/* Smarty version 3.1.39, created on 2021-06-23 10:15:55
   from 'C:\wamp64\www\loja\view\produtos_info.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d21c526628d4_51531836',
+  'unifunc' => 'content_60d3340b8d8049_20438983',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d21c526628d4_51531836 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d3340b8d8049_20438983 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
 $_smarty_tpl->tpl_vars['P']->do_else = true;

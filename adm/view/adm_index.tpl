@@ -120,11 +120,11 @@
                     <span class="list-group-item active"> Categorias</span>
                     <!--pag_ProdutosADM -->
 
-                     <a href="{$PAG_PRODUTOS}" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Todos</a> 
+                     <a href="{$PAG_ADM_PRODUTOS}" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Todos</a> 
 
                     {foreach from=$CATEGORIAS item=C}
                     
-                    <a href="{$C.cate_link}" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> {$C.cate_nome}</a> 
+                    <a href="{$C.cate_link_adm}" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> {$C.cate_nome}</a> 
                     
                     {/foreach}
 

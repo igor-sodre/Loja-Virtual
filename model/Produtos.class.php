@@ -87,7 +87,12 @@ Class Produtos extends Conexao{
 	         'pro_slug' => $lista['pro_slug'], 
 	         'pro_ref' => $lista['pro_ref'], 
 	         'cate_nome' => $lista['cate_nome'] , 
-	         'cate_id'   => $lista['cate_id']  
+	         'cate_id'   => $lista['cate_id'],
+             'pro_modelo'   => $lista['pro_modelo'] ,  
+             'pro_estoque'   => $lista['pro_estoque'] ,  
+             'pro_ativo'   => $lista['pro_ativo'] , 
+             'pro_img_arquivo'   => Rotas::get_SiteRAIZ() .'/'. Rotas::get_ImagePasta().$lista['pro_img'], 
+             'pro_img_atual'     => $lista['pro_img'] ,
 			);
 
 		$i++;
@@ -162,6 +167,72 @@ Class Produtos extends Conexao{
            
         }
 
+
+        function Alterar($id){
+          
+            $query = " UPDATE {$this->prefix}produtos SET pro_nome=:pro_nome, pro_categoria=:pro_categoria," ;
+            $query.= " pro_ativo=:pro_ativo, pro_modelo=:pro_modelo, pro_ref=:pro_ref,";
+            $query.= " pro_valor=:pro_valor, pro_estoque=:pro_estoque, pro_peso=:pro_peso , ";
+            $query.= " pro_altura=:pro_altura, pro_largura=:pro_largura,";
+            $query.= " pro_comprimento=:pro_comprimento ,pro_img=:pro_img, pro_desc=:pro_desc, pro_slug=:pro_slug";
+           $query.= " WHERE pro_id = :pro_id";
+             // $query.= " VALUES ";
+             // $query.= " ( :pro_nome, :pro_categoria, :pro_ativo, :pro_modelo, :pro_ref, :pro_valor, :pro_estoque, :pro_peso ,";
+             //  $query.= " :pro_altura, :pro_largura, :pro_comprimento ,:pro_img, :pro_desc, :pro_slug)";
+            
+            $params = array(
+            ':pro_nome'=> $this->getPro_nome(),   
+            ':pro_categoria'=> $this->getPro_categoria(),   
+            ':pro_ativo'=> $this->getPro_ativo(),   
+            ':pro_modelo'=> $this->getPro_modelo(),   
+            ':pro_ref'=> $this->getPro_ref(),   
+            ':pro_valor'=> $this->getPro_valor(),   
+            ':pro_estoque'=> $this->getPro_estoque(),   
+            ':pro_peso'=> $this->getPro_peso(),   
+            ':pro_altura'=> $this->getPro_altura() , 
+            ':pro_largura'=> $this->getPro_largura(),
+            ':pro_comprimento'=> $this->getPro_comprimento(),   
+            ':pro_img'=> $this->getPro_img(),   
+            ':pro_desc'=> $this->getPro_desc(),   
+            ':pro_slug'=> $this->getPro_slug(),   
+            ':pro_id'=> (int)$id,   
+                         
+            );
+            
+               
+            
+               // executo a SQL
+               if($this->ExecuteSQL($query, $params)):
+                   
+                       return TRUE;
+                   
+                   else:
+                       
+                       return FALSE; 
+                   
+               endif;
+            
+            
+               
+               
+            }
+            
+            function Apagar($id){
+                $query = "DELETE FROM {$this->prefix}produtos WHERE pro_id = :id";
+                $params = array(
+                    ':id' => (int)$id
+                    );
+        
+                 if($this->ExecuteSQL($query, $params)):
+                       
+                           return TRUE;
+                       
+                       else:
+                           
+                           return FALSE; 
+                       
+                   endif;
+            }
 
 
 

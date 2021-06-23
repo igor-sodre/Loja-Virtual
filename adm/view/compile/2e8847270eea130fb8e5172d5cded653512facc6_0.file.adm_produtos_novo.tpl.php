@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-23 03:45:39
+/* Smarty version 3.1.39, created on 2021-06-23 11:17:51
   from 'C:\wamp64\www\loja\adm\view\adm_produtos_novo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d2d8933863c5_18973082',
+  'unifunc' => 'content_60d3428fdfc191_48824208',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2e8847270eea130fb8e5172d5cded653512facc6' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\adm\\view\\adm_produtos_novo.tpl',
-      1 => 1504720221,
+      1 => 1624457840,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d2d8933863c5_18973082 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d3428fdfc191_48824208 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/js/tinymce/tinymce.min.js"><?php echo '</script'; ?>
@@ -156,7 +156,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             
                  <hr>
                  <label>Imagem Principal</label>
-                 <input type="file" name="pro_img" class="form-control " id="pro_img">
+                 <input type="file" name="pro_img" class="form-control " id="pro_img" required>
             </div>
             
             <div class="col-md-3">

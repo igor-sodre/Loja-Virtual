@@ -121,7 +121,7 @@
             
                  <hr>
                  <label>Imagem Principal</label>
-                 <input type="file" name="pro_img" class="form-control " id="pro_img">
+                 <input type="file" name="pro_img" class="form-control " id="pro_img" required>
             </div>
             
             <div class="col-md-3">
