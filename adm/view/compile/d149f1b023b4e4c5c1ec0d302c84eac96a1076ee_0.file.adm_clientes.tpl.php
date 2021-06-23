@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-22 19:39:05
+/* Smarty version 3.1.39, created on 2021-06-22 22:57:49
   from 'C:\wamp64\www\loja\adm\view\adm_clientes.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d2668917c6c6_83555369',
+  'unifunc' => 'content_60d2951d1b4961_36397228',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,6 +20,6 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d2668917c6c6_83555369 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d2951d1b4961_36397228 (Smarty_Internal_Template $_smarty_tpl) {
 ?>Clientes<?php }
 }

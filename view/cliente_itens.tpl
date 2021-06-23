@@ -66,11 +66,11 @@
                 <table class="table table-bordered" style="width: 80%">
                     <tr>
 
-                        <td class="text-danger"> <b>Frete:</b> {$ITENS.1.ped_frete_valor}</td>
+                        <td class="text-danger"> <b>Frete: R$</b> {$ITENS.1.ped_frete_valor}</td>
 
-                        <td class="text-danger"> <b>Total:</b> {$TOTAL}</td>
+                        <td class="text-danger"> <b>Total: R$</b> {$TOTAL}</td>
 
-                        <td class="text-danger"> <b>Final:</b> {$ITENS.1.ped_frete_valor+$TOTAL}</td>
+                        <td class="text-danger"> <b>Final: R$</b> {$ITENS.1.ped_frete_valor+$TOTAL}</td>
 
                     </tr>  
 

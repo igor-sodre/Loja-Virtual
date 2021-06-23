@@ -32,7 +32,9 @@ if(isset($_POST['pro_nome']) && isset($_POST['pro_valor'])){
 
     $gravar = new Produtos();
 
-    $gravar->Preparar($pro_nome, $pro_categoria, $pro_ativo, $pro_modelo, $pro_ref, $pro_valor, $pro_estoque, $pro_peso, $pro_altura, $pro_largura, $pro_comprimento, $pro_img, $pro_desc, $pro_slug);
+    $gravar->Preparar($pro_nome, $pro_categoria, $pro_ativo, $pro_modelo, $pro_ref,
+    $pro_valor, $pro_estoque, $pro_peso, $pro_altura, $pro_largura, $pro_comprimento,
+    $pro_img, $pro_desc, $pro_slug);
 
 
     if($gravar->Inserir()){

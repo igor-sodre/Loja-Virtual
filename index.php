@@ -1,6 +1,6 @@
 <?php 
 
-
+//funçao q deixa a hora do registro no banco no horiario do nosso fuso horario
 date_default_timezone_set('America/Sao_Paulo');
 
 if(!isset($_SESSION)){
@@ -27,7 +27,7 @@ $categorias->GetCategorias();
 
 
 //valores para o template
-$smarty->assign('NOME', 'HUGO VASCONCELOS DE FREITAS');
+$smarty->assign('NOME', 'Leonidas TOWERFALL');
 $smarty->assign('GET_TEMA', Rotas::get_SiteTEMA());
 $smarty->assign('GET_NOME', Config::SITE_NOME);
 $smarty->assign('GET_SITE_HOME', Rotas::get_SiteHOME());

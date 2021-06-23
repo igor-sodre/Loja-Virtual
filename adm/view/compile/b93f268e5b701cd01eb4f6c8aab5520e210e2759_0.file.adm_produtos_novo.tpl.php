@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-23 03:45:39
-  from 'C:\wamp64\www\loja\adm\view\adm_produtos_novo.tpl' */
+/* Smarty version 3.1.31, created on 2017-09-06 14:50:24
+  from "C:\xampp\htdocs\loja\adm\view\adm_produtos_novo.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_60d2d8933863c5_18973082',
+  'version' => '3.1.31',
+  'unifunc' => 'content_59b03560eca2b4_16064627',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '2e8847270eea130fb8e5172d5cded653512facc6' => 
+    'b93f268e5b701cd01eb4f6c8aab5520e210e2759' => 
     array (
-      0 => 'C:\\wamp64\\www\\loja\\adm\\view\\adm_produtos_novo.tpl',
+      0 => 'C:\\xampp\\htdocs\\loja\\adm\\view\\adm_produtos_novo.tpl',
       1 => 1504720221,
       2 => 'file',
     ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d2d8933863c5_18973082 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59b03560eca2b4_16064627 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/js/tinymce/tinymce.min.js"><?php echo '</script'; ?>
@@ -51,9 +51,8 @@ echo '<script'; ?>
                 <option value="teste"> Escolha </option>                           
                     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CATEGORIAS']->value, 'C');
-$_smarty_tpl->tpl_vars['C']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['C']->value) {
-$_smarty_tpl->tpl_vars['C']->do_else = false;
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['C']->value) {
 ?>                    
                 <option value="<?php echo $_smarty_tpl->tpl_vars['C']->value['cate_id'];?>
 "><?php echo $_smarty_tpl->tpl_vars['C']->value['cate_nome'];?>
@@ -61,7 +60,10 @@ $_smarty_tpl->tpl_vars['C']->do_else = false;
 
                     <?php
 }
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>                
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
+?>
+                
             </select>
             
             

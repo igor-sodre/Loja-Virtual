@@ -43,6 +43,7 @@ if(!Login::Logado()){
 
 
 	$pedido = new Pedidos();
+	//sessao de cliente
 	$cliente = $_SESSION['CLI']['cli_id'];
 	$cod = $_SESSION['PED']['pedido'];
 	$ref = $_SESSION['PED']['ref'];

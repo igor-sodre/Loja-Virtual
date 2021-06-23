@@ -40,6 +40,12 @@ $smarty->assign('PAG_ADM_PRODUTOS', Rotas::pag_ProdutosADM());
 $smarty->assign('CATEGORIAS', $categorias->GetItens());
 $smarty->assign('DATA', Sistema::DataAtualBR());
 $smarty->assign('LOGADO', Login::Logado());
+
+//temporario
+$smarty->assign('PAG_PRODUTOS', Rotas::pag_Produtos());
+$smarty->assign('PAG_LOGOFF', Rotas::pag_Logoff());
+//temporario
+
 //$smarty->assign('LOGADO', Login::LogadoADM());
 //$smarty->assign('PAG_LOGOFF', Rotas::get_SiteADM() .'/logoff');
 //$smarty->assign('PAG_SENHA', Rotas::get_SiteADM() .'/adm_senha');

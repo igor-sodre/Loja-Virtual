@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-23 03:44:02
-  from 'C:\wamp64\www\loja\view\index.tpl' */
+/* Smarty version 3.1.31, created on 2017-09-06 11:42:00
+  from "C:\xampp\htdocs\loja\adm\view\adm_index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_60d2d832e57179_66527343',
+  'version' => '3.1.31',
+  'unifunc' => 'content_59b00938118097_85210274',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'df340bbdbc059a6320ce8bffa25a5619d716d6dc' => 
+    '56ee9dbab1711ca502b7da58086071b9e944e44f' => 
     array (
-      0 => 'C:\\wamp64\\www\\loja\\view\\index.tpl',
-      1 => 1624430640,
+      0 => 'C:\\xampp\\htdocs\\loja\\adm\\view\\adm_index.tpl',
+      1 => 1504708916,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d2d832e57179_66527343 (Smarty_Internal_Template $_smarty_tpl) {
-?><!DOCTYPE html>
+function content_59b00938118097_85210274 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<!DOCTYPE html>
 
 <html>
     <head>
@@ -32,14 +33,12 @@ function content_60d2d832e57179_66527343 (Smarty_Internal_Template $_smarty_tpl)
         
         <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <!--configuração do css da pagina de contato -->
         <link href="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/contatos/contatos.css" rel="stylesheet" type="text/css"/>
         <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/js/jquery-2.2.1.min.js" type="text/javascript"><?php echo '</script'; ?>
 >
-        <!--configuração do JS da pagina de contato -->
         <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/js/bootstrap.min.js" type="text/javascript"><?php echo '</script'; ?>
@@ -76,7 +75,7 @@ function content_60d2d832e57179_66527343 (Smarty_Internal_Template $_smarty_tpl)
 
                     <div class="col-md-6">
                          <img src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
-/images/logo.png" alt=""> 
+/images/logo-adm.png" alt=""> 
                     </div>
 
                     <div class="col-md-6 text-right">
@@ -84,7 +83,7 @@ function content_60d2d832e57179_66527343 (Smarty_Internal_Template $_smarty_tpl)
                                      <br><?php if ($_smarty_tpl->tpl_vars['LOGADO']->value == true) {?>
                                       Olá: <?php echo $_smarty_tpl->tpl_vars['USER']->value;?>
  <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_LOGOFF']->value;?>
-" class="btn btn-danger"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
+" class="btn btn-info"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
                                      <?php }?>
                         
                         </div>  
@@ -118,19 +117,19 @@ function content_60d2d832e57179_66527343 (Smarty_Internal_Template $_smarty_tpl)
                         
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="nav navbar-nav">
-                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_SITE_HOME']->value;?>
+                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['GET_SITE_ADM']->value;?>
 "><i class="glyphicon glyphicon-home"></i> Home </a> </li>
 
 
-                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
-"><i class="glyphicon glyphicon-tag"></i> Produtos </a> </li>
+                                 <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CATEGORIAS']->value;?>
+"><i class="glyphicon glyphicon-tag"></i> Categorias </a> </li>
                                
-                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_MINHACONTA']->value;?>
-"><i class="glyphicon glyphicon-user"></i> Minha Conta </a> </li>
-                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
-"><i class="glyphicon glyphicon-shopping-cart"></i> Carrinho </a> </li>
-                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CONTATO']->value;?>
-" ><i class="glyphicon glyphicon-envelope"></i> Contato </a> </li>
+                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_ADM_PRODUTOS']->value;?>
+"><i class="glyphicon glyphicon-user"></i> Produtos </a> </li>
+                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_ADM_CLIENTE']->value;?>
+"><i class="glyphicon glyphicon-shopping-cart"></i> Clientes </a> </li>
+                                <li><a href="<?php echo $_smarty_tpl->tpl_vars['PAG_ADM_PEDIDOS']->value;?>
+" ><i class="glyphicon glyphicon-envelope"></i> Pedidos </a> </li>
                                 
                                 
                                
@@ -171,14 +170,11 @@ function content_60d2d832e57179_66527343 (Smarty_Internal_Template $_smarty_tpl)
 
                      <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
 " class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Todos</a> 
-                    
-                    <!--busca os protudos filtrados por categorias e busca as opçoes de categorias -->
-                    
+
                     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['CATEGORIAS']->value, 'C');
-$_smarty_tpl->tpl_vars['C']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['C']->value) {
-$_smarty_tpl->tpl_vars['C']->do_else = false;
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['C']->value) {
 ?>
                     
                     <a href="<?php echo $_smarty_tpl->tpl_vars['C']->value['cate_link'];?>
@@ -187,7 +183,10 @@ $_smarty_tpl->tpl_vars['C']->do_else = false;
                     
                     <?php
 }
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
+?>
+
 
 
                     
@@ -230,7 +229,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <center>
                     <h4><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
 </h4>
-                    <P>Todos os Direitos Reservados - StrayDogs - Data Atual: <?php echo $_smarty_tpl->tpl_vars['DATA']->value;?>
+                    <P>Todos os Direitos Reservados - Hugo Vasconcelos - Q-Cursos - Data Atual: <?php echo $_smarty_tpl->tpl_vars['DATA']->value;?>
 </P>
                 </center>
             

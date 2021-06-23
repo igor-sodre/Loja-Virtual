@@ -39,7 +39,7 @@
                     <div class="col-md-6 text-right">
                             
                                      <br>{if $LOGADO == true}
-                                      Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-info"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
+                                      Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-danger"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
                                      {/if}
                         
                         </div>  
@@ -118,6 +118,7 @@
                     
                 <div class="list-group">
                     <span class="list-group-item active"> Categorias</span>
+                    <!--pag_ProdutosADM -->
 
                      <a href="{$PAG_PRODUTOS}" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Todos</a> 
 
@@ -167,7 +168,7 @@
             <div class="row" id="rodape">
                 <center>
                     <h4>{$TITULO_SITE}</h4>
-                    <P>Todos os Direitos Reservados - Hugo Vasconcelos - Q-Cursos - Data Atual: {$DATA}</P>
+                    <P>Todos os Direitos Reservados - StrayDogs - Data Atual: {$DATA}</P>
                 </center>
             
             </div><!-- fim div rodape-->

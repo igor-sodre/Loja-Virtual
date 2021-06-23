@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-22 13:25:57
+/* Smarty version 3.1.39, created on 2021-06-23 03:43:11
   from 'C:\wamp64\www\loja\adm\view\adm_index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d20f15835905_93097905',
+  'unifunc' => 'content_60d2d7ffe427e6_50370714',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '999d2d1103b48bf31f46911d3ebba4d3f6bd7cc8' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\adm\\view\\adm_index.tpl',
-      1 => 1504708916,
+      1 => 1624430590,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d20f15835905_93097905 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d2d7ffe427e6_50370714 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -82,7 +82,7 @@ function content_60d20f15835905_93097905 (Smarty_Internal_Template $_smarty_tpl)
                                      <br><?php if ($_smarty_tpl->tpl_vars['LOGADO']->value == true) {?>
                                       Olá: <?php echo $_smarty_tpl->tpl_vars['USER']->value;?>
  <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_LOGOFF']->value;?>
-" class="btn btn-info"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
+" class="btn btn-danger"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
                                      <?php }?>
                         
                         </div>  
@@ -166,6 +166,7 @@ function content_60d20f15835905_93097905 (Smarty_Internal_Template $_smarty_tpl)
                     
                 <div class="list-group">
                     <span class="list-group-item active"> Categorias</span>
+                    <!--pag_ProdutosADM -->
 
                      <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_PRODUTOS']->value;?>
 " class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span> Todos</a> 
@@ -226,7 +227,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <center>
                     <h4><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
 </h4>
-                    <P>Todos os Direitos Reservados - Hugo Vasconcelos - Q-Cursos - Data Atual: <?php echo $_smarty_tpl->tpl_vars['DATA']->value;?>
+                    <P>Todos os Direitos Reservados - StrayDogs - Data Atual: <?php echo $_smarty_tpl->tpl_vars['DATA']->value;?>
 </P>
                 </center>
             

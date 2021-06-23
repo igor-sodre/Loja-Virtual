@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-22 22:46:51
-  from 'C:\wamp64\www\loja\adm\view\adm_produtos.tpl' */
+/* Smarty version 3.1.31, created on 2017-09-06 12:13:15
+  from "C:\xampp\htdocs\loja\adm\view\adm_produtos.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_60d2928b88f798_51122702',
+  'version' => '3.1.31',
+  'unifunc' => 'content_59b0108b4b0136_02893309',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '648558107b45716b13b5ff53da1de470913a47fc' => 
+    'a3c5bacd8546ed5aca82130e079535b3d3f5fc2e' => 
     array (
-      0 => 'C:\\wamp64\\www\\loja\\adm\\view\\adm_produtos.tpl',
+      0 => 'C:\\xampp\\htdocs\\loja\\adm\\view\\adm_produtos.tpl',
       1 => 1504710768,
       2 => 'file',
     ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d2928b88f798_51122702 (Smarty_Internal_Template $_smarty_tpl) {
-?><h4 class="text-center">Gerenciar Produtos</h4>
+function content_59b0108b4b0136_02893309 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<h4 class="text-center">Gerenciar Produtos</h4>
 <hr>
 <section class="row ">
     
@@ -71,9 +72,8 @@ function content_60d2928b88f798_51122702 (Smarty_Internal_Template $_smarty_tpl)
           
     <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['PRO']->value, 'P');
-$_smarty_tpl->tpl_vars['P']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
-$_smarty_tpl->tpl_vars['P']->do_else = false;
+if ($_from !== null) {
+foreach ($_from as $_smarty_tpl->tpl_vars['P']->value) {
 ?>
     
     <tr>
@@ -116,7 +116,10 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
     
     <?php
 }
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
+?>
+
     
       </table>
     
