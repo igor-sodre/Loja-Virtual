@@ -92,11 +92,24 @@
             <!-- botao de pagamento  -->
             <div class="col-md-4">
                
-                BOTÃO DE PAGAMENTO
+                <button class="btn btn-success btn-lg btn-block" onclick="PagSeguroLightbox({
+    code: '{$PS_COD}'
+    }, {
+    success : function(transactionCode) {
+      alert('Transação efetuada - ' + transactionCode);
+        window.location ='{$PAG_RETORNO}/{$REF}';
+    },
+    abort : function() {
+       alert('Erro no processo de pagamento');
+         window.location ='{$PAG_ERRO}/{$REF}';
+    }
+});   
+
+"> Pague com o Pagseguro </button>
                 
                 
                    <img src="{$TEMA}/images/logo-pagseguro.png"  alt=""> 
-                   <script type="text/javascript" src=""></script>
+                   <script type="text/javascript" src="{$PS_SCRIPT}"></script>
                 
             </div>
             <div class="col-md-4">

@@ -90,6 +90,16 @@ Class Rotas{
 		return  self::get_SiteHOME(). '/pedido_finalizar';
 	}
 
+	static function pag_PedidoRetorno(){
+        
+        return self::get_SiteHOME() .'/pedido_retorno' ;
+    }
+   
+   static function pag_PedidoRetornoERRO(){
+        
+        return self::get_SiteHOME() .'/pedido_retorno_erro' ;
+    }
+
 	static function get_ImagePasta(){
 		return 'media/images/';
 	}
@@ -165,7 +175,10 @@ Class Rotas{
 	}
 
 
+	static function pag_LogoffADM(){
+		return self::get_SiteADM() .'/adm_logoff';
 
+	}
 
 
 

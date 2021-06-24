@@ -90,14 +90,16 @@
                             </ul>
                             
 
-                            <form class="navbar-form navbar-right" role="search">
+                           <form class="navbar-form navbar-right" role="search"
+                            method="POST" action="">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Digite para buscar" required>
+                                    <input type="text"
+                                    name="txt_buscar" class="form-control" placeholder="Digite para buscar" required>
                                 </div>
                                 <button type="submit" class="btn btn-primary">Buscar</button>
                             </form>
                             
-                         </div><!-- fim navbar collapse-->   
+                         </div><!-- fim navbar collapse-->  
 
 
                     </div> <!--fim container navBar-->

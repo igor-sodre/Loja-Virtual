@@ -29,6 +29,13 @@ if(!Login::Logado()){
 			$_SESSION['PED']['ref'] = $ref_cod_pedido;
 		}
 
+
+	$pedido = new Pedidos();
+	$cliente = $_SESSION['CLI']['cli_id'];
+	$cod = $_SESSION['PED']['pedido'];
+	$ref = $_SESSION['PED']['ref'];
+	$frete = $_SESSION['PED']['frete'];
+
 	$smarty->assign('PRO', $carrinho->GetCarrinho());
 	$smarty->assign('TOTAL', Sistema::MoedaBR($carrinho->GetTotal()));
 	$smarty->assign('NOME_CLIENTE', $_SESSION['CLI']['cli_nome']);
@@ -40,14 +47,13 @@ if(!Login::Logado()){
 
 	$smarty->assign('FRETE', Sistema::MoedaBR($_SESSION['PED']['frete']));
 	$smarty->assign('TOTAL_FRETE', Sistema::MoedaBR($_SESSION['PED']['total_com_frete']));
+	$smarty->assign('PAG_RETORNO', Rotas::pag_PedidoRetorno());
+	$smarty->assign('PAG_ERRO',Rotas::pag_PedidoRetornoERRO());
+	$smarty->assign('REF', $ref);
 
 
-	$pedido = new Pedidos();
-	//sessao de cliente
-	$cliente = $_SESSION['CLI']['cli_id'];
-	$cod = $_SESSION['PED']['pedido'];
-	$ref = $_SESSION['PED']['ref'];
-	$frete = $_SESSION['PED']['frete'];
+
+	
 
 
 
@@ -61,6 +67,18 @@ if(!Login::Logado()){
 	$email->Enviar($assunto, $msg, $destinatarios);
 
 	if($pedido->PedidoGravar($cliente, $cod, $ref, $frete)){
+
+			$pag = new PagamentoPS();
+      
+            $pag->Pagamento($_SESSION['CLI'], $_SESSION['PED'], $carrinho->GetCarrinho());
+            
+          //  var_dump($pag);
+            
+              // passando para o template dados do PS
+              $smarty->assign('PS_URL', $pag->psURL);            
+              $smarty->assign('PS_COD', $pag->psCod);
+              $smarty->assign('PS_SCRIPT', $pag->psURL_Script);
+
 		$pedido->LimparSessoes();
 	}
 

@@ -30,7 +30,7 @@
             <div class="row" id="topo">
                  
                 
-                <div class="container">
+               <div class="container">
 
                     <div class="col-md-6">
                          <img src="{$GET_TEMA}/images/logo-adm.png" alt=""> 
@@ -39,7 +39,12 @@
                     <div class="col-md-6 text-right">
                             
                                      <br>{if $LOGADO == true}
-                                      Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-danger"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
+                                      Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-info"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
+                                      <a href="{$PAG_SENHA}" class="btn btn-warning"><i class="glyphicon glyphicon-asterisk"></i>Alterar Senha </a> <br><br>
+                                      <h5>
+                                      <p>Último Login: {$DATA} ás {$HORA}
+                                        </p>
+                                       </h5>
                                      {/if}
                         
                         </div>  
@@ -154,6 +159,33 @@
                   {/php}
                     
                 </div>  <!--fim coluna direita-->  
+
+                <!--Conteudo da pagina ADM-->  
+
+                <h4 class="text-center text-danger"> Olá Administrador <b>{$USER}</b>, seja bem vindo! O que deseja fazer agora?</h4> 
+<section class="row">
+    
+    <div class="text-center">
+        
+        <a href="{$PAG_CATEGORIAS}" class="btn btn-success"><i class="glyphicon glyphicon-home"></i> Categorias</a>
+        
+        <a href="{$PAG_ADM_PRODUTOS}" class="btn btn-success"><i class="glyphicon glyphicon-barcode"></i> Produtos</a>
+        
+        <a href="{$PAG_ADM_CLIENTE}" class="btn btn-success"><i class="glyphicon glyphicon-edit"></i> Clientes </a>
+        <a href="{$PAG_ADM_PEDIDOS}" class="btn btn-success"><i class="glyphicon glyphicon-shopping-cart"></i> Pedidos </a>
+        <a href="{$PAG_SENHA}" class="btn btn-warning"> Alterar Senha </a>
+        <a href="{$PAG_LOGOFF}" class="btn btn-danger"><i class="glyphicon glyphicon-log-out"></i> Sair </a>
+     
+        
+        
+        
+    </div>
+    
+    
+    
+    
+    
+</section>
             
             </div>   
                 

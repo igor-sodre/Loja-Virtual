@@ -9,11 +9,23 @@ $produtos = new Produtos();
 //com 0 assim q ele for verificar ja vai estar como 1,
 //isset verifica se existe
 
-if(isset(Rotas::$pag[1])){
+if(isset(Rotas::$pag[1]) && !isset($_POST['txt_buscar'])){
 	$produtos->GetProdutosCateID(Rotas::$pag[1]);
+}elseif(isset($_POST['txt_buscar'])){
+	
+				$nome = filter_var($_POST['txt_buscar'], FILTER_SANITIZE_STRING);
+				$produtos->GetProdutosNome($nome);
+
+}elseif(isset($_POST['txt_buscar']) && isset(Rotas::$pag[1])){
+	
+				$nome = filter_var($_POST['txt_buscar'], FILTER_SANITIZE_STRING);
+				$produtos->GetProdutosNome($nome);
+	
 }else{
+
 	$produtos->GetProdutos();
 }
+
 
 
 
@@ -23,6 +35,7 @@ $smarty->assign('PRO_INFO', Rotas::pag_ProdutosInfo());
 $smarty->assign('PRO_TOTAL', $produtos->TotalDados());
 //chama o metodo q faz a paginação com a configuração de paginas
 $smarty->assign('PAGINAS', $produtos->ShowPaginacao());
+$smarty->assign('PRODUTOS', Rotas::pag_Produtos());
 
 $smarty->display('produtos.tpl');
 

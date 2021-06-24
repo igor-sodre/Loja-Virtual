@@ -33,6 +33,11 @@ Class Config{
 	const EMAIL_COPIA = "Etheprojectcompracerta@gmail.com";
 
 
+	//CONSTANTES PARA O PAGSEGURO
+	const PS_EMAIL  = "theprojectcompracerta@gmail.com"; // email pagseguro
+    const PS_TOKEN  = "0E86ADF6373348509E7B35389D92004C"; // token produção
+    const PS_TOKEN_SBX = "1FB4D7860EA9491BA7AB4A9D9336C275";  // token do sandbox
+    const PS_AMBIENTE = "production"; // production   /  sandbox
 
 }
  ?>

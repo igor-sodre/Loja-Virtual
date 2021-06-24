@@ -22,6 +22,7 @@ return array(
     'PHPMailerOAuth' => $vendorDir . '/phpmailer/phpmailer/class.phpmaileroauth.php',
     'PHPMailerOAuthGoogle' => $vendorDir . '/phpmailer/phpmailer/class.phpmaileroauthgoogle.php',
     'POP3' => $vendorDir . '/phpmailer/phpmailer/class.pop3.php',
+    'PagamentoPS' => $baseDir . '/model/PagamentoPS.class.php',
     'Paginacao' => $baseDir . '/model/Paginacao.class.php',
     'Pedidos' => $baseDir . '/model/Pedidos.class.php',
     'Produtos' => $baseDir . '/model/Produtos.class.php',
@@ -203,6 +204,7 @@ return array(
     'TPC_yyStackEntry' => $vendorDir . '/smarty/smarty/libs/sysplugins/smarty_internal_configfileparser.php',
     'TP_yyStackEntry' => $vendorDir . '/smarty/smarty/libs/sysplugins/smarty_internal_templateparser.php',
     'Template' => $baseDir . '/model/Template.class.php',
+    'User' => $baseDir . '/model/User.class.php',
     'ntlm_sasl_client_class' => $vendorDir . '/phpmailer/phpmailer/extras/ntlm_sasl_client.php',
     'phpmailerException' => $vendorDir . '/phpmailer/phpmailer/class.phpmailer.php',
 );

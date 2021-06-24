@@ -56,6 +56,46 @@ class Login extends Conexao{
 	}
 
 
+	//FUNCAO PARA LOGIN DO ADM
+
+	function GetLoginADM($user,$senha){
+        
+        $this->setUser($user);
+        $this->setSenha($senha);
+        
+        $query = "SELECT * FROM {$this->prefix}user WHERE user_email = :email AND user_pw = :senha";
+        
+        $params = array(':email'=>  $this->getUser(),
+                        ':senha'=>  $this->getSenha());
+        
+           $this->ExecuteSQL($query,$params);
+           
+           // caso o login seja efetivado com exito 
+           if($this->TotalDados() > 0):
+               
+             $lista = $this->ListarDados();
+               
+             $_SESSION['ADM']['user_id']     =  $lista['user_id'];
+             $_SESSION['ADM']['user_nome']   =  $lista['user_nome'];
+             $_SESSION['ADM']['user_email']  =  $lista['user_email'];
+             $_SESSION['ADM']['user_pw']     =  $lista['user_pw'];
+             $_SESSION['ADM']['user_data']     = Sistema::DataAtualBR();
+             $_SESSION['ADM']['user_hora']     = Sistema::HoraAtual();
+
+             return TRUE;
+           // caso o login seja incorreto 
+           else:    
+               
+               
+                echo '<h4 class="alert alert-danger"> O login incorreto </h4>';  
+                //  Rotas::Redirecionar(1,  Rotas::pag_ClienteLogin() );
+           
+                return FALSE;
+           endif;
+
+    }
+
+
 	static function Logado(){
 		if(isset($_SESSION['CLI']['cli_email']) && isset($_SESSION['CLI']['cli_id'])){
 			return TRUE;
@@ -65,12 +105,30 @@ class Login extends Conexao{
 		}
 	}
 
+	static function LogadoADM(){
+		if(isset($_SESSION['ADM']['user_nome']) && isset($_SESSION['ADM']['user_id'])){
+			return TRUE;
+
+		}else{
+			return FALSE;
+		}
+	}
+
+	
+
 
 	static function Logoff(){
 		unset($_SESSION['CLI']);
 		echo '<h4 class="alert alert-success"> Saindo... </h4>';
 		Rotas::Redirecionar(2, Rotas::pag_ClienteLogin());
 	}
+
+	static function LogoffADM(){
+		unset($_SESSION['ADM']);
+		
+		Rotas::Redirecionar(0, 'login.php');
+	}
+
 
 
 
