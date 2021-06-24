@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-23 12:23:33
+/* Smarty version 3.1.39, created on 2021-06-24 04:15:00
   from 'C:\wamp64\www\loja\adm\view\adm_categorias.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d351f5207165_03248784',
+  'unifunc' => 'content_60d430f4371ae0_05137812',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a32ad949a25b90de4ec4fbd47dd7172db6ef6665' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\adm\\view\\adm_categorias.tpl',
-      1 => 1624461810,
+      1 => 1624511295,
       2 => 'file',
     ),
   ),
@@ -20,19 +20,21 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d351f5207165_03248784 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d430f4371ae0_05137812 (Smarty_Internal_Template $_smarty_tpl) {
 ?> <h4 class="text-center"> Gerenciar categorias </h4>
 <hr>
 
 <section class="row">
     
     <form name="categoriainsere" method="post" action="">
+    <!--Div pra ocupar espaço-->
+    <div class="col-md-1"></div>
         
-        <div class="col-md-4">
+        <div class="col-md-7">
             <input type="text" name="cate_nome" class="form-control" required>  
         </div>
         <div class="col-md-4">
-            <button class="btn btn-success" name="cate_nova" value="cate_nova"> Inserir nova </button>
+            <button class="btn btn-success" name="cate_nova" value="cate_nova">Nova Categoria </button>
             
         </div>
         <div class="col-md-4"></div>

@@ -4,12 +4,14 @@
 <section class="row">
     
     <form name="categoriainsere" method="post" action="">
+    <!--Div pra ocupar espaço-->
+    <div class="col-md-1"></div>
         
-        <div class="col-md-4">
+        <div class="col-md-7">
             <input type="text" name="cate_nome" class="form-control" required>  
         </div>
         <div class="col-md-4">
-            <button class="btn btn-success" name="cate_nova" value="cate_nova"> Inserir nova </button>
+            <button class="btn btn-success" name="cate_nova" value="cate_nova">Nova Categoria </button>
             
         </div>
         <div class="col-md-4"></div>
