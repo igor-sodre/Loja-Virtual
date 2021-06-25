@@ -9,8 +9,9 @@ Class Config{
 	const SITE_NOME = "W.A Acessorios";
 	const SITE_EMAIL_ADM = "theprojectcompracerta@gmail.com";
 	//quantidade de itens por pagina
-	const BD_LIMIT_POR_PAG = 6;
-	const SITE_CEP = '76150000';
+	const BD_LIMIT_POR_PAG = 9;
+	//cep da loja fisica
+	const SITE_CEP = '76105000';
 
 
 	//INFORMAÇÕES DO BANCO DE DADOS
@@ -34,10 +35,11 @@ Class Config{
 
 
 	//CONSTANTES PARA O PAGSEGURO
-	const PS_EMAIL  = "theprojectcompracerta@gmail.com"; // email pagseguro
-    const PS_TOKEN  = "0E86ADF6373348509E7B35389D92004C"; // token produção
-    const PS_TOKEN_SBX = "1FB4D7860EA9491BA7AB4A9D9336C275";  // token do sandbox
-    const PS_AMBIENTE = "production"; // production   /  sandbox
+	const PS_EMAIL  = "alanpirescosta2@outlook.com"; // email pagseguro
+    const PS_TOKEN  = ""; // token produção
+    const PS_TOKEN_SBX = "A707A62B66054F4594060DC02B934266";  // token do sandbox
+	//sandbox e para testes onde não vai cobrar nada 
+    const PS_AMBIENTE = "sandbox"; // production   /  sandbox
 
 }
  ?>

@@ -39,7 +39,7 @@
                     <div class="col-md-6 text-right">
                             
                                      <br>{if $LOGADO == true}
-                                      Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-info"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
+                                      Olá: {$USER} <a href="{$PAG_LOGOFF}" class="btn btn-danger"><i class="glyphicon glyphicon-log-out"></i> Sair </a> 
                                       <a href="{$PAG_SENHA}" class="btn btn-warning"><i class="glyphicon glyphicon-asterisk"></i>Alterar Senha </a> <br><br>
                                       <h5>
                                       <p>Último Login: {$DATA} ás {$HORA}
@@ -145,10 +145,10 @@
                 <div class="col-md-10">
                     
                     
-                    <ul class="breadcrumb">
+                   <!-- <ul class="breadcrumb">
                         <li><a href="#"><i class="glyphicon glyphicon-home"></i> Home </a></li>
                         <li><a href="#"> Produtos </a></li>
-                        <li><a href="#"> Info </a></li>
+                        <li><a href="#"> Info </a></li>--> 
                     </ul>   
                     <!-- fim do menu breadcrumb-->             
                     

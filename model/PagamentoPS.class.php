@@ -1,4 +1,5 @@
 ﻿<?php
+//classe de pagamento pelo pague-segurp
 
 
 class PagamentoPS extends Conexao{

@@ -1,4 +1,4 @@
-Cliente<h4 class="text-center">Gerenciar Clientes </h4>
+<h4 class="text-center">Gerenciar Clientes </h4>
 <hr>
 
 <!--- listando clientes ---->

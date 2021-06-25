@@ -1,4 +1,27 @@
-<div class="container">
+<?php
+/* Smarty version 3.1.39, created on 2021-06-25 01:32:27
+  from 'C:\wamp64\www\loja\view\contato.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_60d55c5b318143_83525503',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '8738557e679abbc099c5dfc61123f30c92cdd68c' => 
+    array (
+      0 => 'C:\\wamp64\\www\\loja\\view\\contato.tpl',
+      1 => 1624595546,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_60d55c5b318143_83525503 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="container">
     <div class="row">
         
         <form class="form-horizontal" id="frmcontatoazul" action="envio">
@@ -48,4 +71,5 @@
         </form>
         
 	</div>
-</div>
+</div><?php }
+}

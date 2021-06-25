@@ -36,11 +36,11 @@ $smarty->assign('PAG_ITENS', Rotas::pag_CLienteItens());
 $smarty->display('pedido_retorno.tpl');
 
 
-//else:
+//else
     
-    echo '<div class="alert alert-danger">Sem transações  para informar </div>';
-    
-//endif;
+    //echo <div class="alert alert-danger">Sem transações  para informar </div>;
+   
+endif
 
 
 
