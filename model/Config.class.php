@@ -36,7 +36,7 @@ Class Config{
 
 	//CONSTANTES PARA O PAGSEGURO
 	const PS_EMAIL  = "alanpirescosta2@outlook.com"; // email pagseguro
-    const PS_TOKEN  = ""; // token produção
+    const PS_TOKEN  = "79ab1ce0-293a-4199-87a9-5a017511dcb7b0cec6374ba5bd8f67b6724048092f032173-e8e0-474b-8611-b0f263fc220e"; // token produção
     const PS_TOKEN_SBX = "A707A62B66054F4594060DC02B934266";  // token do sandbox
 	//sandbox e para testes onde não vai cobrar nada 
     const PS_AMBIENTE = "sandbox"; // production   /  sandbox
