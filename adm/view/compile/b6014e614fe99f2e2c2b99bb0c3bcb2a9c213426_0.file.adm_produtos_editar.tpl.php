@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-23 09:54:25
+/* Smarty version 3.1.39, created on 2021-06-27 23:37:29
   from 'C:\wamp64\www\loja\adm\view\adm_produtos_editar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d32f01e78192_19335783',
+  'unifunc' => 'content_60d935e99786a9_09237668',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b6014e614fe99f2e2c2b99bb0c3bcb2a9c213426' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\adm\\view\\adm_produtos_editar.tpl',
-      1 => 1624452861,
+      1 => 1624774664,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d32f01e78192_19335783 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d935e99786a9_09237668 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/js/tinymce/tinymce.min.js"><?php echo '</script'; ?>
@@ -103,7 +103,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         
            <div class="col-md-2">
             <label>Referencia</label>
-            <input type="text" name="pro_ref" id="pro_ref" class="form-control" value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_ref'];?>
+            <input type="text" name="pro_ref" id="pro_ref" placeholder="000000001" class="form-control" value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_ref'];?>
 " >
             
         </div>
@@ -112,7 +112,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         
            <div class="col-md-2">
             <label>Valor</label>
-            <input type="text" name="pro_valor" id="pro_valor" class="form-control" required value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_valor'];?>
+            <input type="text" name="pro_valor" id="pro_valor" class="form-control" placeholder="349,99" required value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_valor'];?>
 ">
             
         </div>
@@ -130,31 +130,31 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         
            <div class="col-md-2">
             <label>Peso</label>
-            <input type="text" name="pro_peso" id="pro_peso" class="form-control" required value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_peso'];?>
+            <input type="text" name="pro_peso" id="pro_peso" class="form-control" placeholder="1,350" required value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_peso'];?>
 ">
             
           </div>
         
         
            <div class="col-md-2">
-            <label>Altura</label>
-            <input type="text" name="pro_altura" id="pro_altura" class="form-control" required value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_altura'];?>
+            <label>Altura Cm</label>
+            <input type="text" name="pro_altura" id="pro_altura" placeholder="20" class="form-control" required value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_altura'];?>
 ">
             
           </div>
         
         
            <div class="col-md-2">
-            <label>Largura</label>
-            <input type="text" name="pro_largura" id="pro_largura" class="form-control" required value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_largura'];?>
+            <label>Largura Cm</label>
+            <input type="text" name="pro_largura" id="pro_largura" placeholder="20" class="form-control" required value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_largura'];?>
 ">
             
           </div>
         
         
            <div class="col-md-2">
-            <label>Comprimento</label>
-            <input type="text" name="pro_comprimento" id="pro_comprimento" class="form-control" required value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_comprimento'];?>
+            <label>Comprimento Cm</label>
+            <input type="text" name="pro_comprimento" id="pro_comprimento" placeholder="20" class="form-control" required value="<?php echo $_smarty_tpl->tpl_vars['PRO']->value[1]['pro_comprimento'];?>
 ">
             
           </div>

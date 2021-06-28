@@ -6,7 +6,7 @@
 
 <!-- começa os campos para form produto    -->
 <section class="row" id="camposproduto">
-                                           <!--  enctype="multipart/form-data"  -->
+    <!--  enctype="multipart/form-data"  -->
     <form name="frm_produto" method="post" action=""  enctype="multipart/form-data">
         
         <div class="col-md-6">
@@ -61,7 +61,7 @@
         
            <div class="col-md-2">
             <label>Referencia</label>
-            <input type="text" name="pro_ref" id="pro_ref" class="form-control"  >
+            <input type="text" name="pro_ref" id="pro_ref" placeholder="000000001" class="form-control"  >
             
         </div>
         
@@ -69,7 +69,7 @@
         
            <div class="col-md-2">
             <label>Valor</label>
-            <input type="text" name="pro_valor" id="pro_valor" class="form-control" required >
+            <input type="text" name="pro_valor" id="pro_valor" placeholder="349,99" class="form-control" required >
             
         </div>
         
@@ -85,28 +85,28 @@
         
            <div class="col-md-2">
             <label>Peso</label>
-            <input type="text" name="pro_peso" id="pro_peso" class="form-control" required >
+            <input type="text" name="pro_peso" id="pro_peso" placeholder="1.350" class="form-control" required >
             
           </div>
         
         
            <div class="col-md-2">
-            <label>Altura</label>
-            <input type="text" name="pro_altura" id="pro_altura" class="form-control" required >
+            <label>Altura Cm</label>
+            <input type="text" name="pro_altura" id="pro_altura"  placeholder="20" class="form-control" required >
             
           </div>
         
         
            <div class="col-md-2">
-            <label>Largura</label>
-            <input type="text" name="pro_largura" id="pro_largura" class="form-control" required >
+            <label>Largura Cm</label>
+            <input type="text" name="pro_largura" id="pro_largura" placeholder="20" class="form-control" required >
             
           </div>
         
         
            <div class="col-md-2">
-            <label>Comprimento</label>
-            <input type="text" name="pro_comprimento" id="pro_comprimento" class="form-control" required >
+            <label>Comprimento Cm</label>
+            <input type="text" name="pro_comprimento" id="pro_comprimento" placeholder="20" class="form-control" required >
             
           </div>
         

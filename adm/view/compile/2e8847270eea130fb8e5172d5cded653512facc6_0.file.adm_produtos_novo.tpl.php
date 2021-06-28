@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-23 11:17:51
+/* Smarty version 3.1.39, created on 2021-06-27 03:24:26
   from 'C:\wamp64\www\loja\adm\view\adm_produtos_novo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d3428fdfc191_48824208',
+  'unifunc' => 'content_60d8199a22f454_64593045',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2e8847270eea130fb8e5172d5cded653512facc6' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\adm\\view\\adm_produtos_novo.tpl',
-      1 => 1624457840,
+      1 => 1624774722,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d3428fdfc191_48824208 (Smarty_Internal_Template $_smarty_tpl) {
+function content_60d8199a22f454_64593045 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/js/tinymce/tinymce.min.js"><?php echo '</script'; ?>
@@ -32,7 +32,7 @@ echo '<script'; ?>
 
 <!-- começa os campos para form produto    -->
 <section class="row" id="camposproduto">
-                                           <!--  enctype="multipart/form-data"  -->
+    <!--  enctype="multipart/form-data"  -->
     <form name="frm_produto" method="post" action=""  enctype="multipart/form-data">
         
         <div class="col-md-6">
@@ -96,7 +96,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         
            <div class="col-md-2">
             <label>Referencia</label>
-            <input type="text" name="pro_ref" id="pro_ref" class="form-control"  >
+            <input type="text" name="pro_ref" id="pro_ref" placeholder="000000001" class="form-control"  >
             
         </div>
         
@@ -104,7 +104,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         
            <div class="col-md-2">
             <label>Valor</label>
-            <input type="text" name="pro_valor" id="pro_valor" class="form-control" required >
+            <input type="text" name="pro_valor" id="pro_valor" placeholder="349,99" class="form-control" required >
             
         </div>
         
@@ -120,28 +120,28 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
         
            <div class="col-md-2">
             <label>Peso</label>
-            <input type="text" name="pro_peso" id="pro_peso" class="form-control" required >
+            <input type="text" name="pro_peso" id="pro_peso" placeholder="1.350" class="form-control" required >
             
           </div>
         
         
            <div class="col-md-2">
-            <label>Altura</label>
-            <input type="text" name="pro_altura" id="pro_altura" class="form-control" required >
+            <label>Altura Cm</label>
+            <input type="text" name="pro_altura" id="pro_altura"  placeholder="20" class="form-control" required >
             
           </div>
         
         
            <div class="col-md-2">
-            <label>Largura</label>
-            <input type="text" name="pro_largura" id="pro_largura" class="form-control" required >
+            <label>Largura Cm</label>
+            <input type="text" name="pro_largura" id="pro_largura" placeholder="20" class="form-control" required >
             
           </div>
         
         
            <div class="col-md-2">
-            <label>Comprimento</label>
-            <input type="text" name="pro_comprimento" id="pro_comprimento" class="form-control" required >
+            <label>Comprimento Cm</label>
+            <input type="text" name="pro_comprimento" id="pro_comprimento" placeholder="20" class="form-control" required >
             
           </div>
         

@@ -20,7 +20,7 @@ Class Config{
 		  BD_SENHA = "",
 		  BD_BANCO = "lojaonline",
 		  //prefixo ele serve pra meio q criar uma inicial pre definida no banco de dados, pra evitar de ataques ao banco
-		  BD_PREFIX = "qc_";
+		  BD_PREFIX = "wa_";
 
 
 	//INFORMAÇÕES PARA PHP MAILLER

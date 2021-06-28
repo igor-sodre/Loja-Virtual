@@ -62,7 +62,7 @@
         
            <div class="col-md-2">
             <label>Referencia</label>
-            <input type="text" name="pro_ref" id="pro_ref" class="form-control" value="{$PRO.1.pro_ref}" >
+            <input type="text" name="pro_ref" id="pro_ref" placeholder="000000001" class="form-control" value="{$PRO.1.pro_ref}" >
             
         </div>
         
@@ -70,7 +70,7 @@
         
            <div class="col-md-2">
             <label>Valor</label>
-            <input type="text" name="pro_valor" id="pro_valor" class="form-control" required value="{$PRO.1.pro_valor}">
+            <input type="text" name="pro_valor" id="pro_valor" class="form-control" placeholder="349,99" required value="{$PRO.1.pro_valor}">
             
         </div>
         
@@ -86,28 +86,28 @@
         
            <div class="col-md-2">
             <label>Peso</label>
-            <input type="text" name="pro_peso" id="pro_peso" class="form-control" required value="{$PRO.1.pro_peso}">
+            <input type="text" name="pro_peso" id="pro_peso" class="form-control" placeholder="1,350" required value="{$PRO.1.pro_peso}">
             
           </div>
         
         
            <div class="col-md-2">
-            <label>Altura</label>
-            <input type="text" name="pro_altura" id="pro_altura" class="form-control" required value="{$PRO.1.pro_altura}">
+            <label>Altura Cm</label>
+            <input type="text" name="pro_altura" id="pro_altura" placeholder="20" class="form-control" required value="{$PRO.1.pro_altura}">
             
           </div>
         
         
            <div class="col-md-2">
-            <label>Largura</label>
-            <input type="text" name="pro_largura" id="pro_largura" class="form-control" required value="{$PRO.1.pro_largura}">
+            <label>Largura Cm</label>
+            <input type="text" name="pro_largura" id="pro_largura" placeholder="20" class="form-control" required value="{$PRO.1.pro_largura}">
             
           </div>
         
         
            <div class="col-md-2">
-            <label>Comprimento</label>
-            <input type="text" name="pro_comprimento" id="pro_comprimento" class="form-control" required value="{$PRO.1.pro_comprimento}">
+            <label>Comprimento Cm</label>
+            <input type="text" name="pro_comprimento" id="pro_comprimento" placeholder="20" class="form-control" required value="{$PRO.1.pro_comprimento}">
             
           </div>
         
