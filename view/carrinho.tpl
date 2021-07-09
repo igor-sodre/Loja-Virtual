@@ -7,6 +7,9 @@ $(document).ready(function(){
         
       var CEP_CLIENTE = $('#cep_frete').val();
       var PESO_FRETE = $('#peso_frete').val();
+      var ALTURA_FRETE = $('#peso_frete').val();
+      var LARGURA_FRETE = $('#largura_frete').val();
+      var COMPRIMENTO_FRETE = $('#comprimento_frete').val();
        
         if (CEP_CLIENTE.length !== 8 ) {
         alert('Digite seu CEP corretamente, 8 dígitos e sem traço ou ponto');  
@@ -21,7 +24,8 @@ $(document).ready(function(){
       
         // carrego o combo com os bairros
        
-        $('#frete').load('controller/frete.php?cepcliente='+CEP_CLIENTE+'&pesofrete='+PESO_FRETE);
+        $('#frete').load('controller/frete.php?cepcliente='+CEP_CLIENTE+'&pesofrete='+PESO_FRETE+'&alturafrete='+ALTURA_FRETE+
+        '&largurafrete='+LARGURA_FRETE+'&comprimentofrete='+COMPRIMENTO_FRETE);
  
  } // fim do IF digitei o CEP
       
@@ -69,7 +73,7 @@ $(document).ready(function(){
             <td></td> 
             <td>Produto</td> 
             <td>Valor R$</td> 
-            <td>X</td> 
+            <td>Quantidade</td> 
             <td>Sub Total R$</td> 
             <td></td> 
             
@@ -122,6 +126,11 @@ $(document).ready(function(){
                    
                    <!-- campos para tratar  do  frete -->
                    <input type="hidden" name="peso_frete" id="peso_frete" value="{$PESO}" class="form-control " readonly>
+                   <!--DEBUG DA GAMBIARA do frete-->
+                   <input type="hidden" name="altura_frete" id="altura_frete" value="{$ALTURA}" class="form-control " readonly>
+                   <input type="hidden" name="largura_frete" id="largura_frete" value="{$LARGURA}" class="form-control " readonly>
+                   <input type="hidden" name="comprimento_frete" id="comprimento_frete" value="{$COMPRIMENTO}" class="form-control " readonly>
+                   
                    
                    <input type="text" name="cep_frete" class="form-control" id="cep_frete" value="" placeholder="digite seu cep" >
                   
@@ -168,8 +177,7 @@ $(document).ready(function(){
                     <input type="hidden" name="acao" value="limpar">
                     <input type="hidden" name="pro_id" value="1">
 
-                    <button class="btn btn-danger btn-block"> <i class="glyphicon glyphicon-trash"></i> Limpar Tudo</button>
-                    <br>
+
 
                 </form>
                     <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="{$PAG_CONFIRMAR}">

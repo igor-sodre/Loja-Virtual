@@ -16,10 +16,9 @@ class Correios
 	 * @param string cep destino
 	 * @param  float peso 
 	 */
-	function __construct($destino, $peso)
-	{
+	function __construct($destino, $peso, $comprimento, $largura, $altura){
 
-		//tipo de servicos, ou seja, sedex, pac, sedex 10, esses codigos voce encontra no PDF que mencionei acima
+		//tipo de servicos, ou seja, sedex, pac, sedex 10, 
 		$this->servico 	    = $this->pac;  // PAC
 		$this->servico2 	= $this->sedex; // sedex
 
@@ -31,10 +30,10 @@ class Correios
 
 		//peso em kilogramas
 		$this->peso 		= $peso;
-		$this->comprimento      = '35'; //em cm
-		$this->altura 		= '35'; //em cm
-		$this->largura     	= '35'; //em cm
-		$this->diametro 	= '90'; //em cm
+		$this->comprimento      = $comprimento; //em cm
+		$this->altura 		= $altura; //em cm
+		$this->largura     	= $largura; //em cm
+		$this->diametro 	= '0'; //em cm
 		
 
 	}

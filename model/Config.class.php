@@ -11,7 +11,7 @@ Class Config{
 	//quantidade de itens por pagina
 	const BD_LIMIT_POR_PAG = 9;
 	//cep da loja fisica
-	const SITE_CEP = '76105000';
+	const SITE_CEP = '76105-000';
 
 
 	//INFORMAÇÕES DO BANCO DE DADOS

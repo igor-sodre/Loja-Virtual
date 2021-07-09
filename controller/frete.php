@@ -1,18 +1,23 @@
 <?php
 
 require_once '../lib/autoload.php';
-
         //instancio a classe correios
         $destino = $_GET['cepcliente'];
         $peso    = $_GET['pesofrete'];
 
+        $altura = $_GET['alturafrete'];
+        $largura = $_GET['largurafrete'];
+        $comprimento = $_GET['comprimentofrete'];
+
+
 	// chamando a classe Correios
-        $frete = new Correios($destino, $peso);
+        $frete = new Correios($destino, $peso, $comprimento, $largura, $altura);
+        //,$altura,$comprimento,$largura
 	
 	//chamo meu metodo para calcular
 	$calc = $frete->Calcular();
 	
-	//verifica se foi calculado, se sim retorna xml , caso n�o, mostra erros
+	//verifica se foi calculado, se sim retorna xml , senão mostra erros
 	if(!$calc):
 	
 		$error = $frete->error();

@@ -50,7 +50,7 @@ if(isset($_POST['cli_nome']) and isset($_POST['cli_email']) and isset($_POST['cl
      $email->Enviar($assunto, $msg, $destinatarios);
 
      //mensagem indicando q foi criado o usuario com sucesso
-     echo'<div class="alert alert-success"> Cadastro Efetuado!! A senha para fazer login foi enviada para seu email cadastrado. <br>' . 'Acesse seu email e confira!</div>';
+     echo'<div class="alert alert-success"> Cadastro Efetuado!! A senha para fazer login foi enviada para seu email cadastrado. <br>' . 'Acesse seu email e Verefique!</div>';
      Rotas::Redirecionar(5, Rotas::pag_ClienteLogin());
 
 }else{

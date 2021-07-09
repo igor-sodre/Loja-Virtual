@@ -1,11 +1,13 @@
 <?php 
 
 class Carrinho{
-	private $total_valor, $total_peso, $itens = array();
+	private $total_valor, $total_peso, $total_altura, $total_largura,$total_comprimento, $itens = array();
 
 	function GetCarrinho($sessao=NULL){
 
-		$i = 1; $sub = 1.00; $peso = 0;
+		$i = 1; $sub = 1.00; $peso = 0 ; $altura = 0 ; $altura = 0; $comprimento = 0;
+
+		
 
 		
 
@@ -16,21 +18,36 @@ class Carrinho{
 
 			$peso = $lista['PESO'] *  $lista['QTD'];
 			$this->total_peso += $peso;
-
 			
+			$altura = $lista['ALTURA'] * $lista['QTD'];
+			$this->total_altura +=$altura;
 
+
+			$largura = $lista['LARGURA'] * $lista['QTD'];
+			$this->total_largura +=$largura;
+
+
+			$comprimento = $lista['COMPRIMENTO'] * $lista['QTD'];
+			$this->total_comprimento +=$comprimento;
+
+
+		
 			$this->itens[$i] = array(
 
 				'pro_id' => $lista['ID'],
 				'pro_nome'  => $lista['NOME'],
 	            'pro_valor' => $lista['VALOR'], // 1.000,99
 	            'pro_valor_us' => $lista['VALOR_US'],  //1000.99
-	            'pro_peso'  => $lista['PESO'],
+	            'pro_peso'  => $lista['PESO'],						
+				'pro_altura'  => $lista['ALTURA'],// em cm 20
+				'pro_largura'  => $lista['LARGURA'],// em cm 20
+				'pro_comprimento'  => $lista['COMPRIMENTO'],// em cm 20	
 	            'pro_qtd'   => $lista['QTD'],
 	            'pro_img'   => $lista['IMG'],
 	            'pro_link'  => $lista['LINK'],
 	            'pro_subTotal'=> Sistema::MoedaBR($sub),         
-	            'pro_subTotal_us'=> $sub 
+	            'pro_subTotal_us'=> $sub,
+				
 
 				);
 			$i++;
@@ -56,6 +73,16 @@ class Carrinho{
 		return $this->total_peso;
 	}
 
+	function GetAltura(){
+		return $this->total_altura;
+	}
+	function GetLargura(){
+		return $this->total_largura;
+	}
+	function GetComprimento(){
+		return $this->total_comprimento;
+	}
+
 	function CarrinhoADD($id){
 		$produtos = new Produtos();
 		$produtos->GetProdutosID($id);
@@ -65,6 +92,9 @@ class Carrinho{
             $VALOR_US = $pro['pro_valor_us'];
             $VALOR  = $pro['pro_valor'];
             $PESO  = $pro['pro_peso'];
+			$ALTURA = $pro['pro_altura'];
+			$LARGURA = $pro['pro_largura'];
+			$COMPRIMENTO = $pro['pro_comprimento'];
             $QTD   = 1;
             $IMG   = $pro['pro_img_p'];
             $LINK  = Rotas::pag_ProdutosInfo().'/'.$ID.'/'.$pro['pro_slug'];
@@ -79,6 +109,9 @@ class Carrinho{
 					    $_SESSION['PRO'][$ID]['VALOR'] = $VALOR;
 					    $_SESSION['PRO'][$ID]['VALOR_US'] = $VALOR_US;
 					    $_SESSION['PRO'][$ID]['PESO']  = $PESO;
+						$_SESSION['PRO'][$ID]['ALTURA']  = $ALTURA;
+						$_SESSION['PRO'][$ID]['LARGURA']  = $LARGURA;
+						$_SESSION['PRO'][$ID]['COMPRIMENTO']  = $COMPRIMENTO;
 					    $_SESSION['PRO'][$ID]['QTD']   = $QTD;
 					    $_SESSION['PRO'][$ID]['IMG']   = $IMG;
 					    $_SESSION['PRO'][$ID]['LINK']  = $LINK;  
