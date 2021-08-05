@@ -34,7 +34,7 @@
             <td></td>
             <td>Item</td>
             <td>Valor Uni</td>
-            <td>X</td>
+            <td>Quantidade</td>
             <td>Sub</td>
         </tr>
         

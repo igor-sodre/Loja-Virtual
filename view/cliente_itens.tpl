@@ -87,9 +87,10 @@
             <h3 class="text-center"> Formas de pagamento </h3>     
             
             <div class="col-md-4">
-              
+                    Se realizou o pagamento aguarde ate 48 horas
             </div>
             <!-- botao de pagamento  -->
+            
             <div class="col-md-4">
                
                 <button class="btn btn-success btn-lg btn-block" onclick="PagSeguroLightbox({
@@ -108,14 +109,17 @@
 "> Pague com o Pagseguro </button>
                 
                 
-                   <img src="{$TEMA}/images/logo-pagseguro.png"  alt=""> 
+                   <!--<img src="{$TEMA}/images/logo-pagseguro.png"  alt=""> -->
                    <script type="text/javascript" src="{$PS_SCRIPT}"></script>
+
+                            
                 
             </div>
             <div class="col-md-4">
                 
             </div>
-         
+            <Br>
+
             
         </section>
 

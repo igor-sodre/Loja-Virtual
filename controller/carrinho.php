@@ -16,6 +16,7 @@ if(isset($_SESSION['PRO'])) {
 	$smarty->assign('PAG_PRODUTOS', Rotas::pag_Produtos());
 	$smarty->assign('PAG_CARRINHO_ALTERAR', Rotas::pag_CarrinhoAlterar());
 	$smarty->assign('PAG_CONFIRMAR', Rotas::pag_PedidoConfirmar());
+	$smarty->assign('PAG_SOLICITAR', Rotas::pag_PedidoSolicitar());
 	$smarty->assign('PESO', number_format($carrinho->GetPeso(),3,'.',''));
 	$smarty->assign('ALTURA', number_format($carrinho->GetAltura(),3));
 	$smarty->assign('LARGURA', number_format($carrinho->GetLargura(),3));

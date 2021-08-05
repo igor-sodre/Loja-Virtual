@@ -144,8 +144,10 @@ $(document).ready(function(){
                    <div class="col-md-4">
                        <!-- botão frete -->
 
-                       <button class="btn btn-warning btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-send"></i> Calcular Frete </button>
-
+                    <button class="btn btn-warning btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-send"></i> Calcular Frete </button>
+                    <br>
+                    <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="{$PAG_SOLICITAR}">
+                    <button class="btn btn-danger btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-globe"></i> Solicitar Entrega</button>
                       
                        
                    </div>          
@@ -172,12 +174,6 @@ $(document).ready(function(){
             
             <!-- botão de limpar-->
             <div class="col-md-4 ">
-
-                <form name="limpar" method="post" action="{$PAG_CARRINHO_ALTERAR}">
-                    <input type="hidden" name="acao" value="limpar">
-                    <input type="hidden" name="pro_id" value="1">
-
-
 
                 </form>
                     <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="{$PAG_CONFIRMAR}">

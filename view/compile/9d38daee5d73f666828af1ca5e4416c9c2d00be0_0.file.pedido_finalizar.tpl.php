@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-25 04:52:36
+/* Smarty version 3.1.39, created on 2021-08-05 17:39:17
   from 'C:\wamp64\www\loja\view\pedido_finalizar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d58b444c7d80_62988509',
+  'unifunc' => 'content_610c4c751e5000_50217852',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9d38daee5d73f666828af1ca5e4416c9c2d00be0' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\pedido_finalizar.tpl',
-      1 => 1624603881,
+      1 => 1628113540,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d58b444c7d80_62988509 (Smarty_Internal_Template $_smarty_tpl) {
+function content_610c4c751e5000_50217852 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <h3>Finalizar Pedido</h3>
 <hr>
 <!-- botoes e opções de cima -->
@@ -51,7 +51,7 @@ function content_60d58b444c7d80_62988509 (Smarty_Internal_Template $_smarty_tpl)
         
             <td>Produto</td> 
             <td>Valor R$</td> 
-            <td>X</td> 
+            <td>Quantidade</td> 
             <td>Sub Total R$</td> 
             
             

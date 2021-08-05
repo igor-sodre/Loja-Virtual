@@ -2,10 +2,7 @@
 
 <hr>
 
-
-
-
-  <form name="cadcliente" id="cadcliente" method="post" action="">
+<form name="cadcliente" id="cadcliente" method="post" action="">
 
 <section class="row" id="cadastro">
     

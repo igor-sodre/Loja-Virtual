@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-25 01:34:34
+/* Smarty version 3.1.39, created on 2021-08-04 17:37:19
   from 'C:\wamp64\www\loja\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d55cda557524_53470516',
+  'unifunc' => 'content_610afa7f1fcb46_00860261',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'df340bbdbc059a6320ce8bffa25a5619d716d6dc' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\index.tpl',
-      1 => 1624595672,
+      1 => 1628109436,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d55cda557524_53470516 (Smarty_Internal_Template $_smarty_tpl) {
+function content_610afa7f1fcb46_00860261 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>
@@ -232,8 +232,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                 <center>
                     <h4><?php echo $_smarty_tpl->tpl_vars['TITULO_SITE']->value;?>
 </h4>
-                    <P>Todos os Direitos Reservados - StrayDogs - Data Atual: <?php echo $_smarty_tpl->tpl_vars['DATA']->value;?>
-</P>
+                    <P>Todos os Direitos Reservados: StrayDogs - Data Atual: <?php echo $_smarty_tpl->tpl_vars['DATA']->value;?>
+<br>Firminópolis-GO</P>
                 </center>
             
             </div><!-- fim div rodape-->

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-07-08 21:43:47
+/* Smarty version 3.1.39, created on 2021-08-04 17:33:34
   from 'C:\wamp64\www\loja\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60e79bc3db2264_07256691',
+  'unifunc' => 'content_610af99e5502d6_35566464',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ded13e2a0ceff58a56453e0caa86919e69a388e7' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\carrinho.tpl',
-      1 => 1625791337,
+      1 => 1628109212,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60e79bc3db2264_07256691 (Smarty_Internal_Template $_smarty_tpl) {
+function content_610af99e5502d6_35566464 (Smarty_Internal_Template $_smarty_tpl) {
 ?> 
 <?php echo '<script'; ?>
 >
@@ -189,8 +189,11 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                    <div class="col-md-4">
                        <!-- botão frete -->
 
-                       <button class="btn btn-warning btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-send"></i> Calcular Frete </button>
-
+                    <button class="btn btn-warning btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-send"></i> Calcular Frete </button>
+                    <br>
+                    <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_SOLICITAR']->value;?>
+">
+                    <button class="btn btn-danger btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-globe"></i> Solicitar Entrega</button>
                       
                        
                    </div>          
@@ -218,13 +221,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             
             <!-- botão de limpar-->
             <div class="col-md-4 ">
-
-                <form name="limpar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO_ALTERAR']->value;?>
-">
-                    <input type="hidden" name="acao" value="limpar">
-                    <input type="hidden" name="pro_id" value="1">
-
-
 
                 </form>
                     <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_CONFIRMAR']->value;?>

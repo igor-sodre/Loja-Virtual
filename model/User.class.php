@@ -52,13 +52,6 @@ class User extends Conexao{
 
 
 
-
-
-
-
-
-
-
     ///  SÃO OS GETTERS E SETTERS 
     
     

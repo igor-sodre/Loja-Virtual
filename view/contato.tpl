@@ -20,7 +20,7 @@
         <div class="form-group">
           <label class="col-md-4 control-label" for="txtinputemail">Email</label>  
           <div class="col-md-8">
-          <input id="txtinputemail" name="txtinputemail" placeholder="Coloque um email válido" class="form-control input-md" required="required" type="email" />
+          <input id="txtinputemail" name="txtinputemail" placeholder="Insira um email válido" class="form-control input-md" required="required" type="email" />
           <span class="help-block">help</span>  
           </div>
         </div>
@@ -46,6 +46,6 @@
         
         </fieldset>
         </form>
-        
+        Mais Informaçoes contato whatsapp (64)9 9941-7078
 	</div>
 </div>

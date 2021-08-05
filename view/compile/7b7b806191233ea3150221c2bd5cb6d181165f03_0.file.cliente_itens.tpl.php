@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-25 01:27:58
+/* Smarty version 3.1.39, created on 2021-08-04 16:28:52
   from 'C:\wamp64\www\loja\view\cliente_itens.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_60d55b4e35e954_19101747',
+  'unifunc' => 'content_610aea749b2f54_53585804',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7b7b806191233ea3150221c2bd5cb6d181165f03' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\cliente_itens.tpl',
-      1 => 1624576328,
+      1 => 1628105329,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d55b4e35e954_19101747 (Smarty_Internal_Template $_smarty_tpl) {
+function content_610aea749b2f54_53585804 (Smarty_Internal_Template $_smarty_tpl) {
 ?><br><h4 class="text-center">Dados do pedido</h4>
 
 <!-- informações sobre o pedido -->
@@ -129,9 +129,10 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <h3 class="text-center"> Formas de pagamento </h3>     
             
             <div class="col-md-4">
-              
+                    Se realizou o pagamento aguarde ate 48 horas
             </div>
             <!-- botao de pagamento  -->
+            
             <div class="col-md-4">
                
                 <button class="btn btn-success btn-lg btn-block" onclick="PagSeguroLightbox({
@@ -155,18 +156,21 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 "> Pague com o Pagseguro </button>
                 
                 
-                   <img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
-/images/logo-pagseguro.png"  alt=""> 
+                   <!--<img src="<?php echo $_smarty_tpl->tpl_vars['TEMA']->value;?>
+/images/logo-pagseguro.png"  alt=""> -->
                    <?php echo '<script'; ?>
  type="text/javascript" src="<?php echo $_smarty_tpl->tpl_vars['PS_SCRIPT']->value;?>
 "><?php echo '</script'; ?>
 >
+
+                            
                 
             </div>
             <div class="col-md-4">
                 
             </div>
-         
+            <Br>
+
             
         </section>
 

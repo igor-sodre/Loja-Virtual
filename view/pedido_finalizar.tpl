@@ -28,7 +28,7 @@
         
             <td>Produto</td> 
             <td>Valor R$</td> 
-            <td>X</td> 
+            <td>Quantidade</td> 
             <td>Sub Total R$</td> 
             
             

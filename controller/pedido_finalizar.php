@@ -61,7 +61,7 @@ if(!Login::Logado()){
 	$email = new EnviarEmail();
 
 	$destinatarios = array(Config::SITE_EMAIL_ADM, $_SESSION['CLI']['cli_email']);
-	$assunto = 'Pedido da Loja Freitas - ' . Sistema::DataAtualBR();
+	$assunto = 'W.A Acessorios - ' . Sistema::DataAtualBR();
 	$msg = $smarty->fetch('email_compra.tpl');
 
 	$email->Enviar($assunto, $msg, $destinatarios);
