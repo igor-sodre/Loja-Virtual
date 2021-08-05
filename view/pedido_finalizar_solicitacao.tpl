@@ -1,25 +1,21 @@
-  <h3>Confirmar Pedido</h3>
+  <h3>Finalizar Solicitação</h3>
 <hr>
 <!-- botoes e opções de cima -->
 <section class="row">
     
-    <div class="col-md-12 " align="right">
-        <a href="{$PAG_CARRINHO}" class="btn btn-info" title="">Voltar para Carrinho</a>
-    </div>
-    <div class="col-md-4">
-        
-    </div>
-    <div class="col-md-4 text-right">
-         
-    </div>
+   
     
 </section>
     <br>
 
 <!--  table listagem de itens -->
 <section class="row ">
+
+
    
     <center>
+    <div class="alert alert-success">Pedido Finalizado com Sucesso</div>
+    aguarde nosso contato em ate 24 horas
     <table class="table table-bordered" style="width: 95%">
 
 <!--
@@ -30,7 +26,7 @@
         </tr> -->
        
         <tr class="text-danger bg-danger">
-            <td></td> 
+        
             <td>Produto</td> 
             <td>Valor R$</td> 
             <td>Quantidade</td> 
@@ -44,7 +40,7 @@
         
         <tr>
             
-            <td> <img src="{$P.pro_img}" alt="{$P.pro_nome}"> </td>
+           
             <td>  {$P.pro_nome} </td>
             <td>  {$P.pro_valor} </td>
             <td> {$P.pro_qtd}  </td>
@@ -70,33 +66,19 @@
            
             </div>
             
-            <div class="col-md-4 text-right text-danger bg-warning">
-            <h4>
-            <!--Informaçoes da compra como preco e frete-->
+            <div class="col-md-12 text-right text-danger bg-warning" align="right">
                Total : R$ {$TOTAL}
             </h4>
-
             <h4>
-               Frete : R$ {$FRETE}
+               Frete : R$ 00
             </h4>
-            <hr>
             <h4>
-               Total com Frete : R$ {$TOTAL_FRETE}
+               Total do Pedido : R$ {$TOTAL}
             </h4>
+            
             </div>
             
-            <!-- botão de limpar-->
-            <div class="col-md-4 ">
-
-               
-                    <form name="pedido_finalizar" id="pedido_finalizar"" method="post" action="{$PAG_FINALIZAR}">
-                     <button class="btn btn-success btn-block" type="submit">  <i class="glyphicon glyphicon-ok"></i> Finalizar Pedido </button>
-                 </form>
-
-            </div>
-
-            
-               <!-- botão finalzar -->
+           
               
           
 
@@ -115,6 +97,9 @@
                    
                         
   </section>
+
+
+
        <br>
        <br>
        <br>

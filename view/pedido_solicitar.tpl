@@ -73,16 +73,23 @@
             <div class="col-md-4 text-right text-danger bg-warning">
             <h4>
             <!--Informaçoes da compra como preco e frete-->
-               Valor do Produto : R$ {$TOTAL}
+               Total : R$ {$TOTAL}
             </h4>
 
+            <h4>
+               Frete : R$ 00,00
+            </h4>
+            <hr>
+            <h4>
+               Total com Frete : R$ {$TOTAL}
+            </h4>
             </div>
             
             <!-- botão de limpar-->
             <div class="col-md-4 ">
 
                
-                    <form name="pedido_finalizar" id="pedido_finalizar"" method="post" action="{$PAG_FINALIZAR}">
+                    <form name="pedido_finalizar" id="pedido_finalizar"" method="post" action="{$PAG_FINALIZAR_SOLI}">
                      <button class="btn btn-success btn-block" type="submit">  <i class="glyphicon glyphicon-ok"></i> Solicitar Entrega </button>
                  </form>
 

@@ -93,6 +93,10 @@ Class Rotas{
 		return  self::get_SiteHOME(). '/pedido_finalizar';
 	}
 
+	static function pag_PedidoFinalizarSolicitacao(){
+		return  self::get_SiteHOME(). '/pedido_finalizar_solicitacao';
+	}
+
 	static function pag_PedidoRetorno(){
         
         return self::get_SiteHOME() .'/pedido_retorno' ;

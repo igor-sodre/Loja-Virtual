@@ -31,11 +31,11 @@
     <table class="table table-bordered" style="width: 80%">
         
         <tr class="text-success bg-success">
-            <td></td>
             <td>Item</td>
-            <td>Valor Uni</td>
-            <td>X</td>
-            <td>Sub</td>
+            <td>Nome</td>
+            <td>Preço R$</td>
+            <td>Quantidade</td>
+            <td>Total</td>
         </tr>
         
         {foreach from=$ITENS item=P}
@@ -87,7 +87,7 @@
             <h3 class="text-center"> Formas de pagamento </h3>     
             
             <div class="col-md-4">
-                    Se realizou o pagamento aguarde ate 48 horas
+                    Se realizou o pagamento aguarde ate 48 horas 
             </div>
             <!-- botao de pagamento  -->
             

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-05 17:36:56
+/* Smarty version 3.1.39, created on 2021-08-05 19:10:46
   from 'C:\wamp64\www\loja\view\pedido_solicitar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_610c4be85c7a85_19231868',
+  'unifunc' => 'content_610c61e639ae88_24754361',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9b7b5f96c918ee82fcf4ead799c138953bb3486a' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\pedido_solicitar.tpl',
-      1 => 1628195814,
+      1 => 1628201364,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_610c4be85c7a85_19231868 (Smarty_Internal_Template $_smarty_tpl) {
+function content_610c61e639ae88_24754361 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <h3>Solicitar Entrega</h3>
 <hr>
 <!-- botoes e opções de cima -->
@@ -110,17 +110,25 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <div class="col-md-4 text-right text-danger bg-warning">
             <h4>
             <!--Informaçoes da compra como preco e frete-->
-               Valor do Produto : R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
+               Total : R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
 
             </h4>
 
+            <h4>
+               Frete : R$ 00,00
+            </h4>
+            <hr>
+            <h4>
+               Total com Frete : R$ <?php echo $_smarty_tpl->tpl_vars['TOTAL']->value;?>
+
+            </h4>
             </div>
             
             <!-- botão de limpar-->
             <div class="col-md-4 ">
 
                
-                    <form name="pedido_finalizar" id="pedido_finalizar"" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_FINALIZAR']->value;?>
+                    <form name="pedido_finalizar" id="pedido_finalizar"" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_FINALIZAR_SOLI']->value;?>
 ">
                      <button class="btn btn-success btn-block" type="submit">  <i class="glyphicon glyphicon-ok"></i> Solicitar Entrega </button>
                  </form>

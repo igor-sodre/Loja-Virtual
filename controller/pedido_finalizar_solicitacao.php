@@ -7,12 +7,10 @@ if(!Login::Logado()){
 	if(isset($_SESSION['PRO'])) {
 
 
-	if(!isset($_SESSION['PED']['frete'])){
-		Rotas::Redirecionar(1, Rotas::pag_Carrinho().'#dadosfrete');
-		exit ('<h4 class="alert alert-danger"> Precisa selecionar o frete! </h4>');
-	}	
-
-
+//	if(!isset($_SESSION['PED']['frete'])){
+//		Rotas::Redirecionar(1, Rotas::pag_Carrinho().'#dadosfrete');
+//		exit ('<h4 class="alert alert-danger"> Precisa selecionar o frete! </h4>');
+//	}	
 
 	$smarty = new Template();
 
@@ -34,7 +32,7 @@ if(!Login::Logado()){
 	$cliente = $_SESSION['CLI']['cli_id'];
 	$cod = $_SESSION['PED']['pedido'];
 	$ref = $_SESSION['PED']['ref'];
-	$frete = $_SESSION['PED']['frete'];
+	$frete = 00.00;
 
 	$smarty->assign('PRO', $carrinho->GetCarrinho());
 	$smarty->assign('TOTAL', Sistema::MoedaBR($carrinho->GetTotal()));
@@ -45,8 +43,8 @@ if(!Login::Logado()){
 	
 	$smarty->assign('TEMA', Rotas::get_SiteTEMA());
 
-	$smarty->assign('FRETE', Sistema::MoedaBR($_SESSION['PED']['frete']));
-	$smarty->assign('TOTAL_FRETE', Sistema::MoedaBR($_SESSION['PED']['total_com_frete']));
+	//$smarty->assign('FRETE', Sistema::MoedaBR($_SESSION['PED']['frete']));
+	//$smarty->assign('TOTAL_FRETE', Sistema::MoedaBR($_SESSION['PED']['total_com_frete']));
 	$smarty->assign('PAG_RETORNO', Rotas::pag_PedidoRetorno());
 	$smarty->assign('PAG_ERRO',Rotas::pag_PedidoRetornoERRO());
 	$smarty->assign('REF', $ref);
@@ -56,11 +54,11 @@ if(!Login::Logado()){
 
 	$destinatarios = array(Config::SITE_EMAIL_ADM, $_SESSION['CLI']['cli_email']);
 	$assunto = 'W.A Acessorios - ' . Sistema::DataAtualBR();
-	$msg = $smarty->fetch('email_compra.tpl');
+	$msg = $smarty->fetch('email_compra2.tpl');
 
 	$email->Enviar($assunto, $msg, $destinatarios);
 
-	if($pedido->PedidoGravar($cliente, $cod, $ref, $frete)){
+	if($pedido->PedidoGravar($cliente, $cod, $ref)){
 
 			$pag = new PagamentoPS();
       
@@ -69,15 +67,15 @@ if(!Login::Logado()){
           //  var_dump($pag);
             
               // passando para o template dados do PS
-              $smarty->assign('PS_URL', $pag->psURL);            
-              $smarty->assign('PS_COD', $pag->psCod);
-              $smarty->assign('PS_SCRIPT', $pag->psURL_Script);
+              //$smarty->assign('PS_URL', $pag->psURL);            
+              //$smarty->assign('PS_COD', $pag->psCod);
+              //$smarty->assign('PS_SCRIPT', $pag->psURL_Script);
 
 		$pedido->LimparSessoes();
 	}
 
 
-	$smarty->display('pedido_finalizar.tpl');
+	$smarty->display('pedido_finalizar_solicitacao.tpl');
 
 
 }else{
