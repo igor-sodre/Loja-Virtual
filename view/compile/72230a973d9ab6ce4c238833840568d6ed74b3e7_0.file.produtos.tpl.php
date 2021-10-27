@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-24 20:14:36
+/* Smarty version 3.1.40, created on 2021-10-27 11:41:34
   from 'C:\wamp64\www\loja\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_60d511dce9a3d5_68983947',
+  'version' => '3.1.40',
+  'unifunc' => 'content_6179651e3c2fc9_61648707',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d511dce9a3d5_68983947 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6179651e3c2fc9_61648707 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <hr>
 

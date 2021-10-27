@@ -58,12 +58,12 @@ private static $installed = array (
     ),
     'smarty/smarty' => 
     array (
-      'pretty_version' => 'v3.1.39',
-      'version' => '3.1.39.0',
+      'pretty_version' => 'v3.1.40',
+      'version' => '3.1.40.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'e27da524f7bcd7361e3ea5cdfa99c4378a7b5419',
+      'reference' => '9d4f8309ed49702e0d7152f9983c3a9c4b98eb9d',
       'dev-requirement' => false,
     ),
   ),

@@ -32,7 +32,9 @@ if(!Login::Logado()){
 	$cliente = $_SESSION['CLI']['cli_id'];
 	$cod = $_SESSION['PED']['pedido'];
 	$ref = $_SESSION['PED']['ref'];
-	$frete = 00.00;
+	$frete = 00;
+	
+	
 
 	$smarty->assign('PRO', $carrinho->GetCarrinho());
 	$smarty->assign('TOTAL', Sistema::MoedaBR($carrinho->GetTotal()));
@@ -57,12 +59,12 @@ if(!Login::Logado()){
 	$msg = $smarty->fetch('email_compra2.tpl');
 
 	$email->Enviar($assunto, $msg, $destinatarios);
-
-	if($pedido->PedidoGravar($cliente, $cod, $ref)){
+//
+	if($pedido->PedidoGravarS($cliente, $cod, $ref)){
 
 			$pag = new PagamentoPS();
       
-            $pag->Pagamento($_SESSION['CLI'], $_SESSION['PED'], $carrinho->GetCarrinho());
+            //$pag->Pagamento($_SESSION['CLI'], $_SESSION['PED'], $carrinho->GetCarrinho());
             
           //  var_dump($pag);
             

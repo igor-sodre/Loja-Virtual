@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-24 04:19:30
+/* Smarty version 3.1.40, created on 2021-10-27 11:42:44
   from 'C:\wamp64\www\loja\view\clentes_pedidos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_60d43202970f80_33635883',
+  'version' => '3.1.40',
+  'unifunc' => 'content_61796564b8d764_31673108',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d43202970f80_33635883 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61796564b8d764_31673108 (Smarty_Internal_Template $_smarty_tpl) {
 ?><br>
 <br>
 

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-05 19:10:46
+/* Smarty version 3.1.40, created on 2021-10-27 11:41:38
   from 'C:\wamp64\www\loja\view\pedido_solicitar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_610c61e639ae88_24754361',
+  'version' => '3.1.40',
+  'unifunc' => 'content_617965223127b4_39268298',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_610c61e639ae88_24754361 (Smarty_Internal_Template $_smarty_tpl) {
+function content_617965223127b4_39268298 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <h3>Solicitar Entrega</h3>
 <hr>
 <!-- botoes e opções de cima -->

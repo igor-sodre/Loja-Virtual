@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-23 11:28:35
+/* Smarty version 3.1.40, created on 2021-10-27 11:43:25
   from 'C:\wamp64\www\loja\adm\view\adm_produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_60d34513723537_41785051',
+  'version' => '3.1.40',
+  'unifunc' => 'content_6179658d662556_26444706',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '648558107b45716b13b5ff53da1de470913a47fc' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\adm\\view\\adm_produtos.tpl',
-      1 => 1624458511,
+      1 => 1624509592,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d34513723537_41785051 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6179658d662556_26444706 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h4 class="text-center">Gerenciar Produtos</h4>
 <hr>
 <section class="row ">

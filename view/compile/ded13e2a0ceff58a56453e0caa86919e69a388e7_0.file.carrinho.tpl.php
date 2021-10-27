@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-04 17:33:34
+/* Smarty version 3.1.40, created on 2021-10-27 11:41:36
   from 'C:\wamp64\www\loja\view\carrinho.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_610af99e5502d6_35566464',
+  'version' => '3.1.40',
+  'unifunc' => 'content_61796520dbb194_73943661',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ded13e2a0ceff58a56453e0caa86919e69a388e7' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\carrinho.tpl',
-      1 => 1628109212,
+      1 => 1628885741,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_610af99e5502d6_35566464 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61796520dbb194_73943661 (Smarty_Internal_Template $_smarty_tpl) {
 ?> 
 <?php echo '<script'; ?>
 >
@@ -193,7 +193,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
                     <br>
                     <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_SOLICITAR']->value;?>
 ">
-                    <button class="btn btn-danger btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-globe"></i> Solicitar Entrega</button>
+                    <button class="btn btn-danger btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-globe"></i> Solicitar Entrega / Retirada ma loja</button>
                       
                        
                    </div>          

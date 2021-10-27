@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-24 05:22:39
+/* Smarty version 3.1.40, created on 2021-10-27 11:43:33
   from 'C:\wamp64\www\loja\adm\view\adm_pedidos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_60d440cf207df6_88023459',
+  'version' => '3.1.40',
+  'unifunc' => 'content_617965955526a3_52042962',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d440cf207df6_88023459 (Smarty_Internal_Template $_smarty_tpl) {
+function content_617965955526a3_52042962 (Smarty_Internal_Template $_smarty_tpl) {
 ?>    <h4 class="text-center"> Gerenciar Pedidos </h4>
 <hr>
 

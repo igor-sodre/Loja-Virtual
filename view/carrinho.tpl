@@ -147,7 +147,7 @@ $(document).ready(function(){
                     <button class="btn btn-warning btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-send"></i> Calcular Frete </button>
                     <br>
                     <form name="pedido_confirmar" id="pedido_confirmar" method="post" action="{$PAG_SOLICITAR}">
-                    <button class="btn btn-danger btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-globe"></i> Solicitar Entrega</button>
+                    <button class="btn btn-danger btn-block" id="buscar_frete"> <i class="glyphicon glyphicon-globe"></i> Solicitar Entrega / Retirada ma loja</button>
                       
                        
                    </div>          

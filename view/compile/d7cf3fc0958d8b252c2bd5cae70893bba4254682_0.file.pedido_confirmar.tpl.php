@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-25 01:26:58
+/* Smarty version 3.1.40, created on 2021-10-27 12:10:58
   from 'C:\wamp64\www\loja\view\pedido_confirmar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_60d55b126162d2_04860728',
+  'version' => '3.1.40',
+  'unifunc' => 'content_61796c027ceb19_83905065',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd7cf3fc0958d8b252c2bd5cae70893bba4254682' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\pedido_confirmar.tpl',
-      1 => 1624003535,
+      1 => 1628203950,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d55b126162d2_04860728 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61796c027ceb19_83905065 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <h3>Confirmar Pedido</h3>
 <hr>
 <!-- botoes e opções de cima -->
@@ -57,7 +57,7 @@ function content_60d55b126162d2_04860728 (Smarty_Internal_Template $_smarty_tpl)
             <td></td> 
             <td>Produto</td> 
             <td>Valor R$</td> 
-            <td>X</td> 
+            <td>Quantidade</td> 
             <td>Sub Total R$</td> 
             
             

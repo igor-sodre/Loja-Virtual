@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-05 19:07:09
+/* Smarty version 3.1.40, created on 2021-10-27 11:41:39
   from 'C:\wamp64\www\loja\view\email_compra2.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_610c610d1c82d7_45764403',
+  'version' => '3.1.40',
+  'unifunc' => 'content_617965233e02c9_65154812',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ac5d7fb23365410ccc4f35cfe8ff414fed1b1664' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\email_compra2.tpl',
-      1 => 1628201144,
+      1 => 1628203872,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_610c610d1c82d7_45764403 (Smarty_Internal_Template $_smarty_tpl) {
+function content_617965233e02c9_65154812 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!--Css pra estrutura do email-->
 <style>
 .tabela {
@@ -74,7 +74,7 @@ function content_610c610d1c82d7_45764403 (Smarty_Internal_Template $_smarty_tpl)
 </style>
 
 <p class="textoinicio"> Olá <?php echo $_smarty_tpl->tpl_vars['NOME_CLIENTE']->value;?>
- , obrigado pela sua compra em <?php echo $_smarty_tpl->tpl_vars['SITE_NOME']->value;?>
+ ,foi solicitada a entega de seu produto, obrigado pela sua Preferencia em <?php echo $_smarty_tpl->tpl_vars['SITE_NOME']->value;?>
  <br>
 <a href="<?php echo $_smarty_tpl->tpl_vars['SITE_HOME']->value;?>
 "> <?php echo $_smarty_tpl->tpl_vars['SITE_HOME']->value;?>

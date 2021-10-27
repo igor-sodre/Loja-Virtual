@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-05 17:39:17
+/* Smarty version 3.1.40, created on 2021-10-27 12:11:04
   from 'C:\wamp64\www\loja\view\pedido_finalizar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_610c4c751e5000_50217852',
+  'version' => '3.1.40',
+  'unifunc' => 'content_61796c08cd8742_53678661',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_610c4c751e5000_50217852 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61796c08cd8742_53678661 (Smarty_Internal_Template $_smarty_tpl) {
 ?>  <h3>Finalizar Pedido</h3>
 <hr>
 <!-- botoes e opções de cima -->

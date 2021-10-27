@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-23 13:24:28
+/* Smarty version 3.1.40, created on 2021-10-27 11:43:31
   from 'C:\wamp64\www\loja\adm\view\adm_clientes_editar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_60d3603ce9fcd5_32338041',
+  'version' => '3.1.40',
+  'unifunc' => 'content_617965933e5411_80361964',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd93e95a0f46fc40908a687d682eb37566ed31f4b' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\adm\\view\\adm_clientes_editar.tpl',
-      1 => 1624465441,
+      1 => 1624509592,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d3603ce9fcd5_32338041 (Smarty_Internal_Template $_smarty_tpl) {
+function content_617965933e5411_80361964 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h3>Meus Dados</h3>
 
 <hr>

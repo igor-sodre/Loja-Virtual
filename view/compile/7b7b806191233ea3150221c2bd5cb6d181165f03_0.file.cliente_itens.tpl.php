@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-05 19:54:25
+/* Smarty version 3.1.40, created on 2021-10-27 11:43:00
   from 'C:\wamp64\www\loja\view\cliente_itens.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_610c6c211fd646_99513432',
+  'version' => '3.1.40',
+  'unifunc' => 'content_61796574c814e2_68042626',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '7b7b806191233ea3150221c2bd5cb6d181165f03' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\view\\cliente_itens.tpl',
-      1 => 1628204063,
+      1 => 1628204083,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_610c6c211fd646_99513432 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61796574c814e2_68042626 (Smarty_Internal_Template $_smarty_tpl) {
 ?><br><h4 class="text-center">Dados do pedido</h4>
 
 <!-- informações sobre o pedido -->
@@ -129,7 +129,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
             <h3 class="text-center"> Formas de pagamento </h3>     
             
             <div class="col-md-4">
-                    Se realizou o pagamento aguarde ate 48 horas
+                    Se realizou o pagamento aguarde ate 48 horas 
             </div>
             <!-- botao de pagamento  -->
             

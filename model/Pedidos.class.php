@@ -8,7 +8,7 @@ class Pedidos extends Conexao{
 	function PedidoGravar($cliente, $cod, $ref, $freteValor=null, $freteTipo=null){
 
 		$retorno = FALSE;
-    //esse modelo de query com . faz concatenar as linhas pra n ter q deixar o codigo todo junto assim reduzindo erros de escrita
+   
 		 $query  = "INSERT INTO ".$this->prefix."pedidos ";   
      	 $query .= "(ped_data, ped_hora, ped_cliente, ped_cod, ped_ref, ped_frete_valor, ped_frete_tipo, ped_pag_status)"; 
     	 $query .= " VALUES ";
@@ -24,7 +24,39 @@ class Pedidos extends Conexao{
             ':ref' => $ref,
             ':frete_valor'=>$freteValor,
             ':frete_tipo' =>$freteTipo,
-            ':ped_pag_status' =>'NAO' 
+            ':ped_pag_status' =>'Não Finalizado' 
+
+     	 	);
+
+
+     	 $this->ExecuteSQL($query, $params);
+     	 
+     	 //gravar os itens do pedido
+     	 $this->ItensGravar($cod);
+     	 $retorno = TRUE;
+     	 return $retorno;
+
+	}
+  function PedidoGravarS($cliente, $cod, $ref, $freteValor=null, $freteTipo=null){
+
+		$retorno = FALSE;
+   
+		 $query  = "INSERT INTO ".$this->prefix."pedidos ";   
+     	 $query .= "(ped_data, ped_hora, ped_cliente, ped_cod, ped_ref, ped_frete_valor, ped_frete_tipo, ped_pag_status)"; 
+    	 $query .= " VALUES ";
+     	 $query .= "(:data, :hora, :cliente, :cod, :ref, :frete_valor, :frete_tipo, :ped_pag_status)";
+
+     	 $params = array(
+
+
+     	 	':data' => Sistema::DataAtualUS(),
+            ':hora' => Sistema::HoraAtual(),
+            ':cliente'=> (int)$cliente,
+            ':cod' => $cod,
+            ':ref' => $ref,
+            ':frete_valor'=>$freteValor,
+            ':frete_tipo' =>$freteTipo,
+            ':ped_pag_status' =>'Retirada' 
 
      	 	);
 

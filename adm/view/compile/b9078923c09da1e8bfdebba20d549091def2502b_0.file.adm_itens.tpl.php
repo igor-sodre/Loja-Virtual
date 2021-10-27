@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-24 04:53:06
+/* Smarty version 3.1.40, created on 2021-10-27 11:45:24
   from 'C:\wamp64\www\loja\adm\view\adm_itens.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_60d439e2c928f6_10044129',
+  'version' => '3.1.40',
+  'unifunc' => 'content_61796604519174_50794793',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b9078923c09da1e8bfdebba20d549091def2502b' => 
     array (
       0 => 'C:\\wamp64\\www\\loja\\adm\\view\\adm_itens.tpl',
-      1 => 1624519861,
+      1 => 1628106743,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d439e2c928f6_10044129 (Smarty_Internal_Template $_smarty_tpl) {
+function content_61796604519174_50794793 (Smarty_Internal_Template $_smarty_tpl) {
 ?><h4 class="text-center">Dados do pedido</h4>
 
 <!-- informações sobre o pedido -->
@@ -61,7 +61,7 @@ function content_60d439e2c928f6_10044129 (Smarty_Internal_Template $_smarty_tpl)
             <td></td>
             <td>Item</td>
             <td>Valor Uni</td>
-            <td>X</td>
+            <td>Quantidade</td>
             <td>Sub</td>
         </tr>
         
