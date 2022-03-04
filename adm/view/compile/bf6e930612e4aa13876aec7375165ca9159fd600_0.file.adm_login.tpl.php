@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-24 20:16:37
+/* Smarty version 3.1.40, created on 2021-11-11 22:24:55
   from 'C:\wamp64\www\loja\adm\view\adm_login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_60d51255912836_79482542',
+  'version' => '3.1.40',
+  'unifunc' => 'content_618dc2671d6481_95924740',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d51255912836_79482542 (Smarty_Internal_Template $_smarty_tpl) {
+function content_618dc2671d6481_95924740 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 
 <html>

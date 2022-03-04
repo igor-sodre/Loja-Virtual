@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-06-27 03:24:26
+/* Smarty version 3.1.40, created on 2021-11-11 22:56:32
   from 'C:\wamp64\www\loja\adm\view\adm_produtos_novo.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
-  'version' => '3.1.39',
-  'unifunc' => 'content_60d8199a22f454_64593045',
+  'version' => '3.1.40',
+  'unifunc' => 'content_618dc9d02a32e9_11160139',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_60d8199a22f454_64593045 (Smarty_Internal_Template $_smarty_tpl) {
+function content_618dc9d02a32e9_11160139 (Smarty_Internal_Template $_smarty_tpl) {
 echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>
 /tema/js/tinymce/tinymce.min.js"><?php echo '</script'; ?>
